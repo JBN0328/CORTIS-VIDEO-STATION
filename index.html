@@ -23,15 +23,6 @@
         extend: {
           fontFamily: {
             sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
-          },
-          colors: {
-            cortis: {
-              primary: '#6366f1',
-              darkBg: '#0f172a',
-              darkCard: '#1e293b',
-              lightBg: '#f8fafc',
-              lightCard: '#ffffff'
-            }
           }
         }
       }
@@ -64,7 +55,7 @@
 
 <body class="bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 min-h-screen font-sans transition-colors duration-200">
 
-  <!-- Header -->
+  <!-- Main Header -->
   <header class="sticky top-0 z-30 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-200/80 dark:border-slate-800 transition-colors">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16 gap-4">
@@ -87,7 +78,7 @@
             <input 
               type="text" 
               id="searchInput" 
-              placeholder="搜尋影片標題、歌名、關鍵字..." 
+              placeholder="搜尋影片標題、關鍵字..." 
               class="w-full pl-10 pr-10 py-2 text-sm bg-slate-100 dark:bg-slate-800 border-none rounded-full focus:ring-2 focus:ring-indigo-500 dark:focus:ring-indigo-400 focus:outline-none transition-all placeholder-slate-400"
             >
             <button id="clearSearchBtn" class="hidden absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 text-xs">
@@ -96,7 +87,7 @@
           </div>
         </div>
 
-        <!-- Right Tools -->
+        <!-- Counter & Theme Toggle -->
         <div class="flex items-center gap-2">
           <span class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 border border-indigo-100 dark:border-indigo-900/50">
             <i class="fa-solid fa-film text-[10px]"></i>
@@ -117,7 +108,7 @@
           <input 
             type="text" 
             id="searchInputMobile" 
-            placeholder="搜尋影片標題、歌名..." 
+            placeholder="搜尋影片標題..." 
             class="w-full pl-10 pr-10 py-2 text-sm bg-slate-100 dark:bg-slate-800 border-none rounded-full focus:ring-2 focus:ring-indigo-500 focus:outline-none placeholder-slate-400"
           >
         </div>
@@ -125,54 +116,100 @@
     </div>
   </header>
 
-  <!-- Filter Toolbar -->
-  <section class="bg-white/50 dark:bg-slate-900/50 border-b border-slate-200/60 dark:border-slate-800/80 sticky top-16 z-20 backdrop-blur-sm py-2.5">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap items-center justify-between gap-3">
-      
-      <!-- Category Badges -->
-      <div class="flex items-center gap-1.5 overflow-x-auto pb-1 sm:pb-0 no-scrollbar text-xs font-medium" id="categoryFilterGroup">
-        <button data-type="all" class="filter-btn active-filter px-3 py-1.5 rounded-lg bg-indigo-600 text-white shadow-sm transition-all">
+  <!-- Main Category Navigation -->
+  <section class="bg-white dark:bg-slate-900 border-b border-slate-200/80 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5">
+      <nav class="flex items-center gap-2.5 overflow-x-auto pb-1 sm:pb-0" id="mainCategoryNav">
+        <button data-cat="all" class="cat-nav-btn px-5 py-2.5 rounded-xl text-xs font-bold bg-indigo-600 text-white shadow-md shadow-indigo-500/20 transition-all duration-200 flex items-center gap-2 whitespace-nowrap">
+          <span class="w-3 h-3 rounded-full bg-white/30 flex items-center justify-center text-[8px]"><i class="fa-solid fa-border-all"></i></span>
           全部影片
         </button>
-        <button data-type="stage" class="filter-btn px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-rose-50 hover:text-rose-600 dark:hover:bg-rose-950/40 dark:hover:text-rose-400 transition-all">
-          🔴 舞台打歌
+        
+        <button data-cat="official" class="cat-nav-btn px-5 py-2.5 rounded-xl text-xs font-semibold bg-slate-100/90 dark:bg-slate-800/90 text-slate-600 dark:text-slate-300 hover:bg-slate-200/70 dark:hover:bg-slate-700/70 transition-all duration-200 flex items-center gap-2 whitespace-nowrap">
+          <span class="w-3 h-3 rounded-full bg-rose-500 inline-block shrink-0"></span>
+          官方
         </button>
-        <button data-type="variety" class="filter-btn px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-sky-50 hover:text-sky-600 dark:hover:bg-sky-950/40 dark:hover:text-sky-400 transition-all">
-          🔵 綜藝節目
+        
+        <button data-cat="stage" class="cat-nav-btn px-5 py-2.5 rounded-xl text-xs font-semibold bg-slate-100/90 dark:bg-slate-800/90 text-slate-600 dark:text-slate-300 hover:bg-slate-200/70 dark:hover:bg-slate-700/70 transition-all duration-200 flex items-center gap-2 whitespace-nowrap">
+          <span class="w-3 h-3 rounded-full bg-blue-500 inline-block shrink-0"></span>
+          舞台
         </button>
-        <button data-type="live" class="filter-btn px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-emerald-50 hover:text-emerald-600 dark:hover:bg-emerald-950/40 dark:hover:text-emerald-400 transition-all">
-          🟢 直播紀錄
+        
+        <button data-cat="variety" class="cat-nav-btn px-5 py-2.5 rounded-xl text-xs font-semibold bg-slate-100/90 dark:bg-slate-800/90 text-slate-600 dark:text-slate-300 hover:bg-slate-200/70 dark:hover:bg-slate-700/70 transition-all duration-200 flex items-center gap-2 whitespace-nowrap">
+          <span class="w-3 h-3 rounded-full bg-emerald-500 inline-block shrink-0"></span>
+          節目
         </button>
-        <button data-type="behind" class="filter-btn px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-purple-50 hover:text-purple-600 dark:hover:bg-purple-950/40 dark:hover:text-purple-400 transition-all">
-          🟣 側拍/花絮
+        
+        <button data-cat="other" class="cat-nav-btn px-5 py-2.5 rounded-xl text-xs font-semibold bg-slate-100/90 dark:bg-slate-800/90 text-slate-600 dark:text-slate-300 hover:bg-slate-200/70 dark:hover:bg-slate-700/70 transition-all duration-200 flex items-center gap-2 whitespace-nowrap">
+          <span class="w-3 h-3 rounded-full bg-violet-500 inline-block shrink-0"></span>
+          其他
         </button>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Secondary Filter Controls Toolbar -->
+  <section class="bg-white/60 dark:bg-slate-900/60 border-b border-slate-200/60 dark:border-slate-800/80 sticky top-16 z-20 backdrop-blur-sm py-2.5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap items-center justify-between gap-3">
+      
+      <!-- Subcategory / Song Dropdowns Container -->
+      <div class="flex items-center gap-2 flex-wrap" id="subFiltersContainer">
+        <!-- Subtype Select -->
+        <div id="subtypeFilterWrapper" class="hidden items-center gap-1.5">
+          <label for="subtypeSelect" class="text-xs text-slate-500 dark:text-slate-400 font-medium whitespace-nowrap">
+            <i class="fa-solid fa-layer-group mr-1"></i>分類:
+          </label>
+          <select id="subtypeSelect" class="text-xs bg-slate-100 dark:bg-slate-800 border-none rounded-lg py-1.5 px-2.5 focus:ring-2 focus:ring-indigo-500 dark:text-slate-200 cursor-pointer">
+            <option value="all">全部分類</option>
+          </select>
+        </div>
+
+        <!-- Song Select (Stage Page Only) -->
+        <div id="songFilterWrapper" class="hidden items-center gap-1.5">
+          <label for="songSelect" class="text-xs text-slate-500 dark:text-slate-400 font-medium whitespace-nowrap">
+            <i class="fa-solid fa-music mr-1"></i>歌曲:
+          </label>
+          <select id="songSelect" class="text-xs bg-slate-100 dark:bg-slate-800 border-none rounded-lg py-1.5 px-2.5 focus:ring-2 focus:ring-indigo-500 dark:text-slate-200 cursor-pointer">
+            <option value="all">全部歌曲</option>
+            <option value="GO!">GO!</option>
+            <option value="What You Want">What You Want</option>
+            <option value="FaSHioN">FaSHioN</option>
+            <option value="JoyRide">JoyRide</option>
+            <option value="REDRED">REDRED</option>
+            <option value="TNT">TNT</option>
+            <option value="ACAI">ACAI</option>
+            <option value="YOUNGCREATORCREW">YOUNGCREATORCREW</option>
+            <option value="MIC DROP">MIC DROP</option>
+            <option value="DEJAVU">DEJAVU</option>
+          </select>
+        </div>
       </div>
 
-      <!-- Controls: Member & Date Sort -->
+      <!-- Right Controls: Member & Date Sort -->
       <div class="flex items-center gap-3 ml-auto flex-wrap">
+        <!-- Member Filter Select -->
+        <div class="flex items-center gap-1.5">
+          <label for="memberSelect" class="text-xs text-slate-500 dark:text-slate-400 font-medium whitespace-nowrap">
+            <i class="fa-solid fa-user-group mr-1"></i>成員篩選:
+          </label>
+          <select id="memberSelect" class="text-xs bg-slate-100 dark:bg-slate-800 border-none rounded-lg py-1.5 px-2.5 focus:ring-2 focus:ring-indigo-500 dark:text-slate-200 cursor-pointer">
+            <option value="all">全體成員 (ALL)</option>
+            <option value="JAMES 趙雨凡">JAMES 趙雨凡</option>
+            <option value="JUHOON 金主訓">JUHOON 金主訓</option>
+            <option value="MARTIN 朴宇宙">MARTIN 朴宇宙</option>
+            <option value="SEONGHYEON 嚴成玹">SEONGHYEON 嚴成玹</option>
+            <option value="KEONHO 安乾鎬">KEONHO 安乾鎬</option>
+          </select>
+        </div>
+
         <!-- Date Sort Select -->
         <div class="flex items-center gap-1.5">
           <label for="sortSelect" class="text-xs text-slate-500 dark:text-slate-400 font-medium whitespace-nowrap">
             <i class="fa-solid fa-sort mr-1"></i>排序:
           </label>
           <select id="sortSelect" class="text-xs bg-slate-100 dark:bg-slate-800 border-none rounded-lg py-1.5 px-2.5 focus:ring-2 focus:ring-indigo-500 dark:text-slate-200 cursor-pointer">
-            <option value="desc">由新到舊 (最新)</option>
-            <option value="asc">由舊到新 (最舊)</option>
-          </select>
-        </div>
-
-        <!-- Member Filter Select -->
-        <div class="flex items-center gap-1.5">
-          <label for="memberSelect" class="text-xs text-slate-500 dark:text-slate-400 font-medium whitespace-nowrap">
-            <i class="fa-solid fa-user-group mr-1"></i>成員:
-          </label>
-          <select id="memberSelect" class="text-xs bg-slate-100 dark:bg-slate-800 border-none rounded-lg py-1.5 px-2.5 focus:ring-2 focus:ring-indigo-500 dark:text-slate-200 cursor-pointer">
-            <option value="all">全體成員 (ALL)</option>
-            <option value="Cortis">Cortis (團體)</option>
-            <option value="Liam">Liam</option>
-            <option value="Noah">Noah</option>
-            <option value="Ethan">Ethan</option>
-            <option value="Lucas">Lucas</option>
+            <option value="desc">由新到舊</option>
+            <option value="asc">由舊到新</option>
           </select>
         </div>
       </div>
@@ -184,7 +221,7 @@
   <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
     <div class="flex flex-col md:flex-row gap-8 items-start relative">
       
-      <!-- Sidebar Navigation -->
+      <!-- Timeline Sidebar Navigation -->
       <aside class="w-full md:w-56 shrink-0 md:sticky md:top-36 z-10 hidden md:block">
         <div class="bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 rounded-2xl p-4 shadow-sm">
           <h3 class="text-xs font-semibold text-slate-400 dark:text-slate-500 uppercase tracking-wider mb-3 px-2">
@@ -194,25 +231,25 @@
         </div>
       </aside>
 
-      <!-- Video Content Area -->
+      <!-- Video Content List -->
       <section class="flex-1 w-full min-w-0">
         
-        <!-- Filter Status Banner -->
+        <!-- Active Filter Indicator Bar -->
         <div id="filterStatus" class="hidden mb-6 p-3 bg-indigo-50/80 dark:bg-indigo-950/30 border border-indigo-100 dark:border-indigo-900/40 rounded-xl text-xs text-indigo-700 dark:text-indigo-300 flex items-center justify-between">
-          <span><i class="fa-solid fa-filter mr-1.5"></i>已套用搜尋或篩選條件</span>
-          <button id="resetFilterBtn" class="font-semibold underline hover:text-indigo-900 dark:hover:text-indigo-100">重設所有條件</button>
+          <span><i class="fa-solid fa-filter mr-1.5"></i>已套用篩選條件</span>
+          <button id="resetFilterBtn" class="font-semibold underline hover:text-indigo-900 dark:hover:text-indigo-100">重設所有篩選</button>
         </div>
 
-        <!-- Video List Grouped by Month -->
+        <!-- Video Cards Container -->
         <div id="timelineContainer" class="space-y-10"></div>
 
-        <!-- Empty State -->
+        <!-- Empty State Message -->
         <div id="emptyState" class="hidden text-center py-20 bg-white dark:bg-slate-900 rounded-2xl border border-dashed border-slate-300 dark:border-slate-800">
           <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-400 text-2xl">
             <i class="fa-solid fa-ghost"></i>
           </div>
           <h3 class="text-lg font-semibold text-slate-700 dark:text-slate-200">找不到符合條件的影音紀錄</h3>
-          <p class="text-sm text-slate-400 mt-1 max-w-sm mx-auto">請嘗試變更關鍵字或調整篩選條件。</p>
+          <p class="text-sm text-slate-400 mt-1 max-w-sm mx-auto">請嘗試變更搜尋條件或重設成員篩選。</p>
           <button id="emptyResetBtn" class="mt-4 px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg text-xs font-semibold transition-all">
             重設搜尋條件
           </button>
@@ -223,12 +260,12 @@
     </div>
   </main>
 
-  <!-- Video Modal -->
+  <!-- Video Player Modal -->
   <div id="videoModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 sm:p-6 md:p-10 modal-backdrop bg-slate-950/80">
     <div class="relative w-full max-w-4xl bg-slate-900 rounded-2xl overflow-hidden shadow-2xl border border-slate-800 transform transition-all scale-95 opacity-0" id="modalContainer">
       <div class="flex items-center justify-between px-5 py-4 border-b border-slate-800 bg-slate-900/90">
         <div class="flex items-center gap-2 overflow-hidden pr-4">
-          <span id="modalCategoryBadge" class="px-2.5 py-0.5 rounded text-xs font-semibold text-white bg-rose-600 shrink-0">舞台</span>
+          <span id="modalCategoryBadge" class="px-2.5 py-0.5 rounded text-xs font-semibold text-white bg-indigo-600 shrink-0">影片</span>
           <h3 id="modalVideoTitle" class="font-bold text-white text-sm sm:text-base truncate">載入中...</h3>
         </div>
         <button id="closeModalBtn" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-white flex items-center justify-center transition-colors shrink-0">
@@ -253,28 +290,36 @@
   </div>
 
   <script>
-    const TYPE_CONFIG = {
-      stage: { label: '舞台打歌', bg: 'bg-rose-500', badgeBg: 'bg-rose-100 dark:bg-rose-950/60 text-rose-700 dark:text-rose-400 border-rose-200 dark:border-rose-900/50', icon: 'fa-solid fa-microphone-lines' },
-      variety: { label: '綜藝節目', bg: 'bg-sky-500', badgeBg: 'bg-sky-100 dark:bg-sky-950/60 text-sky-700 dark:text-sky-400 border-sky-200 dark:border-sky-900/50', icon: 'fa-solid fa-tv' },
-      live: { label: '直播紀錄', bg: 'bg-emerald-500', badgeBg: 'bg-emerald-100 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-400 border-emerald-200 dark:border-emerald-900/50', icon: 'fa-solid fa-headset' },
-      behind: { label: '側拍花絮', bg: 'bg-purple-500', badgeBg: 'bg-purple-100 dark:bg-purple-950/60 text-purple-700 dark:text-purple-400 border-purple-200 dark:border-purple-900/50', icon: 'fa-solid fa-clapperboard' }
+    // Subtype configurations per page
+    const SUBTYPES = {
+      official: ["MV", "八點檔", "練習室"],
+      stage: ["打歌舞台", "電台", "安可舞台", "專場", "大型演出"],
+      variety: ["訪問", "綜藝"],
+      other: ["花絮", "得獎感言"]
     };
 
     let archiveData = [];
+    let currentMainCategory = 'all';
+    let currentSubtype = 'all';
+    let currentSong = 'all';
+    let currentMember = 'all';
+    let currentSortOrder = 'desc';
     let currentSearchQuery = '';
-    let currentTypeFilter = 'all';
-    let currentMemberFilter = 'all';
-    let currentSortOrder = 'desc'; // 'desc': 由新到舊, 'asc': 由舊到新
 
-    // DOM References
+    // DOM Elements
     const timelineContainer = document.getElementById('timelineContainer');
     const sidebarTimelineNav = document.getElementById('sidebarTimelineNav');
     const searchInput = document.getElementById('searchInput');
     const searchInputMobile = document.getElementById('searchInputMobile');
     const clearSearchBtn = document.getElementById('clearSearchBtn');
+    
+    const subtypeFilterWrapper = document.getElementById('subtypeFilterWrapper');
+    const subtypeSelect = document.getElementById('subtypeSelect');
+    const songFilterWrapper = document.getElementById('songFilterWrapper');
+    const songSelect = document.getElementById('songSelect');
     const memberSelect = document.getElementById('memberSelect');
     const sortSelect = document.getElementById('sortSelect');
-    const categoryFilterGroup = document.getElementById('categoryFilterGroup');
+    
     const totalCountEl = document.getElementById('totalCount');
     const emptyState = document.getElementById('emptyState');
     const emptyResetBtn = document.getElementById('emptyResetBtn');
@@ -296,6 +341,7 @@
       initTheme();
       fetchVideoData();
       setupEventListeners();
+      updateSubFilterUI();
     });
 
     function initTheme() {
@@ -317,32 +363,74 @@
       });
     }
 
-    // 載入外部 video.json 檔
     async function fetchVideoData() {
       try {
         const response = await fetch('./video.json');
-        if (!response.ok) throw new Error('無法載入 video.json 資料');
+        if (!response.ok) throw new Error('無法載入 video.json');
         archiveData = await response.json();
         renderTimeline();
       } catch (error) {
         console.error('載入失敗:', error);
-        timelineContainer.innerHTML = `<div class="text-center py-12 text-rose-500 font-semibold">讀取 video.json 失敗，請確定檔案路徑正確。</div>`;
+        timelineContainer.innerHTML = `<div class="text-center py-12 text-rose-500 font-semibold">讀取 video.json 失敗，請確認檔案路徑。</div>`;
+      }
+    }
+
+    // Dynamic UI Update for Secondary Subtype / Song Filters
+    function updateSubFilterUI() {
+      currentSubtype = 'all';
+      currentSong = 'all';
+      songSelect.value = 'all';
+
+      if (currentMainCategory === 'all') {
+        subtypeFilterWrapper.classList.add('hidden');
+        subtypeFilterWrapper.classList.remove('flex');
+        songFilterWrapper.classList.add('hidden');
+        songFilterWrapper.classList.remove('flex');
+      } else {
+        subtypeFilterWrapper.classList.remove('hidden');
+        subtypeFilterWrapper.classList.add('flex');
+        
+        // Populate subtype dropdown
+        const options = SUBTYPES[currentMainCategory] || [];
+        subtypeSelect.innerHTML = `<option value="all">全部分類</option>` + 
+          options.map(opt => `<option value="${opt}">${opt}</option>`).join('');
+
+        // Show song filter only for Stage
+        if (currentMainCategory === 'stage') {
+          songFilterWrapper.classList.remove('hidden');
+          songFilterWrapper.classList.add('flex');
+        } else {
+          songFilterWrapper.classList.add('hidden');
+          songFilterWrapper.classList.remove('flex');
+        }
       }
     }
 
     function getFilteredData() {
       let filtered = archiveData.filter(item => {
-        const matchesSearch = currentSearchQuery === '' || 
-          item.title.toLowerCase().includes(currentSearchQuery.toLowerCase()) ||
-          (item.description && item.description.toLowerCase().includes(currentSearchQuery.toLowerCase()));
+        // Main Category ("all" shows everything)
+        if (currentMainCategory !== 'all' && item.category !== currentMainCategory) return false;
 
-        const matchesType = currentTypeFilter === 'all' || item.type === currentTypeFilter;
-        const matchesMember = currentMemberFilter === 'all' || item.members.includes(currentMemberFilter);
+        // Search Query
+        if (currentSearchQuery !== '') {
+          const matchTitle = item.title.toLowerCase().includes(currentSearchQuery.toLowerCase());
+          const matchDesc = item.description && item.description.toLowerCase().includes(currentSearchQuery.toLowerCase());
+          if (!matchTitle && !matchDesc) return false;
+        }
 
-        return matchesSearch && matchesType && matchesMember;
+        // Subtype Filter
+        if (currentSubtype !== 'all' && item.subtype !== currentSubtype) return false;
+
+        // Song Filter (Stage page)
+        if (currentMainCategory === 'stage' && currentSong !== 'all' && item.song !== currentSong) return false;
+
+        // Member Filter
+        if (currentMember !== 'all' && (!item.members || !item.members.includes(currentMember))) return false;
+
+        return true;
       });
 
-      // 依日期排序 (新至舊 / 舊至新)
+      // Date Sorting
       filtered.sort((a, b) => {
         const dateA = new Date(a.date);
         const dateB = new Date(b.date);
@@ -370,7 +458,7 @@
       const filteredData = getFilteredData();
       totalCountEl.textContent = filteredData.length;
 
-      const isFiltered = currentSearchQuery !== '' || currentTypeFilter !== 'all' || currentMemberFilter !== 'all';
+      const isFiltered = currentSearchQuery !== '' || currentSubtype !== 'all' || currentSong !== 'all' || currentMember !== 'all' || currentMainCategory !== 'all';
       filterStatus.classList.toggle('hidden', !isFiltered);
 
       if (filteredData.length === 0) {
@@ -430,10 +518,12 @@
     }
 
     function createVideoCardHTML(item) {
-      const typeInfo = TYPE_CONFIG[item.type] || TYPE_CONFIG.stage;
-      const memberBadges = item.members.map(m => 
+      const memberBadges = (item.members || []).map(m => 
         `<span class="px-2 py-0.5 rounded text-[11px] font-medium bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300">#${m}</span>`
       ).join(' ');
+
+      const subtypeTag = item.subtype ? `<span class="px-2 py-0.5 rounded text-[11px] font-semibold bg-indigo-100 dark:bg-indigo-950 text-indigo-600 dark:text-indigo-400">${item.subtype}</span>` : '';
+      const songTag = item.song ? `<span class="px-2 py-0.5 rounded text-[11px] font-semibold bg-violet-100 dark:bg-violet-950 text-violet-600 dark:text-violet-400">🎵 ${item.song}</span>` : '';
 
       return `
         <div class="group bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 hover:border-indigo-300 dark:hover:border-indigo-700/60 rounded-xl p-4 transition-all duration-200 shadow-sm hover:shadow-md flex flex-col sm:flex-row sm:items-center justify-between gap-4">
@@ -444,11 +534,10 @@
             </div>
 
             <div class="min-w-0 space-y-1.5">
-              <div class="flex flex-wrap items-center gap-2">
-                <span class="px-2.5 py-0.5 rounded-full text-[11px] font-semibold border ${typeInfo.badgeBg} flex items-center gap-1">
-                  <i class="${typeInfo.icon} text-[10px]"></i> ${typeInfo.label}
-                </span>
-                <div class="flex items-center gap-1">
+              <div class="flex flex-wrap items-center gap-1.5">
+                ${subtypeTag}
+                ${songTag}
+                <div class="flex items-center gap-1 flex-wrap">
                   ${memberBadges}
                 </div>
               </div>
@@ -483,13 +572,9 @@
     }
 
     function openModal(data) {
-      const typeInfo = TYPE_CONFIG[data.type] || TYPE_CONFIG.stage;
-
       modalVideoTitle.textContent = data.title;
-      modalCategoryBadge.textContent = typeInfo.label;
-      modalCategoryBadge.className = `px-2.5 py-0.5 rounded text-xs font-semibold text-white ${typeInfo.bg}`;
       modalVideoDate.innerHTML = `<i class="fa-regular fa-calendar mr-1"></i>${data.date}`;
-      modalVideoMembers.innerHTML = `<i class="fa-regular fa-user mr-1"></i>成員: ${data.members.join(', ')}`;
+      modalVideoMembers.innerHTML = `<i class="fa-regular fa-user mr-1"></i>成員: ${(data.members || []).join(', ')}`;
       
       youtubeIframe.src = `https://www.youtube-nocookie.com/embed/${data.youtubeId}?autoplay=1`;
       modalExternalLink.href = `https://www.youtube.com/watch?v=${data.youtubeId}`;
@@ -515,12 +600,30 @@
     }
 
     function setupEventListeners() {
+      // Main Nav Category Buttons
+      document.getElementById('mainCategoryNav').addEventListener('click', (e) => {
+        const btn = e.target.closest('.cat-nav-btn');
+        if (!btn) return;
+
+        // Reset all buttons to Inactive Light Gray Style
+        document.querySelectorAll('.cat-nav-btn').forEach(b => {
+          b.className = 'cat-nav-btn px-5 py-2.5 rounded-xl text-xs font-semibold bg-slate-100/90 dark:bg-slate-800/90 text-slate-600 dark:text-slate-300 hover:bg-slate-200/70 dark:hover:bg-slate-700/70 transition-all duration-200 flex items-center gap-2 whitespace-nowrap';
+        });
+
+        // Set clicked button to Active Deep Purple Style
+        btn.className = 'cat-nav-btn px-5 py-2.5 rounded-xl text-xs font-bold bg-indigo-600 text-white shadow-md shadow-indigo-500/20 transition-all duration-200 flex items-center gap-2 whitespace-nowrap';
+        currentMainCategory = btn.getAttribute('data-cat');
+        
+        updateSubFilterUI();
+        renderTimeline();
+      });
+
+      // Search Inputs
       const handleSearch = (e) => {
         currentSearchQuery = e.target.value.trim();
         clearSearchBtn.classList.toggle('hidden', currentSearchQuery === '');
         renderTimeline();
       };
-
       searchInput.addEventListener('input', handleSearch);
       searchInputMobile.addEventListener('input', handleSearch);
 
@@ -532,21 +635,19 @@
         renderTimeline();
       });
 
-      categoryFilterGroup.addEventListener('click', (e) => {
-        const btn = e.target.closest('.filter-btn');
-        if (!btn) return;
+      // Filter Selects
+      subtypeSelect.addEventListener('change', (e) => {
+        currentSubtype = e.target.value;
+        renderTimeline();
+      });
 
-        document.querySelectorAll('.filter-btn').forEach(b => {
-          b.className = 'filter-btn px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition-all';
-        });
-
-        btn.className = 'filter-btn active-filter px-3 py-1.5 rounded-lg bg-indigo-600 text-white shadow-sm transition-all font-semibold';
-        currentTypeFilter = btn.getAttribute('data-type');
+      songSelect.addEventListener('change', (e) => {
+        currentSong = e.target.value;
         renderTimeline();
       });
 
       memberSelect.addEventListener('change', (e) => {
-        currentMemberFilter = e.target.value;
+        currentMember = e.target.value;
         renderTimeline();
       });
 
@@ -570,25 +671,30 @@
     }
 
     function resetAllFilters() {
+      currentMainCategory = 'all';
       currentSearchQuery = '';
-      currentTypeFilter = 'all';
-      currentMemberFilter = 'all';
+      currentSubtype = 'all';
+      currentSong = 'all';
+      currentMember = 'all';
       currentSortOrder = 'desc';
+
+      document.querySelectorAll('.cat-nav-btn').forEach(b => {
+        if (b.getAttribute('data-cat') === 'all') {
+          b.className = 'cat-nav-btn px-5 py-2.5 rounded-xl text-xs font-bold bg-indigo-600 text-white shadow-md shadow-indigo-500/20 transition-all duration-200 flex items-center gap-2 whitespace-nowrap';
+        } else {
+          b.className = 'cat-nav-btn px-5 py-2.5 rounded-xl text-xs font-semibold bg-slate-100/90 dark:bg-slate-800/90 text-slate-600 dark:text-slate-300 hover:bg-slate-200/70 dark:hover:bg-slate-700/70 transition-all duration-200 flex items-center gap-2 whitespace-nowrap';
+        }
+      });
 
       searchInput.value = '';
       searchInputMobile.value = '';
+      subtypeSelect.value = 'all';
+      songSelect.value = 'all';
       memberSelect.value = 'all';
       sortSelect.value = 'desc';
       clearSearchBtn.classList.add('hidden');
 
-      document.querySelectorAll('.filter-btn').forEach(b => {
-        if (b.getAttribute('data-type') === 'all') {
-          b.className = 'filter-btn active-filter px-3 py-1.5 rounded-lg bg-indigo-600 text-white shadow-sm transition-all font-semibold';
-        } else {
-          b.className = 'filter-btn px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition-all';
-        }
-      });
-
+      updateSubFilterUI();
       renderTimeline();
     }
   </script>
