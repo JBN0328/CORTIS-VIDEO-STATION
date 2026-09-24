@@ -103,169 +103,158 @@
   },
   {
     "id": "7AeUVW00f5c",
+    "youtubeId": "7AeUVW00f5c",
     "title": "[쇼! 음악중심 미방분] 5월 5주차 1위 CORTIS (코르티스) - REDRED | Show! MusicCore | MBC260530방송",
-    "url": "https://youtu.be/7AeUVW00f5c",
+    "date": "2026-05-30",
     "category": "舞台",
     "subtype": "安可舞台",
-    "date": "2026-05-30",
-    "timestamps": [
-      { "time": "00:00", "label": "1位發表" },
-      { "time": "00:30", "label": "獲獎感言" },
-      { "time": "02:08", "label": "REDRED 安可舞台" }
-    ]
+    "song": "REDRED",
+    "program": "Show! 音樂中心",
+    "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
+    "description": "CORTIS - 'REDRED' Show! 音樂中心 5月第5週 1位安可舞台"
   },
   {
     "id": "Eazz08H4MwE",
+    "youtubeId": "Eazz08H4MwE",
     "title": "[#음중직캠] CORTIS (코르티스) – REDRED 1위 직캠 | 쇼! 음악중심 | MBC260530",
-    "url": "https://youtu.be/Eazz08H4MwE",
+    "date": "2026-05-30",
     "category": "舞台",
     "subtype": "安可舞台",
-    "date": "2026-05-30",
-    "timestamps": [
-      { "time": "00:00", "label": "1位發表" },
-      { "time": "00:48", "label": "獲獎感言" },
-      { "time": "02:26", "label": "REDRED 1位直캠安可" }
-    ]
+    "song": "REDRED",
+    "program": "Show! 音樂中心",
+    "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
+    "description": "CORTIS - 'REDRED' Show! 音樂中心 1位安可直캠"
   },
   {
     "id": "v5cM8ujnyyc",
+    "youtubeId": "v5cM8ujnyyc",
     "title": "[앵콜캠4K] 코르티스 'REDRED' 인기가요 1위 앵콜 직캠 (CORTIS Encore Fancam) @SBS Inkigayo 260524",
-    "url": "https://youtu.be/v5cM8ujnyyc",
+    "date": "2026-05-24",
     "category": "舞台",
     "subtype": "安可舞台",
-    "date": "2026-05-24",
-    "timestamps": [
-      { "time": "00:00", "label": "1位發表" },
-      { "time": "00:18", "label": "獲獎感言" },
-      { "time": "00:40", "label": "REDRED 1位安可直캠" }
-    ]
+    "song": "REDRED",
+    "program": "SBS 人氣歌謠",
+    "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
+    "description": "CORTIS - 'REDRED' SBS 人氣歌謠 1位安可直캠 (Encore Fancam)"
   },
   {
     "id": "VYX_ybjCWZ8",
+    "youtubeId": "VYX_ybjCWZ8",
     "title": "[#음중직캠] CORTIS (코르티스) – REDRED 1위 직캠 | 쇼! 음악중심 | MBC260523",
-    "url": "https://youtu.be/VYX_ybjCWZ8",
+    "date": "2026-05-23",
     "category": "舞台",
     "subtype": "安可舞台",
-    "date": "2026-05-23",
-    "timestamps": [
-      { "time": "00:00", "label": "1位發表" },
-      { "time": "00:50", "label": "獲獎感言" },
-      { "time": "02:00", "label": "REDRED 1位直캠安可" }
-    ]
+    "song": "REDRED",
+    "program": "Show! 音樂中心",
+    "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
+    "description": "CORTIS - 'REDRED' Show! 音樂中心 1位安可直캠"
   },
   {
     "id": "LyrYVI-PH20",
+    "youtubeId": "LyrYVI-PH20",
     "title": "[쇼! 음악중심 미방분] 5월 4주차 1위 CORTIS (코르티스) - REDRED | Show! MusicCore | MBC260523방송",
-    "url": "https://youtu.be/LyrYVI-PH20",
+    "date": "2026-05-23",
     "category": "舞台",
     "subtype": "安可舞台",
-    "date": "2026-05-23",
-    "timestamps": [
-      { "time": "00:00", "label": "1位發表" },
-      { "time": "00:35", "label": "獲獎感言" },
-      { "time": "02:17", "label": "REDRED 安可舞台" }
-    ]
+    "song": "REDRED",
+    "program": "Show! 音樂中心",
+    "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
+    "description": "CORTIS - 'REDRED' Show! 音樂中心 5月第4週 1位安可舞台"
   },
   {
     "id": "ES-vE_b9EsY",
+    "youtubeId": "ES-vE_b9EsY",
     "title": "5월 2주 1위 'CORTIS'의 'REDRED' 앵콜 무대! (Full ver.) #엠카운트다운 EP.928",
-    "url": "https://youtu.be/ES-vE_b9EsY",
+    "date": "2026-05-18",
     "category": "舞台",
     "subtype": "安可舞台",
-    "date": "2026-05-18",
-    "timestamps": [
-      { "time": "00:00", "label": "三冠王獲獎感言" },
-      { "time": "02:12", "label": "REDRED 安可舞台" }
-    ]
+    "song": "REDRED",
+    "program": "M COUNTDOWN",
+    "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
+    "description": "CORTIS - 'REDRED' M COUNTDOWN 5月第2週 1位安可舞台 (Full ver.)"
   },
   {
     "id": "AEpuTXgyPgk",
+    "youtubeId": "AEpuTXgyPgk",
     "title": "[앵콜캠4K] 코르티스 'REDRED' 인기가요 1위 앵콜 직캠 (CORTIS Encore Fancam) @SBS Inkigayo 260517",
-    "url": "https://youtu.be/AEpuTXgyPgk",
+    "date": "2026-05-17",
     "category": "舞台",
     "subtype": "安可舞台",
-    "date": "2026-05-17",
-    "timestamps": [
-      { "time": "00:00", "label": "1位發表" },
-      { "time": "00:25", "label": "獲獎感言" },
-      { "time": "01:36", "label": "REDRED 1位安可直캠" }
-    ]
+    "song": "REDRED",
+    "program": "SBS 人氣歌謠",
+    "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
+    "description": "CORTIS - 'REDRED' SBS 人氣歌謠 1位安可直캠"
   },
   {
     "id": "Cflc4cDE22Q",
+    "youtubeId": "Cflc4cDE22Q",
     "title": "[#음중직캠] CORTIS (코르티스) – REDRED 1위 직캠 | 쇼! 음악중심 | MBC260516",
-    "url": "https://youtu.be/Cflc4cDE22Q",
+    "date": "2026-05-16",
     "category": "舞台",
     "subtype": "安可舞台",
-    "date": "2026-05-16",
-    "timestamps": [
-      { "time": "00:00", "label": "1位發表" },
-      { "time": "00:50", "label": "獲獎感言" },
-      { "time": "02:31", "label": "REDRED 1位直캠安可" },
-      { "time": "05:19", "label": "慶祝蛋糕與感謝粉絲" }
-    ]
+    "song": "REDRED",
+    "program": "Show! 音樂中心",
+    "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
+    "description": "CORTIS - 'REDRED' Show! 音樂中心 1位安可直캠"
   },
   {
     "id": "GFbTTVLngVI",
+    "youtubeId": "GFbTTVLngVI",
     "title": "[4K] 코르티스 'REDRED' 뮤직뱅크 1위 앵콜직캠(CORTIS Encore Facecam) @뮤직뱅크(Music Bank) 260515",
-    "url": "https://youtu.be/GFbTTVLngVI",
+    "date": "2026-05-15",
     "category": "舞台",
     "subtype": "安可舞台",
-    "date": "2026-05-15",
-    "timestamps": [
-      { "time": "00:00", "label": "1位獲獎感言" },
-      { "time": "02:04", "label": "REDRED 1位安可直캠" }
-    ]
+    "song": "REDRED",
+    "program": "Music Bank",
+    "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
+    "description": "CORTIS - 'REDRED' Music Bank 1位安可直캠 (溫巴拉公約)"
   },
   {
     "id": "QNLxLy42TZs",
-    "title": "(Interview) Winner's Ceremony - CORTIS コル티스 코르티스🏆 [Music Bank] | KBS WORLD TV 260515",
-    "url": "https://youtu.be/QNLxLy42TZs",
+    "youtubeId": "QNLxLy42TZs",
+    "title": "(Interview) Winner's Ceremony - CORTIS 코르티스🏆 [Music Bank] | KBS WORLD TV 260515",
+    "date": "2026-05-15",
     "category": "舞台",
     "subtype": "安可舞台",
-    "date": "2026-05-15",
-    "timestamps": [
-      { "time": "00:00", "label": "1位發表" },
-      { "time": "00:35", "label": "獲獎感言" },
-      { "time": "01:38", "label": "REDRED 安可現場" }
-    ]
+    "song": "REDRED",
+    "program": "Music Bank",
+    "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
+    "description": "CORTIS - Winner's Ceremony & 安可現場 [Music Bank]"
   },
   {
     "id": "9Mo2tH8frK0",
+    "youtubeId": "9Mo2tH8frK0",
     "title": "[MPD직캠] 코르티스 1위 앵콜 직캠 4K 'REDRED' (CORTIS FanCam No.1 Encore) | @MCOUNTDOWN_2026.5.14",
-    "url": "https://youtu.be/9Mo2tH8frK0",
+    "date": "2026-05-14",
     "category": "舞台",
     "subtype": "安可舞台",
-    "date": "2026-05-14",
-    "timestamps": [
-      { "time": "00:00", "label": "1位發表" },
-      { "time": "00:20", "label": "獲獎感言" },
-      { "time": "02:10", "label": "REDRED 1位安可直캠" }
-    ]
+    "song": "REDRED",
+    "program": "M COUNTDOWN",
+    "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
+    "description": "CORTIS - 'REDRED' MPD 1位安可直캠 4K @MCOUNTDOWN"
   },
   {
     "id": "wm2j_rIRxAA",
+    "youtubeId": "wm2j_rIRxAA",
     "title": "4월 마지막 주 1위 'CORTIS'의 'REDRED' 앵콜 무대! (Full ver.) #엠카운트다운 EP.926",
-    "url": "https://youtu.be/wm2j_rIRxAA",
+    "date": "2026-05-04",
     "category": "舞台",
     "subtype": "安可舞台",
-    "date": "2026-05-04",
-    "timestamps": [
-      { "time": "00:00", "label": "1位獲獎感言與心得" },
-      { "time": "02:38", "label": "REDRED 安可舞台" }
-    ]
+    "song": "REDRED",
+    "program": "M COUNTDOWN",
+    "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
+    "description": "CORTIS - 'REDRED' M COUNTDOWN 4月最後一週 1位安可舞台 (Full ver.)"
   },
   {
     "id": "oaMwK4_qKCA",
+    "youtubeId": "oaMwK4_qKCA",
     "title": "[MPD직캠] 코르티스 1위 앵콜 직캠 4K 'REDRED' (CORTIS FanCam No.1 Encore) | @MCOUNTDOWN_2026.4.30",
-    "url": "https://youtu.be/oaMwK4_qKCA",
+    "date": "2026-04-30",
     "category": "舞台",
     "subtype": "安可舞台",
-    "date": "2026-04-30",
-    "timestamps": [
-      { "time": "00:00", "label": "1位發表" },
-      { "time": "00:25", "label": "獲獎感言" },
-      { "time": "02:32", "label": "REDRED 1位安可直캠" }
-    ]
+    "song": "REDRED",
+    "program": "M COUNTDOWN",
+    "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
+    "description": "CORTIS - 'REDRED' MPD 1位安可直캠 4K @MCOUNTDOWN"
   }
 ]
