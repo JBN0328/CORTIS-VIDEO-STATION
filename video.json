@@ -22,7 +22,7 @@
     "subtype": "MV",
     "song": "GO!",
     "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
-    "description": "CORTIS 'GO!' 官方 MV"
+    "description": "CORTIS 'GO!' 官方MV"
   },
   {
     "id": "-fTvZfQoF-w",
@@ -55,7 +55,7 @@
     "subtype": "MV",
     "song": "What You Want",
     "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
-    "description": "CORTIS 'What You Want' 官方 MV"
+    "description": "CORTIS 'What You Want' 官方MV"
   },
   {
     "id": "J8s5-vsT_Dc",
@@ -66,194 +66,194 @@
     "subtype": "MV",
     "song": "What You Want",
     "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
-    "description": "CORTIS 'What You Want (feat. Teezo Touchdown)' 官方 Visualizer"
+    "description": "CORTIS 'What You Want (feat. Teezo Touchdown)' 官方視覺影片"
   },
   {
     "id": "of-FAob3X9w",
     "youtubeId": "of-FAob3X9w",
-    "title": "CORTIS (코르티스) 'GO!' Official MV (Choreography ver.)",
-    "date": "2025-08-23",
-    "category": "official",
-    "subtype": "MV",
-    "song": "GO!",
-    "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
-    "description": "CORTIS 'GO!' 官方舞蹈版 MV"
-  },
-  {
-    "id": "42wfEs7oIP8",
-    "youtubeId": "42wfEs7oIP8",
-    "title": "CORTIS (코르티스) 'What You Want' Official MV (Performance ver.)",
-    "date": "2025-08-24",
-    "category": "official",
-    "subtype": "MV",
-    "song": "What You Want",
-    "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
-    "description": "CORTIS 'What You Want' 表演版 MV"
-  },
-  {
-    "id": "WVkftpFjIDg",
-    "youtubeId": "WVkftpFjIDg",
-    "title": "CORTIS (코르티스) 'GO!' Performance Video",
-    "date": "2025-08-25",
-    "category": "official",
-    "subtype": "MV",
-    "song": "GO!",
-    "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
-    "description": "CORTIS 'GO!' 表演影片"
-  },
-  {
-    "id": "rdB7ip3zQqg",
-    "youtubeId": "rdB7ip3zQqg",
-    "title": "CORTIS (코르티스) 'What You Want' Visualizer",
+    "title": "CORTIS (코르티스) 'What You Want' MV (Original Ver.)",
     "date": "2025-08-26",
     "category": "official",
     "subtype": "MV",
     "song": "What You Want",
     "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
-    "description": "CORTIS 'What You Want' 官方 Visualizer"
+    "description": "CORTIS 'What You Want' 原始版MV"
+  },
+  {
+    "id": "42wfEs7oIP8",
+    "youtubeId": "42wfEs7oIP8",
+    "title": "CORTIS (코르티스) 'FaSHioN' Official MV",
+    "date": "2025-09-08",
+    "category": "official",
+    "subtype": "MV",
+    "song": "FaSHioN",
+    "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
+    "description": "CORTIS 'FaSHioN' 官方MV"
+  },
+  {
+    "id": "WVkftpFjIDg",
+    "youtubeId": "WVkftpFjIDg",
+    "title": "CORTIS (코르티스) 'FaSHioN' Conceptual Performance Film",
+    "date": "2025-09-09",
+    "category": "official",
+    "subtype": "MV",
+    "song": "FaSHioN",
+    "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
+    "description": "CORTIS 'FaSHioN' 概念表演影片"
+  },
+  {
+    "id": "rdB7ip3zQqg",
+    "youtubeId": "rdB7ip3zQqg",
+    "title": "CORTIS (코르티스) 'FaSHioN' MV (Original Ver.)",
+    "date": "2025-09-15",
+    "category": "official",
+    "subtype": "MV",
+    "song": "FaSHioN",
+    "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
+    "description": "CORTIS 'FaSHioN' 原始版MV"
   },
   {
     "id": "8QZeXvOjgGE",
     "youtubeId": "8QZeXvOjgGE",
-    "title": "CORTIS (코르티스) 'GO!' Special Performance",
-    "date": "2025-08-27",
+    "title": "CORTIS (코르티스) 'JoyRide' Official MV",
+    "date": "2025-09-20",
     "category": "official",
     "subtype": "MV",
-    "song": "GO!",
+    "song": "JoyRide",
     "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
-    "description": "CORTIS 'GO!' 特别表演影片"
+    "description": "CORTIS 'JoyRide' 官方MV"
   },
   {
     "id": "8ej2YOBsimQ",
     "youtubeId": "8ej2YOBsimQ",
-    "title": "CORTIS (코르티스) 'What You Want' Special Video",
-    "date": "2025-08-28",
+    "title": "CORTIS (코르티스) 'Lullaby' Official MV",
+    "date": "2025-09-28",
     "category": "official",
     "subtype": "MV",
-    "song": "What You Want",
+    "song": "Lullaby",
     "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
-    "description": "CORTIS 'What You Want' 特別影片"
+    "description": "CORTIS 'Lullaby' 官方MV"
   },
   {
     "id": "U6BDbXIah-Y",
     "youtubeId": "U6BDbXIah-Y",
-    "title": "CORTIS (코르티스) 'GO!' Concept Film",
-    "date": "2025-08-29",
+    "title": "CORTIS (코르티스) 'REDRED' Official MV",
+    "date": "2026-04-20",
     "category": "official",
     "subtype": "MV",
-    "song": "GO!",
+    "song": "REDRED",
     "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
-    "description": "CORTIS 'GO!' 概念短片"
+    "description": "CORTIS 'REDRED' 官方MV"
   },
   {
     "id": "a1vHjBy85TU",
     "youtubeId": "a1vHjBy85TU",
-    "title": "CORTIS (코르티스) 'What You Want' Concept Film",
-    "date": "2025-08-30",
+    "title": "CORTIS (코르티스) 'REDRED' Conceptual Performance Film",
+    "date": "2026-04-21",
     "category": "official",
     "subtype": "MV",
-    "song": "What You Want",
+    "song": "REDRED",
     "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
-    "description": "CORTIS 'What You Want' 概念短片"
+    "description": "CORTIS 'REDRED' 概念表演影片"
   },
   {
     "id": "7112WTKl45Y",
     "youtubeId": "7112WTKl45Y",
-    "title": "CORTIS (코르티스) 'GO!' Teaser 1",
-    "date": "2025-08-08",
+    "title": "CORTIS (코르티스) 'REDRED' MV (Original Ver.)",
+    "date": "2026-04-29",
     "category": "official",
     "subtype": "MV",
-    "song": "GO!",
+    "song": "REDRED",
     "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
-    "description": "CORTIS 'GO!' 官方預告片 1"
+    "description": "CORTIS 'REDRED' 原始版MV"
   },
   {
     "id": "kRpaqR5sbf0",
     "youtubeId": "kRpaqR5sbf0",
-    "title": "CORTIS (코르티스) 'GO!' Teaser 2",
-    "date": "2025-08-09",
+    "title": "CORTIS (코르티스) 'TNT' Official MV",
+    "date": "2026-05-04",
     "category": "official",
     "subtype": "MV",
-    "song": "GO!",
+    "song": "TNT",
     "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
-    "description": "CORTIS 'GO!' 官方預告片 2"
+    "description": "CORTIS 'TNT' 官方MV"
   },
   {
     "id": "XgmdslsEJ1M",
     "youtubeId": "XgmdslsEJ1M",
-    "title": "CORTIS (코르티스) 'What You Want' Teaser 1",
-    "date": "2025-08-16",
+    "title": "CORTIS (코르티스) 'TNT' Conceptual Performance Film",
+    "date": "2026-05-05",
     "category": "official",
     "subtype": "MV",
-    "song": "What You Want",
+    "song": "TNT",
     "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
-    "description": "CORTIS 'What You Want' 官方預告片 1"
+    "description": "CORTIS 'TNT' 概念表演影片"
   },
   {
     "id": "nCElUD0jvgo",
     "youtubeId": "nCElUD0jvgo",
-    "title": "CORTIS (코르티스) 'What You Want' Teaser 2",
-    "date": "2025-08-17",
+    "title": "CORTIS (코르티스) 'ACAI' Official MV",
+    "date": "2026-05-11",
     "category": "official",
     "subtype": "MV",
-    "song": "What You Want",
+    "song": "ACAI",
     "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
-    "description": "CORTIS 'What You Want' 官方預告片 2"
+    "description": "CORTIS 'ACAI' 官方MV"
   },
   {
     "id": "SSVT8bLjguY",
     "youtubeId": "SSVT8bLjguY",
-    "title": "CORTIS (코르티스) Debut Trailer",
-    "date": "2025-08-01",
+    "title": "CORTIS (코르티스) 'ACAI' Conceptual Performance Film",
+    "date": "2026-05-12",
     "category": "official",
     "subtype": "MV",
-    "song": "",
+    "song": "ACAI",
     "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
-    "description": "CORTIS 出道預告片"
+    "description": "CORTIS 'ACAI' 概念表演影片"
   },
   {
     "id": "hOIY3OhvD94",
     "youtubeId": "hOIY3OhvD94",
-    "title": "CORTIS (코르티스) 'GO!' Mood Sampler",
-    "date": "2025-08-05",
+    "title": "CORTIS (코르티스) 'Blue Lips' Official MV",
+    "date": "2026-05-30",
     "category": "official",
     "subtype": "MV",
-    "song": "GO!",
+    "song": "Blue Lips",
     "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
-    "description": "CORTIS 'GO!' 氛圍預告"
+    "description": "CORTIS 'Blue Lips' 官方MV"
   },
   {
     "id": "h7ITAdTxdxM",
     "youtubeId": "h7ITAdTxdxM",
-    "title": "CORTIS (코르티스) 'What You Want' Mood Sampler",
-    "date": "2025-08-14",
+    "title": "CORTIS (코르티스) 'CORTIS (코르티스) ‘MOTION (feat. Juicy J)’ Official Visualizer",
+    "date": "2026-07-31",
     "category": "official",
     "subtype": "MV",
-    "song": "What You Want",
+    "song": "MOTION",
     "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
-    "description": "CORTIS 'What You Want' 氛圍預告"
+    "description": "CORTIS 'MOTION' 官方視覺影片"
   },
   {
     "id": "OhdvNHmJDsw",
     "youtubeId": "OhdvNHmJDsw",
-    "title": "CORTIS (코르티스) Highlight Medley",
-    "date": "2025-08-07",
+    "title": "CORTIS (코르티스) ‘MONEYMONEYMONEY’ Official Visualizer",
+    "date": "2026-08-23",
     "category": "official",
     "subtype": "MV",
-    "song": "",
+    "song": "MONEYMONEYMONEY",
     "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
-    "description": "CORTIS 專輯試聽 Highlight Medley"
+    "description": "CORTIS 'MONEYMONEYMONEY' 官方視覺影片"
   },
   {
     "id": "TZWiMoQpr8c",
     "youtubeId": "TZWiMoQpr8c",
-    "title": "CORTIS (코르티스) Album Film",
-    "date": "2025-08-12",
+    "title": "CORTIS (코르티스) ‘PACK IT UP’ Official Visualizer",
+    "date": "2026-08-24",
     "category": "official",
     "subtype": "MV",
-    "song": "",
+    "song": "PACK IT UP",
     "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
-    "description": "CORTIS 專輯主題短片"
+    "description": "CORTIS 'PACK IT UP' 官方視覺影片"
   },
   {
     "id": "gSm-eTRl9JE",
