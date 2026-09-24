@@ -493,8 +493,8 @@
     "category": "official",
     "subtype": "八點檔",
     "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
-    "tags": [],
-    "description": "",
+    "tags": ["幻覺博物館", "古著店", "黑膠唱片"],
+    "description": "CORTIS成員們先去古著店挑選喜歡的衣服和唱片，接著去幻覺博物館分組拍照，贏的可以獲得衣服。",
     "timestamps": []
   },
   {
@@ -505,9 +505,13 @@
     "category": "official",
     "subtype": "八點檔",
     "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
-    "tags": [],
+    "tags": ["芝加哥休息日", "餐廳", "芝加哥藝術博物館"],
     "description": "",
-    "timestamps": []
+    "timestamps": [ { "time": "05:55", "seconds": 355, "label": "芝加哥藝術博物館" },
+      { "time": "07:23", "seconds": 443, "label": "安乾鎬博物館迷路" },
+      { "time": "12:34", "seconds": 754, "label": "去芝加哥路邊攤" },
+      { "time": "13:07", "seconds": 787, "label": "The Beeeeean" }
+    ]
   },
   {
     "id": "W9Tk6AMaJvE",
