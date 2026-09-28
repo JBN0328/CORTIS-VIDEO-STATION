@@ -486,6 +486,37 @@
     "description": "CORTIS - 'REDRED' MPD 1位安可直캠 4K @MCOUNTDOWN"
   },
   {
+   "id": "uhw3nzDvwkA",
+   "youtubeId": "uhw3nzDvwkA",
+   "title": "대전의 아들",
+   "date": "2026-09-28",
+   "category": "official",
+   "subtype": "八點檔",
+   "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
+   "tags": ["大田", "聖心堂", "麵包", "開球", "牛奶"],
+   "description": "CORTIS成員們寫信列清單給要去大田開球的嚴成玹，最主要是要買聖心堂麵包。",
+   "timestamps": [ { "time": "00:40", "seconds": 40, "label": "寫信" },
+      { "time": "01:29", "seconds": 89, "label": "喵喵拳" },
+      { "time": "05:30", "seconds": 330, "label": "嚴成玹去大田開球的車上" },
+      { "time": "07:50", "seconds": 470, "label": "嚴成玹去聖心堂買麵包" },
+      { "time": "10:07", "seconds": 607, "label": "嚴成玹拍認證照到群組" },
+      { "time": "10:11", "seconds": 611, "label": "宿舍開箱麵包" },
+      { "time": "15:02", "seconds": 902, "label": "嚴成玹的娃娃朋友" },
+      { "time": "15:19", "seconds": 919, "label": "安乾鎬😏" }]
+ },
+  {
+   "id": "Xq46_fQcVzg",
+   "youtubeId": "Xq46_fQcVzg",
+   "title": "Chuseok Cooking",
+   "date": "2026-09-25",
+   "category": "official",
+   "subtype": "八點檔",
+   "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
+   "tags": ["中秋節", "煮飯", "黃花魚", "韓牛"],
+   "description": "",
+   "timestamps": []
+ },
+  {
     "id": "0S9FK_Zmz50",
     "youtubeId": "0S9FK_Zmz50",
     "title": "코어 나를 바라봐",
