@@ -1,24 +1,34 @@
 <!DOCTYPE html>
 <html lang="zh-TW" class="light">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>CORTIS VIDEO STATION</title>
 
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  >
 
-  <!-- Inter Font -->
+  <!-- Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
 
   <script>
     tailwind.config = {
       darkMode: 'class',
+
       theme: {
         extend: {
           fontFamily: {
@@ -37,6 +47,7 @@
   </script>
 
   <style>
+
     ::-webkit-scrollbar {
       width: 6px;
       height: 6px;
@@ -63,69 +74,118 @@
       backdrop-filter: blur(8px);
     }
 
-    /* 隱藏月份橫向捲軸，但仍然可以滑動 */
-    .month-scroll {
-      scrollbar-width: none;
-      -ms-overflow-style: none;
+    .timeline-year-active {
+      background: rgb(238 242 255);
+      color: rgb(79 70 229);
+      font-weight: 700;
     }
 
-    .month-scroll::-webkit-scrollbar {
-      display: none;
+    .dark .timeline-year-active {
+      background: rgba(49, 46, 129, 0.35);
+      color: rgb(129 140 248);
     }
 
-    /* 避免月份按鈕被壓縮 */
-    .month-btn {
-      flex: 0 0 auto;
+    .month-arrow {
+      width: 30px;
+      height: 30px;
+      border-radius: 9px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s;
     }
+
+    .month-arrow:hover {
+      background: rgb(241 245 249);
+    }
+
+    .dark .month-arrow:hover {
+      background: rgb(30 41 59);
+    }
+
+    .month-arrow:disabled {
+      opacity: 0.3;
+      cursor: not-allowed;
+    }
+
+    .mobile-timeline-year {
+      min-width: 74px;
+    }
+
+    .mobile-month-button {
+      flex-shrink: 0;
+    }
+
+    select {
+      max-width: 100%;
+    }
+
   </style>
+
 </head>
 
 
-<body class="bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 min-h-screen font-sans transition-colors duration-200">
+<body
+  class="bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 min-h-screen font-sans transition-colors duration-200"
+>
 
 
   <!-- =========================================================
-       Header
+       HEADER
   ========================================================== -->
 
-  <header class="sticky top-0 z-30 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-200/80 dark:border-slate-800">
+  <header
+    class="sticky top-0 z-30 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-200/80 dark:border-slate-800"
+  >
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
       <div class="flex items-center justify-between h-16 gap-4">
 
         <!-- Logo -->
+
         <div class="flex items-center gap-3 shrink-0">
 
-          <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 to-violet-500 flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-indigo-500/20">
+          <div
+            class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 to-violet-500 flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-indigo-500/20"
+          >
             C
           </div>
 
           <div>
-            <h1 class="font-bold text-lg tracking-tight leading-none text-slate-900 dark:text-white">
+
+            <h1
+              class="font-bold text-lg tracking-tight leading-none text-slate-900 dark:text-white"
+            >
               CORTIS VIDEO STATION
             </h1>
 
-            <span class="text-xs text-slate-500 dark:text-slate-400 font-medium">
+            <span
+              class="text-xs text-slate-500 dark:text-slate-400 font-medium"
+            >
               Video Archive 影音資料庫
             </span>
+
           </div>
 
         </div>
 
 
-        <!-- Desktop Search -->
+        <!-- Search -->
+
         <div class="hidden md:flex items-center flex-1 max-w-md mx-4">
 
           <div class="relative w-full">
 
-            <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-sm"></i>
+            <i
+              class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-sm"
+            ></i>
 
             <input
               type="text"
               id="searchInput"
               placeholder="搜尋影片標題、標籤、關鍵字..."
-              class="w-full pl-10 pr-10 py-2 text-sm bg-slate-100 dark:bg-slate-800 border-none rounded-full focus:ring-2 focus:ring-indigo-500 dark:focus:ring-indigo-400 focus:outline-none transition-all placeholder-slate-400"
+              class="w-full pl-10 pr-10 py-2 text-sm bg-slate-100 dark:bg-slate-800 border-none rounded-full focus:ring-2 focus:ring-indigo-500 focus:outline-none placeholder-slate-400"
             >
 
             <button
@@ -140,14 +200,19 @@
         </div>
 
 
-        <!-- Right -->
+        <!-- Counter / Theme -->
+
         <div class="flex items-center gap-2">
 
-          <span class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 border border-indigo-100 dark:border-indigo-900/50">
+          <span
+            class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 border border-indigo-100 dark:border-indigo-900/50"
+          >
 
             <i class="fa-solid fa-film text-[10px]"></i>
 
-            <span id="totalCount">0</span> 筆影音
+            <span id="totalCount">0</span>
+
+            筆影音
 
           </span>
 
@@ -157,8 +222,11 @@
             class="p-2.5 rounded-full text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
             title="切換主題模式"
           >
+
             <i class="fa-solid fa-moon dark:hidden"></i>
+
             <i class="fa-solid fa-sun hidden dark:inline"></i>
+
           </button>
 
         </div>
@@ -167,11 +235,14 @@
 
 
       <!-- Mobile Search -->
+
       <div class="md:hidden pb-3">
 
         <div class="relative w-full">
 
-          <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-sm"></i>
+          <i
+            class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-sm"
+          ></i>
 
           <input
             type="text"
@@ -189,28 +260,34 @@
   </header>
 
 
-
   <!-- =========================================================
-       Main Category Navigation
+       MAIN CATEGORY
   ========================================================== -->
 
-  <section class="bg-white dark:bg-slate-900 border-b border-slate-200/80 dark:border-slate-800">
+  <section
+    class="bg-white dark:bg-slate-900 border-b border-slate-200/80 dark:border-slate-800"
+  >
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5">
 
       <nav
-        class="flex items-center gap-2.5 overflow-x-auto pb-1 sm:pb-0"
+        class="flex items-center gap-2.5 overflow-x-auto pb-1"
         id="mainCategoryNav"
       >
 
         <button
           data-cat="all"
-          class="cat-nav-btn active px-5 py-2.5 rounded-xl text-xs font-bold bg-indigo-600 text-white shadow-md shadow-indigo-500/20 transition-all duration-200 flex items-center gap-2 whitespace-nowrap"
+          class="cat-nav-btn px-5 py-2.5 rounded-xl text-xs font-bold bg-indigo-600 text-white shadow-md shadow-indigo-500/20 transition-all duration-200 flex items-center gap-2 whitespace-nowrap"
         >
-          <span class="w-3 h-3 rounded-full bg-white/30 flex items-center justify-center text-[8px]">
+
+          <span
+            class="w-3 h-3 rounded-full bg-white/30 flex items-center justify-center text-[8px]"
+          >
             <i class="fa-solid fa-border-all"></i>
           </span>
+
           全部影片
+
         </button>
 
 
@@ -218,8 +295,11 @@
           data-cat="official"
           class="cat-nav-btn px-5 py-2.5 rounded-xl text-xs font-semibold bg-slate-100/90 dark:bg-slate-800/90 text-slate-600 dark:text-slate-300 hover:bg-slate-200/70 dark:hover:bg-slate-700/70 transition-all duration-200 flex items-center gap-2 whitespace-nowrap"
         >
-          <span class="w-3 h-3 rounded-full bg-rose-500 inline-block shrink-0"></span>
+
+          <span class="w-3 h-3 rounded-full bg-rose-500"></span>
+
           官方
+
         </button>
 
 
@@ -227,8 +307,11 @@
           data-cat="stage"
           class="cat-nav-btn px-5 py-2.5 rounded-xl text-xs font-semibold bg-slate-100/90 dark:bg-slate-800/90 text-slate-600 dark:text-slate-300 hover:bg-slate-200/70 dark:hover:bg-slate-700/70 transition-all duration-200 flex items-center gap-2 whitespace-nowrap"
         >
-          <span class="w-3 h-3 rounded-full bg-blue-500 inline-block shrink-0"></span>
+
+          <span class="w-3 h-3 rounded-full bg-blue-500"></span>
+
           舞台
+
         </button>
 
 
@@ -236,8 +319,11 @@
           data-cat="variety"
           class="cat-nav-btn px-5 py-2.5 rounded-xl text-xs font-semibold bg-slate-100/90 dark:bg-slate-800/90 text-slate-600 dark:text-slate-300 hover:bg-slate-200/70 dark:hover:bg-slate-700/70 transition-all duration-200 flex items-center gap-2 whitespace-nowrap"
         >
-          <span class="w-3 h-3 rounded-full bg-emerald-500 inline-block shrink-0"></span>
+
+          <span class="w-3 h-3 rounded-full bg-emerald-500"></span>
+
           節目
+
         </button>
 
 
@@ -245,8 +331,11 @@
           data-cat="other"
           class="cat-nav-btn px-5 py-2.5 rounded-xl text-xs font-semibold bg-slate-100/90 dark:bg-slate-800/90 text-slate-600 dark:text-slate-300 hover:bg-slate-200/70 dark:hover:bg-slate-700/70 transition-all duration-200 flex items-center gap-2 whitespace-nowrap"
         >
-          <span class="w-3 h-3 rounded-full bg-violet-500 inline-block shrink-0"></span>
+
+          <span class="w-3 h-3 rounded-full bg-violet-500"></span>
+
           其他
+
         </button>
 
       </nav>
@@ -256,22 +345,27 @@
   </section>
 
 
-
   <!-- =========================================================
-       Filter Toolbar
+       FILTER TOOLBAR
   ========================================================== -->
 
-  <section class="bg-white/60 dark:bg-slate-900/60 border-b border-slate-200/60 dark:border-slate-800/80 sticky top-16 z-20 backdrop-blur-sm py-2.5">
+  <section
+    class="bg-white/60 dark:bg-slate-900/60 border-b border-slate-200/60 dark:border-slate-800/80 sticky top-16 z-20 backdrop-blur-sm py-2.5"
+  >
 
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap items-center justify-between gap-3">
+    <div
+      class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap items-center justify-between gap-3"
+    >
 
-      <!-- Left Filters -->
+      <!-- LEFT FILTERS -->
+
       <div
         class="flex items-center gap-2 flex-wrap"
         id="subFiltersContainer"
       >
 
         <!-- Subtype -->
+
         <div
           id="subtypeFilterWrapper"
           class="hidden items-center gap-1.5"
@@ -281,21 +375,27 @@
             for="subtypeSelect"
             class="text-xs text-slate-500 dark:text-slate-400 font-medium whitespace-nowrap"
           >
+
             <i class="fa-solid fa-layer-group mr-1"></i>
+
             分類:
+
           </label>
 
           <select
             id="subtypeSelect"
             class="text-xs bg-slate-100 dark:bg-slate-800 border-none rounded-lg py-1.5 px-2.5 focus:ring-2 focus:ring-indigo-500 dark:text-slate-200 cursor-pointer"
           >
+
             <option value="all">全部分類</option>
+
           </select>
 
         </div>
 
 
         <!-- Album -->
+
         <div
           id="albumFilterWrapper"
           class="hidden items-center gap-1.5"
@@ -305,21 +405,27 @@
             for="albumSelect"
             class="text-xs text-slate-500 dark:text-slate-400 font-medium whitespace-nowrap"
           >
+
             <i class="fa-solid fa-compact-disc mr-1"></i>
+
             專輯:
+
           </label>
 
           <select
             id="albumSelect"
-            class="text-xs bg-slate-100 dark:bg-slate-800 border-none rounded-lg py-1.5 px-2.5 focus:ring-2 focus:ring-indigo-500 dark:text-slate-200 cursor-pointer max-w-[220px]"
+            class="text-xs bg-slate-100 dark:bg-slate-800 border-none rounded-lg py-1.5 px-2.5 focus:ring-2 focus:ring-indigo-500 dark:text-slate-200 cursor-pointer"
           >
+
             <option value="all">全部專輯</option>
+
           </select>
 
         </div>
 
 
         <!-- Song -->
+
         <div
           id="songFilterWrapper"
           class="hidden items-center gap-1.5"
@@ -329,15 +435,20 @@
             for="songSelect"
             class="text-xs text-slate-500 dark:text-slate-400 font-medium whitespace-nowrap"
           >
+
             <i class="fa-solid fa-music mr-1"></i>
+
             歌曲:
+
           </label>
 
           <select
             id="songSelect"
-            class="text-xs bg-slate-100 dark:bg-slate-800 border-none rounded-lg py-1.5 px-2.5 focus:ring-2 focus:ring-indigo-500 dark:text-slate-200 cursor-pointer max-w-[220px]"
+            class="text-xs bg-slate-100 dark:bg-slate-800 border-none rounded-lg py-1.5 px-2.5 focus:ring-2 focus:ring-indigo-500 dark:text-slate-200 cursor-pointer"
           >
+
             <option value="all">全部歌曲</option>
+
           </select>
 
         </div>
@@ -345,54 +456,83 @@
       </div>
 
 
+      <!-- RIGHT FILTERS -->
 
-      <!-- Right Filters -->
       <div class="flex items-center gap-3 ml-auto flex-wrap">
 
         <!-- Member -->
+
         <div class="flex items-center gap-1.5">
 
           <label
             for="memberSelect"
             class="text-xs text-slate-500 dark:text-slate-400 font-medium whitespace-nowrap"
           >
+
             <i class="fa-solid fa-user-group mr-1"></i>
+
             成員篩選:
+
           </label>
 
           <select
             id="memberSelect"
             class="text-xs bg-slate-100 dark:bg-slate-800 border-none rounded-lg py-1.5 px-2.5 focus:ring-2 focus:ring-indigo-500 dark:text-slate-200 cursor-pointer"
           >
+
             <option value="all">全部 (ALL)</option>
+
             <option value="GROUP">團體 (GROUP)</option>
-            <option value="JAMES 趙雨凡">JAMES 趙雨凡</option>
-            <option value="JUHOON 金主訓">JUHOON 金主訓</option>
-            <option value="MARTIN 朴宇宙">MARTIN 朴宇宙</option>
-            <option value="SEONGHYEON 嚴成玹">SEONGHYEON 嚴成玹</option>
-            <option value="KEONHO 安乾鎬">KEONHO 安乾鎬</option>
+
+            <option value="JAMES 趙雨凡">
+              JAMES 趙雨凡
+            </option>
+
+            <option value="JUHOON 金主訓">
+              JUHOON 金主訓
+            </option>
+
+            <option value="MARTIN 朴宇宙">
+              MARTIN 朴宇宙
+            </option>
+
+            <option value="SEONGHYEON 嚴成玹">
+              SEONGHYEON 嚴成玹
+            </option>
+
+            <option value="KEONHO 安乾鎬">
+              KEONHO 安乾鎬
+            </option>
+
           </select>
 
         </div>
 
 
         <!-- Sort -->
+
         <div class="flex items-center gap-1.5">
 
           <label
             for="sortSelect"
             class="text-xs text-slate-500 dark:text-slate-400 font-medium whitespace-nowrap"
           >
+
             <i class="fa-solid fa-sort mr-1"></i>
+
             排序:
+
           </label>
 
           <select
             id="sortSelect"
             class="text-xs bg-slate-100 dark:bg-slate-800 border-none rounded-lg py-1.5 px-2.5 focus:ring-2 focus:ring-indigo-500 dark:text-slate-200 cursor-pointer"
           >
+
             <option value="desc">由新到舊</option>
+
             <option value="asc">由舊到新</option>
+
           </select>
 
         </div>
@@ -404,142 +544,163 @@
   </section>
 
 
-
   <!-- =========================================================
-       Main
+       MAIN
   ========================================================== -->
 
-  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+  <main
+    class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8"
+  >
+
+    <div class="flex flex-col md:flex-row gap-8 items-start relative">
 
 
-    <!-- =======================================================
-         Timeline Navigation
-         同一套元件，桌機與手機都使用
-    ======================================================== -->
+      <!-- =====================================================
+           DESKTOP TIMELINE
+      ====================================================== -->
 
-    <aside
-      id="timelineNavigation"
-      class="mb-8 bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 rounded-2xl p-4 shadow-sm"
-    >
-
-      <!-- Title -->
-      <div class="flex items-center justify-between gap-3 mb-4">
-
-        <h3 class="text-xs font-semibold text-slate-400 dark:text-slate-500 uppercase tracking-wider">
-          <i class="fa-regular fa-calendar-check mr-1.5"></i>
-          時間軸導覽
-        </h3>
-
-        <span class="text-[10px] text-slate-400 dark:text-slate-500">
-          點年份跳轉 · 滑動月份
-        </span>
-
-      </div>
-
-
-      <!-- Years -->
-      <div
-        id="yearTimelineNav"
-        class="flex items-center gap-2 mb-3"
-      ></div>
-
-
-      <!-- Months -->
-      <div
-        id="monthTimelineNav"
-        class="month-scroll flex items-center gap-2 overflow-x-auto pb-1"
-      ></div>
-
-    </aside>
-
-
-
-    <!-- =======================================================
-         Filter Status
-    ======================================================== -->
-
-    <div
-      id="filterStatus"
-      class="hidden mb-6 p-3 bg-indigo-50/80 dark:bg-indigo-950/30 border border-indigo-100 dark:border-indigo-900/40 rounded-xl text-xs text-indigo-700 dark:text-indigo-300 flex items-center justify-between gap-3"
-    >
-
-      <span>
-        <i class="fa-solid fa-filter mr-1.5"></i>
-        已套用篩選條件
-      </span>
-
-      <button
-        id="resetFilterBtn"
-        class="font-semibold underline hover:text-indigo-900 dark:hover:text-indigo-100 whitespace-nowrap"
-      >
-        重設所有篩選
-      </button>
-
-    </div>
-
-
-
-    <!-- =======================================================
-         Video Timeline
-    ======================================================== -->
-
-    <section>
-
-      <div
-        id="timelineContainer"
-        class="space-y-10"
-      ></div>
-
-
-      <!-- Empty State -->
-      <div
-        id="emptyState"
-        class="hidden text-center py-20 bg-white dark:bg-slate-900 rounded-2xl border border-dashed border-slate-300 dark:border-slate-800"
+      <aside
+        class="w-full md:w-56 shrink-0 md:sticky md:top-36 z-10"
       >
 
-        <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-400 text-2xl">
-          <i class="fa-solid fa-ghost"></i>
+        <div
+          class="bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 rounded-2xl p-4 shadow-sm"
+        >
+
+          <h3
+            class="text-xs font-semibold text-slate-400 dark:text-slate-500 uppercase tracking-wider mb-3 px-2"
+          >
+
+            <i class="fa-regular fa-calendar-check mr-1.5"></i>
+
+            時間軸導覽
+
+          </h3>
+
+
+          <!-- YEAR NAV -->
+
+          <nav
+            class="space-y-1 text-sm font-medium"
+            id="sidebarTimelineNav"
+          ></nav>
+
+
+          <!-- MONTH NAV -->
+
+          <div
+            id="desktopMonthNavigator"
+            class="mt-3 pt-3 border-t border-slate-100 dark:border-slate-800"
+          ></div>
+
         </div>
 
-        <h3 class="text-lg font-semibold text-slate-700 dark:text-slate-200">
-          找不到符合條件的影音紀錄
-        </h3>
+      </aside>
 
-        <p class="text-sm text-slate-400 mt-1 max-w-sm mx-auto">
-          請嘗試變更搜尋條件或重設篩選。
-        </p>
 
-        <button
-          id="emptyResetBtn"
-          class="mt-4 px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg text-xs font-semibold transition-all"
+      <!-- =====================================================
+           VIDEO CONTENT
+      ====================================================== -->
+
+      <section class="flex-1 w-full min-w-0">
+
+
+        <!-- FILTER STATUS -->
+
+        <div
+          id="filterStatus"
+          class="hidden mb-6 p-3 bg-indigo-50/80 dark:bg-indigo-950/30 border border-indigo-100 dark:border-indigo-900/40 rounded-xl text-xs text-indigo-700 dark:text-indigo-300 flex items-center justify-between"
         >
-          重設搜尋條件
-        </button>
 
-      </div>
+          <span>
 
-    </section>
+            <i class="fa-solid fa-filter mr-1.5"></i>
+
+            已套用篩選條件
+
+          </span>
+
+
+          <button
+            id="resetFilterBtn"
+            class="font-semibold underline hover:text-indigo-900 dark:hover:text-indigo-100"
+          >
+
+            重設所有篩選
+
+          </button>
+
+        </div>
+
+
+        <!-- MOBILE TIMELINE -->
+
+        <div
+          id="mobileTimeline"
+          class="md:hidden mb-6"
+        ></div>
+
+
+        <!-- TIMELINE -->
+
+        <div
+          id="timelineContainer"
+          class="space-y-10"
+        ></div>
+
+
+        <!-- EMPTY -->
+
+        <div
+          id="emptyState"
+          class="hidden text-center py-20 bg-white dark:bg-slate-900 rounded-2xl border border-dashed border-slate-300 dark:border-slate-800"
+        >
+
+          <div
+            class="w-16 h-16 mx-auto mb-4 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-400 text-2xl"
+          >
+
+            <i class="fa-solid fa-ghost"></i>
+
+          </div>
+
+
+          <h3
+            class="text-lg font-semibold text-slate-700 dark:text-slate-200"
+          >
+
+            找不到符合條件的影音紀錄
+
+          </h3>
+
+
+          <p class="text-sm text-slate-400 mt-1 max-w-sm mx-auto">
+
+            請嘗試變更搜尋條件或重設成員篩選。
+
+          </p>
+
+
+          <button
+            id="emptyResetBtn"
+            class="mt-4 px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg text-xs font-semibold transition-all"
+          >
+
+            重設搜尋條件
+
+          </button>
+
+        </div>
+
+      </section>
+
+    </div>
 
   </main>
 
 
-
   <!-- =========================================================
-       Back To Top
-  ========================================================== -->
-
-  <button
-    id="backToTopBtn"
-    title="回到最上方"
-    class="fixed bottom-5 right-5 z-40 w-11 h-11 rounded-full bg-indigo-600 hover:bg-indigo-700 text-white shadow-lg shadow-indigo-500/30 flex items-center justify-center opacity-0 pointer-events-none translate-y-3 transition-all duration-300"
-  >
-    <i class="fa-solid fa-arrow-up"></i>
-  </button>
-
-
-
-  <!-- =========================================================
-       Video Modal
+       VIDEO MODAL
   ========================================================== -->
 
   <div
@@ -552,10 +713,15 @@
       class="relative w-full max-w-4xl bg-slate-900 rounded-2xl overflow-hidden shadow-2xl border border-slate-800 transform transition-all scale-95 opacity-0 my-auto"
     >
 
-      <!-- Modal Header -->
-      <div class="flex items-center justify-between px-5 py-4 border-b border-slate-800 bg-slate-900">
+      <!-- HEADER -->
 
-        <div class="flex items-center gap-2 overflow-hidden pr-4">
+      <div
+        class="flex items-center justify-between px-5 py-4 border-b border-slate-800 bg-slate-900"
+      >
+
+        <div
+          class="flex items-center gap-2 overflow-hidden pr-4"
+        >
 
           <span
             id="modalCategoryBadge"
@@ -578,13 +744,16 @@
           id="closeModalBtn"
           class="w-8 h-8 rounded-full bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-white flex items-center justify-center transition-colors shrink-0"
         >
+
           <i class="fa-solid fa-xmark"></i>
+
         </button>
 
       </div>
 
 
-      <!-- Player -->
+      <!-- VIDEO -->
+
       <div class="relative w-full aspect-video bg-black">
 
         <iframe
@@ -598,20 +767,23 @@
       </div>
 
 
-      <!-- Info -->
-      <div class="p-5 max-h-72 overflow-y-auto space-y-4 bg-slate-950 text-xs text-slate-300">
+      <!-- INFO -->
 
-        <div class="flex flex-wrap items-center justify-between gap-3 border-b border-slate-800/80 pb-3">
+      <div
+        class="p-5 max-h-60 overflow-y-auto space-y-4 bg-slate-950 text-xs text-slate-300"
+      >
 
-          <div class="flex flex-wrap items-center gap-4 text-slate-400">
+        <div
+          class="flex flex-wrap items-center justify-between gap-3 border-b border-slate-800/80 pb-3"
+        >
 
-            <span id="modalVideoDate">
-              <i class="fa-regular fa-calendar mr-1"></i>
-            </span>
+          <div
+            class="flex items-center gap-4 text-slate-400"
+          >
 
-            <span id="modalVideoMembers">
-              <i class="fa-regular fa-user mr-1"></i>
-            </span>
+            <span id="modalVideoDate"></span>
+
+            <span id="modalVideoMembers"></span>
 
           </div>
 
@@ -623,19 +795,33 @@
             rel="noopener noreferrer"
             class="text-indigo-400 hover:text-indigo-300 font-medium inline-flex items-center gap-1"
           >
+
             前往 YouTube 觀看
-            <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+
+            <i
+              class="fa-solid fa-arrow-up-right-from-square text-[10px]"
+            ></i>
+
           </a>
 
         </div>
 
 
         <!-- Description -->
-        <div id="modalDescriptionWrapper" class="hidden">
+
+        <div
+          id="modalDescriptionWrapper"
+          class="hidden"
+        >
 
           <h4 class="font-bold text-slate-200 mb-1">
-            <i class="fa-solid fa-align-left mr-1.5 text-indigo-400"></i>
+
+            <i
+              class="fa-solid fa-align-left mr-1.5 text-indigo-400"
+            ></i>
+
             影片說明
+
           </h4>
 
           <p
@@ -647,11 +833,20 @@
 
 
         <!-- Timestamps -->
-        <div id="modalTimestampsWrapper" class="hidden">
+
+        <div
+          id="modalTimestampsWrapper"
+          class="hidden"
+        >
 
           <h4 class="font-bold text-slate-200 mb-2">
-            <i class="fa-regular fa-clock mr-1.5 text-indigo-400"></i>
+
+            <i
+              class="fa-regular fa-clock mr-1.5 text-indigo-400"
+            ></i>
+
             時間戳記與精彩亮點
+
           </h4>
 
           <div
@@ -668,9 +863,8 @@
   </div>
 
 
-
   <!-- =========================================================
-       JavaScript
+       JAVASCRIPT
   ========================================================== -->
 
   <script>
@@ -679,6 +873,7 @@
     /* =========================================================
        基本設定
     ========================================================== */
+
 
     const SUBTYPES = {
 
@@ -709,9 +904,11 @@
     };
 
 
-    /* =========================================================
-       舞台專輯與歌曲
-    ========================================================== */
+    /*
+     * 舞台歌曲資料
+     *
+     * album → songs
+     */
 
     const STAGE_ALBUMS = {
 
@@ -742,43 +939,6 @@
     };
 
 
-    /* =========================================================
-       年份
-       先固定顯示 2025 / 2026
-       未來要增加年份可以直接加進來
-    ========================================================== */
-
-    const TIMELINE_YEARS = [
-      2025,
-      2026
-    ];
-
-
-    /* =========================================================
-       月份
-       12 個月全部預先存在
-    ========================================================== */
-
-    const MONTHS = [
-      "01",
-      "02",
-      "03",
-      "04",
-      "05",
-      "06",
-      "07",
-      "08",
-      "09",
-      "10",
-      "11",
-      "12"
-    ];
-
-
-    /* =========================================================
-       團體成員
-    ========================================================== */
-
     const GROUP_MEMBERS = [
 
       "JAMES 趙雨凡",
@@ -789,10 +949,6 @@
 
     ];
 
-
-    /* =========================================================
-       State
-    ========================================================== */
 
     let archiveData = [];
 
@@ -813,6 +969,19 @@
     let currentActiveYoutubeId = "";
 
 
+    /*
+     * 時間軸目前選中的年份
+     */
+
+    let currentTimelineYear = null;
+
+    /*
+     * 時間軸目前選中的月份
+     */
+
+    let currentTimelineMonth = null;
+
+
     /* =========================================================
        DOM
     ========================================================== */
@@ -820,11 +989,14 @@
     const timelineContainer =
       document.getElementById("timelineContainer");
 
-    const yearTimelineNav =
-      document.getElementById("yearTimelineNav");
+    const sidebarTimelineNav =
+      document.getElementById("sidebarTimelineNav");
 
-    const monthTimelineNav =
-      document.getElementById("monthTimelineNav");
+    const desktopMonthNavigator =
+      document.getElementById("desktopMonthNavigator");
+
+    const mobileTimeline =
+      document.getElementById("mobileTimeline");
 
 
     const searchInput =
@@ -883,12 +1055,8 @@
       document.getElementById("resetFilterBtn");
 
 
-    const backToTopBtn =
-      document.getElementById("backToTopBtn");
-
-
     /* =========================================================
-       Modal DOM
+       MODAL DOM
     ========================================================== */
 
     const videoModal =
@@ -914,9 +1082,6 @@
     const modalVideoMembers =
       document.getElementById("modalVideoMembers");
 
-    const modalCategoryBadge =
-      document.getElementById("modalCategoryBadge");
-
 
     const modalExternalLink =
       document.getElementById("modalExternalLink");
@@ -940,22 +1105,17 @@
        初始化
     ========================================================== */
 
-    document.addEventListener(
-      "DOMContentLoaded",
-      () => {
+    document.addEventListener("DOMContentLoaded", () => {
 
-        initTheme();
+      initTheme();
 
-        fetchVideoData();
+      fetchVideoData();
 
-        setupEventListeners();
+      setupEventListeners();
 
-        updateSubFilterUI();
+      updateSubFilterUI();
 
-        renderTimelineNavigation();
-
-      }
-    );
+    });
 
 
     /* =========================================================
@@ -969,16 +1129,13 @@
 
 
       if (
-
         localStorage.theme === "dark" ||
-
         (
           !("theme" in localStorage) &&
           window.matchMedia(
             "(prefers-color-scheme: dark)"
           ).matches
         )
-
       ) {
 
         document.documentElement.classList.add("dark");
@@ -990,28 +1147,25 @@
       }
 
 
-      themeToggleBtn.addEventListener(
-        "click",
-        () => {
+      themeToggleBtn.addEventListener("click", () => {
 
-          if (
-            document.documentElement.classList.contains("dark")
-          ) {
+        if (
+          document.documentElement.classList.contains("dark")
+        ) {
 
-            document.documentElement.classList.remove("dark");
+          document.documentElement.classList.remove("dark");
 
-            localStorage.theme = "light";
+          localStorage.theme = "light";
 
-          } else {
+        } else {
 
-            document.documentElement.classList.add("dark");
+          document.documentElement.classList.add("dark");
 
-            localStorage.theme = "dark";
-
-          }
+          localStorage.theme = "dark";
 
         }
-      );
+
+      });
 
     }
 
@@ -1042,7 +1196,7 @@
 
 
         /*
-         * 相容舊版 members 格式
+         * 相容 GROUP 舊格式
          */
 
         archiveData =
@@ -1057,8 +1211,7 @@
             const isFullGroup =
               GROUP_MEMBERS.length === members.length &&
               GROUP_MEMBERS.every(
-                member =>
-                  members.includes(member)
+                member => members.includes(member)
               );
 
 
@@ -1077,6 +1230,13 @@
           });
 
 
+        /*
+         * 建立初始時間軸
+         */
+
+        initializeTimeline();
+
+
         renderTimeline();
 
       } catch (error) {
@@ -1089,7 +1249,9 @@
 
         timelineContainer.innerHTML = `
 
-          <div class="text-center py-12 text-rose-500 font-semibold">
+          <div
+            class="text-center py-12 text-rose-500 font-semibold"
+          >
 
             讀取 video.json 失敗，請確認檔案路徑。
 
@@ -1098,6 +1260,759 @@
         `;
 
       }
+
+    }
+
+
+    /* =========================================================
+       日期工具
+    ========================================================== */
+
+    function getValidDate(item) {
+
+      if (!item || !item.date) {
+        return null;
+      }
+
+
+      const date =
+        new Date(item.date);
+
+
+      if (isNaN(date.getTime())) {
+        return null;
+      }
+
+
+      return date;
+
+    }
+
+
+    function getAvailableYears(data) {
+
+      const years =
+        data
+          .map(item => {
+
+            const date =
+              getValidDate(item);
+
+            return date
+              ? date.getFullYear()
+              : null;
+
+          })
+          .filter(Boolean);
+
+
+      return [
+        ...new Set(years)
+      ].sort(
+        (a, b) => b - a
+      );
+
+    }
+
+
+    function getAvailableMonths(year) {
+
+      const months =
+        archiveData
+          .map(item => {
+
+            const date =
+              getValidDate(item);
+
+
+            if (
+              !date ||
+              date.getFullYear() !== Number(year)
+            ) {
+
+              return null;
+
+            }
+
+
+            return date.getMonth() + 1;
+
+          })
+          .filter(Boolean);
+
+
+      return [
+        ...new Set(months)
+      ].sort(
+        (a, b) => a - b
+      );
+
+    }
+
+
+    /* =========================================================
+       初始化時間軸
+    ========================================================== */
+
+    function initializeTimeline() {
+
+      const years =
+        getAvailableYears(
+          archiveData
+        );
+
+
+      if (years.length === 0) {
+
+        currentTimelineYear = null;
+
+        currentTimelineMonth = null;
+
+        return;
+
+      }
+
+
+      if (
+        !currentTimelineYear ||
+        !years.includes(
+          Number(currentTimelineYear)
+        )
+      ) {
+
+        currentTimelineYear =
+          years[0];
+
+      }
+
+
+      const months =
+        getAvailableMonths(
+          currentTimelineYear
+        );
+
+
+      if (
+        months.length > 0 &&
+        (
+          !currentTimelineMonth ||
+          !months.includes(
+            Number(currentTimelineMonth)
+          )
+        )
+      ) {
+
+        currentTimelineMonth =
+          months[0];
+
+      }
+
+    }
+
+
+    /* =========================================================
+       時間軸跳轉
+    ========================================================== */
+
+    function scrollToMonth(
+      year,
+      month
+    ) {
+
+      const target =
+        document.getElementById(
+          `section-${year}-${String(month).padStart(2, "0")}`
+        );
+
+
+      if (!target) {
+        return;
+      }
+
+
+      target.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+
+    }
+
+
+    /* =========================================================
+       年份點擊
+    ========================================================== */
+
+    function selectTimelineYear(
+      year
+    ) {
+
+      const months =
+        getAvailableMonths(
+          year
+        );
+
+
+      if (months.length === 0) {
+        return;
+      }
+
+
+      currentTimelineYear =
+        Number(year);
+
+
+      /*
+       * 點年份時：
+       * 直接跳到該年份第一個月份
+       */
+
+      currentTimelineMonth =
+        months[0];
+
+
+      renderTimelineNavigation();
+
+
+      setTimeout(() => {
+
+        scrollToMonth(
+          currentTimelineYear,
+          currentTimelineMonth
+        );
+
+      }, 30);
+
+    }
+
+
+    /* =========================================================
+       月份選擇
+    ========================================================== */
+
+    function selectTimelineMonth(
+      month
+    ) {
+
+      currentTimelineMonth =
+        Number(month);
+
+
+      renderTimelineNavigation();
+
+
+      scrollToMonth(
+        currentTimelineYear,
+        currentTimelineMonth
+      );
+
+    }
+
+
+    /* =========================================================
+       月份箭頭
+    ========================================================== */
+
+    function moveTimelineMonth(
+      direction
+    ) {
+
+      const months =
+        getAvailableMonths(
+          currentTimelineYear
+        );
+
+
+      if (months.length === 0) {
+        return;
+      }
+
+
+      const currentIndex =
+        months.indexOf(
+          Number(currentTimelineMonth)
+        );
+
+
+      const nextIndex =
+        currentIndex + direction;
+
+
+      if (
+        nextIndex < 0 ||
+        nextIndex >= months.length
+      ) {
+
+        return;
+
+      }
+
+
+      currentTimelineMonth =
+        months[nextIndex];
+
+
+      renderTimelineNavigation();
+
+
+      scrollToMonth(
+        currentTimelineYear,
+        currentTimelineMonth
+      );
+
+    }
+
+
+    /* =========================================================
+       Render Timeline Navigation
+    ========================================================== */
+
+    function renderTimelineNavigation() {
+
+      const years =
+        getAvailableYears(
+          archiveData
+        );
+
+
+      /*
+       * Desktop Year Navigation
+       */
+
+      sidebarTimelineNav.innerHTML =
+        years.map(year => {
+
+          const isActive =
+            Number(year) ===
+            Number(currentTimelineYear);
+
+
+          return `
+
+            <button
+              type="button"
+              data-timeline-year="${year}"
+              class="
+                timeline-year-btn
+                w-full
+                flex
+                items-center
+                justify-between
+                px-3
+                py-2
+                rounded-xl
+                transition-all
+                text-left
+                ${
+                  isActive
+                    ? "timeline-year-active"
+                    : "text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800/80"
+                }
+              "
+            >
+
+              <span class="flex items-center gap-2">
+
+                <i
+                  class="fa-solid fa-circle text-[6px] text-indigo-500"
+                ></i>
+
+                ${year}
+
+              </span>
+
+              <i
+                class="fa-solid fa-chevron-right text-[10px] opacity-40"
+              ></i>
+
+            </button>
+
+          `;
+
+        }).join("");
+
+
+      /*
+       * Desktop Month Navigator
+       */
+
+      renderDesktopMonthNavigator();
+
+
+      /*
+       * Mobile Timeline
+       */
+
+      renderMobileTimeline();
+
+    }
+
+
+    /* =========================================================
+       Desktop Month Navigator
+    ========================================================== */
+
+    function renderDesktopMonthNavigator() {
+
+      const months =
+        getAvailableMonths(
+          currentTimelineYear
+        );
+
+
+      if (
+        !currentTimelineYear ||
+        months.length === 0
+      ) {
+
+        desktopMonthNavigator.innerHTML = "";
+
+        return;
+
+      }
+
+
+      const currentIndex =
+        months.indexOf(
+          Number(currentTimelineMonth)
+        );
+
+
+      const currentMonth =
+        months[currentIndex] ||
+        months[0];
+
+
+      currentTimelineMonth =
+        currentMonth;
+
+
+      desktopMonthNavigator.innerHTML = `
+
+        <div class="flex items-center justify-between gap-1">
+
+          <button
+            type="button"
+            id="desktopPrevMonth"
+            class="month-arrow text-slate-500 dark:text-slate-400"
+            title="上一個月份"
+            ${currentIndex <= 0 ? "disabled" : ""}
+          >
+
+            <i class="fa-solid fa-chevron-left text-[10px]"></i>
+
+          </button>
+
+
+          <button
+            type="button"
+            id="desktopCurrentMonth"
+            class="flex-1 text-center px-2 py-1.5 rounded-lg bg-indigo-50 dark:bg-indigo-950/40 text-indigo-600 dark:text-indigo-400 text-xs font-bold hover:bg-indigo-100 dark:hover:bg-indigo-950/60 transition-colors"
+          >
+
+            ${currentTimelineYear}.${String(currentMonth).padStart(2, "0")}
+
+          </button>
+
+
+          <button
+            type="button"
+            id="desktopNextMonth"
+            class="month-arrow text-slate-500 dark:text-slate-400"
+            title="下一個月份"
+            ${currentIndex >= months.length - 1 ? "disabled" : ""}
+          >
+
+            <i class="fa-solid fa-chevron-right text-[10px]"></i>
+
+          </button>
+
+        </div>
+
+
+        <div class="mt-2 text-[10px] text-center text-slate-400">
+
+          ${currentIndex + 1} / ${months.length} 個月份
+
+        </div>
+
+      `;
+
+
+      document
+        .getElementById("desktopPrevMonth")
+        ?.addEventListener(
+          "click",
+          () => moveTimelineMonth(-1)
+        );
+
+
+      document
+        .getElementById("desktopNextMonth")
+        ?.addEventListener(
+          "click",
+          () => moveTimelineMonth(1)
+        );
+
+
+      document
+        .getElementById("desktopCurrentMonth")
+        ?.addEventListener(
+          "click",
+          () => {
+
+            scrollToMonth(
+              currentTimelineYear,
+              currentTimelineMonth
+            );
+
+          }
+        );
+
+    }
+
+
+    /* =========================================================
+       Mobile Timeline
+    ========================================================== */
+
+    function renderMobileTimeline() {
+
+      const years =
+        getAvailableYears(
+          archiveData
+        );
+
+
+      if (years.length === 0) {
+
+        mobileTimeline.innerHTML = "";
+
+        return;
+
+      }
+
+
+      const months =
+        getAvailableMonths(
+          currentTimelineYear
+        );
+
+
+      mobileTimeline.innerHTML = `
+
+        <div
+          class="bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 rounded-2xl p-3 shadow-sm"
+        >
+
+          <!-- Mobile Header -->
+
+          <div
+            class="flex items-center justify-between mb-3"
+          >
+
+            <div
+              class="text-xs font-semibold text-slate-400 dark:text-slate-500 uppercase tracking-wider"
+            >
+
+              <i
+                class="fa-regular fa-calendar-check mr-1"
+              ></i>
+
+              時間軸導覽
+
+            </div>
+
+            <div
+              class="text-xs font-bold text-indigo-600 dark:text-indigo-400"
+            >
+
+              ${currentTimelineYear}
+
+            </div>
+
+          </div>
+
+
+          <!-- Years -->
+
+          <div
+            class="flex gap-2 overflow-x-auto pb-1"
+            id="mobileYearList"
+          >
+
+            ${years.map(year => `
+
+              <button
+                type="button"
+                data-mobile-year="${year}"
+                class="
+                  mobile-timeline-year
+                  px-4
+                  py-2
+                  rounded-xl
+                  text-xs
+                  font-bold
+                  transition-all
+                  ${
+                    Number(year) === Number(currentTimelineYear)
+                      ? "bg-indigo-600 text-white shadow-sm shadow-indigo-500/20"
+                      : "bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400"
+                  }
+                "
+              >
+
+                ${year}
+
+              </button>
+
+            `).join("")}
+
+          </div>
+
+
+          <!-- Months -->
+
+          <div
+            class="mt-3 pt-3 border-t border-slate-100 dark:border-slate-800"
+          >
+
+            <div
+              class="flex items-center gap-2"
+            >
+
+              <button
+                type="button"
+                id="mobilePrevMonth"
+                class="month-arrow shrink-0 text-slate-500 dark:text-slate-400"
+                ${months.length <= 1 ? "disabled" : ""}
+              >
+
+                <i class="fa-solid fa-chevron-left text-[10px]"></i>
+
+              </button>
+
+
+              <div
+                id="mobileMonthScroller"
+                class="flex-1 flex gap-1.5 overflow-x-auto pb-1"
+              >
+
+                ${months.map(month => `
+
+                  <button
+                    type="button"
+                    data-mobile-month="${month}"
+                    class="
+                      mobile-month-button
+                      px-3
+                      py-1.5
+                      rounded-lg
+                      text-xs
+                      font-semibold
+                      transition-all
+                      ${
+                        Number(month) === Number(currentTimelineMonth)
+                          ? "bg-indigo-100 dark:bg-indigo-950 text-indigo-600 dark:text-indigo-400"
+                          : "bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400"
+                      }
+                    "
+                  >
+
+                    ${String(month).padStart(2, "0")}月
+
+                  </button>
+
+                `).join("")}
+
+              </div>
+
+
+              <button
+                type="button"
+                id="mobileNextMonth"
+                class="month-arrow shrink-0 text-slate-500 dark:text-slate-400"
+                ${months.length <= 1 ? "disabled" : ""}
+              >
+
+                <i class="fa-solid fa-chevron-right text-[10px]"></i>
+
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      `;
+
+
+      /*
+       * Mobile year buttons
+       */
+
+      document
+        .querySelectorAll("[data-mobile-year]")
+        .forEach(btn => {
+
+          btn.addEventListener(
+            "click",
+            () => {
+
+              selectTimelineYear(
+                Number(
+                  btn.getAttribute(
+                    "data-mobile-year"
+                  )
+                )
+              );
+
+            }
+          );
+
+        });
+
+
+      /*
+       * Mobile month buttons
+       */
+
+      document
+        .querySelectorAll("[data-mobile-month]")
+        .forEach(btn => {
+
+          btn.addEventListener(
+            "click",
+            () => {
+
+              selectTimelineMonth(
+                Number(
+                  btn.getAttribute(
+                    "data-mobile-month"
+                  )
+                )
+              );
+
+            }
+          );
+
+        });
+
+
+      document
+        .getElementById("mobilePrevMonth")
+        ?.addEventListener(
+          "click",
+          () => moveTimelineMonth(-1)
+        );
+
+
+      document
+        .getElementById("mobileNextMonth")
+        ?.addEventListener(
+          "click",
+          () => moveTimelineMonth(1)
+        );
 
     }
 
@@ -1128,14 +2043,11 @@
 
 
       return (
-
         GROUP_MEMBERS.length === item.members.length &&
-
         GROUP_MEMBERS.every(
           member =>
             item.members.includes(member)
         )
-
       );
 
     }
@@ -1166,67 +2078,235 @@
 
 
       return (
-
         Array.isArray(item.members) &&
-
         item.members.includes(
           currentMember
         )
-
       );
 
     }
 
 
     /* =========================================================
-       更新專輯選項
+       Array 化歌曲
     ========================================================== */
 
-    function updateAlbumOptions() {
+    function getSongs(item) {
 
-      albumSelect.innerHTML = `
-
-        <option value="all">
-          全部專輯
-        </option>
-
-      `;
+      if (!item) {
+        return [];
+      }
 
 
-      Object.keys(STAGE_ALBUMS)
-        .forEach(album => {
+      /*
+       * 新格式：
+       *
+       * song: ["REDRED", "ACAI"]
+       */
 
-          albumSelect.innerHTML += `
+      if (
+        Array.isArray(item.song)
+      ) {
 
-            <option value="${escapeHTML(album)}">
-              ${escapeHTML(album)}
-            </option>
+        return item.song;
 
-          `;
-
-        });
+      }
 
 
-      albumSelect.value =
-        currentAlbum === "all"
-          ? "all"
-          : currentAlbum;
+      /*
+       * 舊格式：
+       *
+       * song: "REDRED"
+       */
+
+      if (
+        typeof item.song === "string" &&
+        item.song.trim() !== ""
+      ) {
+
+        return [item.song];
+
+      }
+
+
+      return [];
 
     }
 
 
     /* =========================================================
-       更新歌曲選項
+       舞台影片的專輯
     ========================================================== */
 
-    function updateSongOptions() {
+    function getItemAlbums(item) {
+
+      if (!item) {
+        return [];
+      }
+
+
+      /*
+       * 如果 JSON 已經有 album
+       */
+
+      if (
+        Array.isArray(item.album)
+      ) {
+
+        return item.album;
+
+      }
+
+
+      if (
+        typeof item.album === "string" &&
+        item.album.trim() !== ""
+      ) {
+
+        return [item.album];
+
+      }
+
+
+      return [];
+
+    }
+
+
+    /* =========================================================
+       更新 Sub Filter
+    ========================================================== */
+
+    function updateSubFilterUI() {
+
+      currentSubtype = "all";
+
+      currentAlbum = "all";
+
+      currentSong = "all";
+
+
+      subtypeSelect.value = "all";
+
+      albumSelect.value = "all";
+
+      songSelect.value = "all";
+
+
+      /*
+       * 全部
+       */
+
+      if (
+        currentMainCategory === "all"
+      ) {
+
+        subtypeFilterWrapper.classList.add("hidden");
+        subtypeFilterWrapper.classList.remove("flex");
+
+        albumFilterWrapper.classList.add("hidden");
+        albumFilterWrapper.classList.remove("flex");
+
+        songFilterWrapper.classList.add("hidden");
+        songFilterWrapper.classList.remove("flex");
+
+        return;
+
+      }
+
+
+      /*
+       * 顯示分類
+       */
+
+      subtypeFilterWrapper.classList.remove("hidden");
+      subtypeFilterWrapper.classList.add("flex");
+
+
+      const options =
+        SUBTYPES[currentMainCategory] || [];
+
+
+      subtypeSelect.innerHTML =
+        `<option value="all">全部分類</option>` +
+        options
+          .map(
+            opt =>
+              `<option value="${opt}">${opt}</option>`
+          )
+          .join("");
+
+
+      /*
+       * 舞台：
+       *
+       * 不論是哪一種 subtype
+       * 都顯示「專輯」
+       */
+
+      if (
+        currentMainCategory === "stage"
+      ) {
+
+        albumFilterWrapper.classList.remove("hidden");
+        albumFilterWrapper.classList.add("flex");
+
+        songFilterWrapper.classList.remove("hidden");
+        songFilterWrapper.classList.add("flex");
+
+
+        populateAlbumOptions();
+
+        populateSongOptions();
+
+      } else {
+
+        albumFilterWrapper.classList.add("hidden");
+        albumFilterWrapper.classList.remove("flex");
+
+        songFilterWrapper.classList.add("hidden");
+        songFilterWrapper.classList.remove("flex");
+
+      }
+
+    }
+
+
+    /* =========================================================
+       建立專輯選項
+    ========================================================== */
+
+    function populateAlbumOptions() {
+
+      const albums =
+        Object.keys(
+          STAGE_ALBUMS
+        );
+
+
+      albumSelect.innerHTML =
+        `<option value="all">全部專輯</option>` +
+        albums
+          .map(
+            album =>
+              `<option value="${album}">${album}</option>`
+          )
+          .join("");
+
+    }
+
+
+    /* =========================================================
+       建立歌曲選項
+    ========================================================== */
+
+    function populateSongOptions() {
 
       let songs = [];
 
 
       /*
-       * 如果選擇特定專輯
-       * 就只顯示該專輯歌曲
+       * 依照目前專輯決定歌曲
        */
 
       if (
@@ -1239,295 +2319,36 @@
 
       } else {
 
-        /*
-         * 全部專輯
-         * 將所有歌曲合併
-         */
-
         songs =
-          Object.values(STAGE_ALBUMS)
-            .flat();
+          Object.values(
+            STAGE_ALBUMS
+          ).flat();
 
       }
 
 
       /*
-       * 去除重複歌曲
+       * 去除重複
        */
 
-      songs = [
-        ...new Set(songs)
-      ];
+      songs =
+        [...new Set(songs)];
 
 
-      songSelect.innerHTML = `
-
-        <option value="all">
-          全部歌曲
-        </option>
-
-      `;
-
-
-      songs.forEach(song => {
-
-        songSelect.innerHTML += `
-
-          <option value="${escapeHTML(song)}">
-            ${escapeHTML(song)}
-          </option>
-
-        `;
-
-      });
-
-
-      /*
-       * 如果原本歌曲不在目前專輯
-       * 自動回到全部
-       */
-
-      if (
-        currentSong !== "all" &&
-        !songs.includes(currentSong)
-      ) {
-
-        currentSong = "all";
-
-      }
-
-
-      songSelect.value =
-        currentSong;
-
-    }
-
-
-    /* =========================================================
-       Sub Filter UI
-    ========================================================== */
-
-    function updateSubFilterUI() {
-
-      /*
-       * 全部
-       */
-
-      if (
-        currentMainCategory === "all"
-      ) {
-
-        subtypeFilterWrapper.classList.add(
-          "hidden"
-        );
-
-        subtypeFilterWrapper.classList.remove(
-          "flex"
-        );
-
-
-        albumFilterWrapper.classList.add(
-          "hidden"
-        );
-
-        albumFilterWrapper.classList.remove(
-          "flex"
-        );
-
-
-        songFilterWrapper.classList.add(
-          "hidden"
-        );
-
-        songFilterWrapper.classList.remove(
-          "flex"
-        );
-
-
-        return;
-
-      }
-
-
-      /*
-       * 分類
-       */
-
-      subtypeFilterWrapper.classList.remove(
-        "hidden"
-      );
-
-      subtypeFilterWrapper.classList.add(
-        "flex"
-      );
-
-
-      const options =
-        SUBTYPES[currentMainCategory] || [];
-
-
-      subtypeSelect.innerHTML =
-        `<option value="all">全部分類</option>` +
-
-        options
+      songSelect.innerHTML =
+        `<option value="all">全部歌曲</option>` +
+        songs
           .map(
-            opt =>
-              `<option value="${escapeHTML(opt)}">${escapeHTML(opt)}</option>`
+            song =>
+              `<option value="${song}">${song}</option>`
           )
           .join("");
 
-
-      subtypeSelect.value =
-        currentSubtype;
-
-
-      /*
-       * 舞台：
-       * 不論選哪一種舞台分類
-       * 都顯示「專輯」
-       */
-
-      if (
-        currentMainCategory === "stage"
-      ) {
-
-        albumFilterWrapper.classList.remove(
-          "hidden"
-        );
-
-        albumFilterWrapper.classList.add(
-          "flex"
-        );
-
-
-        songFilterWrapper.classList.remove(
-          "hidden"
-        );
-
-        songFilterWrapper.classList.add(
-          "flex"
-        );
-
-
-        updateAlbumOptions();
-
-        updateSongOptions();
-
-      } else {
-
-        albumFilterWrapper.classList.add(
-          "hidden"
-        );
-
-        albumFilterWrapper.classList.remove(
-          "flex"
-        );
-
-
-        songFilterWrapper.classList.add(
-          "hidden"
-        );
-
-        songFilterWrapper.classList.remove(
-          "flex"
-        );
-
-      }
-
     }
 
 
     /* =========================================================
-       判斷歌曲
-    ========================================================== */
-
-    function matchesSongFilter(item) {
-
-      /*
-       * 沒有選歌曲
-       */
-
-      if (
-        currentSong === "all"
-      ) {
-
-        return true;
-
-      }
-
-
-      /*
-       * 新格式：
-       *
-       * "songs": [
-       *   "REDRED",
-       *   "ACAI"
-       * ]
-       */
-
-      if (
-        Array.isArray(item.songs)
-      ) {
-
-        return item.songs.includes(
-          currentSong
-        );
-
-      }
-
-
-      /*
-       * 相容舊格式：
-       *
-       * "song": "REDRED"
-       */
-
-      if (
-        typeof item.song === "string"
-      ) {
-
-        return (
-          item.song === currentSong
-        );
-
-      }
-
-
-      return false;
-
-    }
-
-
-    /* =========================================================
-       判斷專輯
-    ========================================================== */
-
-    function matchesAlbumFilter(item) {
-
-      if (
-        currentAlbum === "all"
-      ) {
-
-        return true;
-
-      }
-
-
-      /*
-       * 新格式：
-       *
-       * "album": "GREENGREEN"
-       */
-
-      return (
-        item.album === currentAlbum
-      );
-
-    }
-
-
-    /* =========================================================
-       取得篩選資料
+       Filtered Data
     ========================================================== */
 
     function getFilteredData() {
@@ -1536,14 +2357,13 @@
         archiveData.filter(item => {
 
 
-          /* 主分類 */
+          /*
+           * 主分類
+           */
 
           if (
-
             currentMainCategory !== "all" &&
-
             item.category !== currentMainCategory
-
           ) {
 
             return false;
@@ -1551,7 +2371,9 @@
           }
 
 
-          /* 搜尋 */
+          /*
+           * 搜尋
+           */
 
           if (
             currentSearchQuery !== ""
@@ -1577,36 +2399,29 @@
 
             const matchTags =
               Array.isArray(item.tags) &&
-              item.tags.some(
-                tag =>
-                  String(tag)
-                    .toLowerCase()
-                    .includes(q)
+              item.tags.some(tag =>
+                String(tag)
+                  .toLowerCase()
+                  .includes(q)
               );
 
 
             const matchAlbum =
-              item.album &&
-              item.album
-                .toLowerCase()
-                .includes(q);
-
-
-            const allSongs =
-              Array.isArray(item.songs)
-                ? item.songs
-                : item.song
-                  ? [item.song]
-                  : [];
+              getItemAlbums(item)
+                .some(album =>
+                  String(album)
+                    .toLowerCase()
+                    .includes(q)
+                );
 
 
             const matchSong =
-              allSongs.some(
-                song =>
+              getSongs(item)
+                .some(song =>
                   String(song)
                     .toLowerCase()
                     .includes(q)
-              );
+                );
 
 
             if (
@@ -1624,14 +2439,13 @@
           }
 
 
-          /* Subtype */
+          /*
+           * 分類
+           */
 
           if (
-
             currentSubtype !== "all" &&
-
             item.subtype !== currentSubtype
-
           ) {
 
             return false;
@@ -1639,37 +2453,65 @@
           }
 
 
-          /* Album */
+          /*
+           * 專輯
+           */
 
           if (
-
             currentMainCategory === "stage" &&
-
-            !matchesAlbumFilter(item)
-
+            currentAlbum !== "all"
           ) {
 
-            return false;
+            const albums =
+              getItemAlbums(item);
+
+
+            if (
+              !albums.includes(
+                currentAlbum
+              )
+            ) {
+
+              return false;
+
+            }
 
           }
 
 
-          /* Song */
+          /*
+           * 歌曲
+           *
+           * 支援：
+           *
+           * song: ["REDRED", "ACAI"]
+           */
 
           if (
-
             currentMainCategory === "stage" &&
-
-            !matchesSongFilter(item)
-
+            currentSong !== "all"
           ) {
 
-            return false;
+            const songs =
+              getSongs(item);
+
+
+            if (
+              !songs.includes(
+                currentSong
+              )
+            ) {
+
+              return false;
+
+            }
 
           }
 
 
-          /* Member */
+          /*
+           * 成員
+           */
 
           if (
             !matchesMemberFilter(item)
@@ -1685,22 +2527,22 @@
         });
 
 
-      /* 日期排序 */
+      /*
+       * 日期排序
+       */
 
       filtered.sort(
         (a, b) => {
 
           const dateA =
-            new Date(a.date);
+            getValidDate(a) || new Date(0);
 
           const dateB =
-            new Date(b.date);
+            getValidDate(b) || new Date(0);
 
 
           return currentSortOrder === "desc"
-
             ? dateB - dateA
-
             : dateA - dateB;
 
         }
@@ -1713,256 +2555,23 @@
 
 
     /* =========================================================
-       Timeline Navigation
+       按月份分組
     ========================================================== */
 
-    function renderTimelineNavigation() {
+    function groupDataByMonth(data) {
 
-      /*
-       * 年份
-       */
+      const groups = {};
 
-      yearTimelineNav.innerHTML =
-        TIMELINE_YEARS
-          .map(
-            year => `
 
-              <button
-                data-year="${year}"
-                class="year-btn px-4 py-2 rounded-xl text-sm font-bold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-indigo-50 dark:hover:bg-indigo-950/50 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all"
-              >
-
-                ${year}
-
-              </button>
-
-            `
-          )
-          .join("");
-
-
-      /*
-       * 月份
-       */
-
-      monthTimelineNav.innerHTML =
-        MONTHS
-          .map(
-            month => `
-
-              <button
-                data-month="${month}"
-                class="month-btn px-3.5 py-2 rounded-lg text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 hover:bg-indigo-50 dark:hover:bg-indigo-950/50 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all"
-              >
-
-                ${parseInt(month)} 月
-
-              </button>
-
-            `
-          )
-          .join("");
-
-
-      /*
-       * 年份事件
-       */
-
-      yearTimelineNav
-        .querySelectorAll(".year-btn")
-        .forEach(btn => {
-
-          btn.addEventListener(
-            "click",
-            () => {
-
-              const year =
-                btn.dataset.year;
-
-
-              const target =
-                document.getElementById(
-                  `year-section-${year}`
-                );
-
-
-              if (target) {
-
-                target.scrollIntoView({
-                  behavior: "smooth",
-                  block: "start"
-                });
-
-              }
-
-            }
-          );
-
-        });
-
-
-      /*
-       * 月份事件
-       */
-
-      monthTimelineNav
-        .querySelectorAll(".month-btn")
-        .forEach(btn => {
-
-          btn.addEventListener(
-            "click",
-            () => {
-
-              const month =
-                btn.dataset.month;
-
-
-              /*
-               * 使用目前第一個年份作為
-               * 月份導覽的預設年份
-               */
-
-              const year =
-                getDefaultTimelineYear();
-
-
-              const target =
-                document.getElementById(
-                  `month-section-${year}-${month}`
-                );
-
-
-              if (target) {
-
-                target.scrollIntoView({
-                  behavior: "smooth",
-                  block: "start"
-                });
-
-              }
-
-            }
-          );
-
-        });
-
-
-      updateActiveTimelineButtons();
-
-    }
-
-
-    /* =========================================================
-       預設時間軸年份
-    ========================================================== */
-
-    function getDefaultTimelineYear() {
-
-      /*
-       * 依目前資料最新年份決定
-       */
-
-      if (
-        archiveData.length === 0
-      ) {
-
-        return TIMELINE_YEARS[
-          TIMELINE_YEARS.length - 1
-        ];
-
-      }
-
-
-      const years =
-        archiveData
-          .map(item =>
-            new Date(item.date)
-              .getFullYear()
-          )
-          .filter(year =>
-            TIMELINE_YEARS.includes(year)
-          );
-
-
-      if (
-        years.length === 0
-      ) {
-
-        return TIMELINE_YEARS[
-          TIMELINE_YEARS.length - 1
-        ];
-
-      }
-
-
-      return Math.max(...years);
-
-    }
-
-
-    /* =========================================================
-       更新 Timeline Active 狀態
-    ========================================================== */
-
-    function updateActiveTimelineButtons() {
-
-      const year =
-        getDefaultTimelineYear();
-
-
-      yearTimelineNav
-        .querySelectorAll(".year-btn")
-        .forEach(btn => {
-
-          const active =
-            Number(btn.dataset.year) === year;
-
-
-          if (active) {
-
-            btn.className =
-              "year-btn px-4 py-2 rounded-xl text-sm font-bold bg-indigo-600 text-white shadow-md shadow-indigo-500/20 transition-all";
-
-          } else {
-
-            btn.className =
-              "year-btn px-4 py-2 rounded-xl text-sm font-bold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-indigo-50 dark:hover:bg-indigo-950/50 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all";
-
-          }
-
-        });
-
-    }
-
-
-    /* =========================================================
-       依年份月份分組
-       這裡會固定產生 2025/2026 × 12 個月份
-    ========================================================== */
-
-    function buildTimelineStructure(filteredData) {
-
-      const structure = {};
-
-
-      TIMELINE_YEARS.forEach(year => {
-
-        structure[year] = {};
-
-
-        MONTHS.forEach(month => {
-
-          structure[year][month] = [];
-
-        });
-
-      });
-
-
-      filteredData.forEach(item => {
+      data.forEach(item => {
 
         const date =
-          new Date(item.date);
+          getValidDate(item);
+
+
+        if (!date) {
+          return;
+        }
 
 
         const year =
@@ -1975,19 +2584,21 @@
           ).padStart(2, "0");
 
 
-        if (
-          structure[year] &&
-          structure[year][month]
-        ) {
+        const key =
+          `${year}.${month}`;
 
-          structure[year][month].push(item);
 
+        if (!groups[key]) {
+          groups[key] = [];
         }
+
+
+        groups[key].push(item);
 
       });
 
 
-      return structure;
+      return groups;
 
     }
 
@@ -2007,17 +2618,11 @@
 
 
       const isFiltered =
-
         currentSearchQuery !== "" ||
-
         currentSubtype !== "all" ||
-
         currentAlbum !== "all" ||
-
         currentSong !== "all" ||
-
         currentMember !== "all" ||
-
         currentMainCategory !== "all";
 
 
@@ -2028,7 +2633,16 @@
 
 
       /*
-       * 如果篩選後完全沒有資料
+       * 更新時間軸年份月份
+       */
+
+      initializeTimeline();
+
+      renderTimelineNavigation();
+
+
+      /*
+       * 無結果
        */
 
       if (
@@ -2051,71 +2665,66 @@
       );
 
 
-      const structure =
-        buildTimelineStructure(
+      const groupedData =
+        groupDataByMonth(
           filteredData
         );
+
+
+      const monthKeys =
+        Object.keys(
+          groupedData
+        );
+
+
+      /*
+       * 如果目前選擇月份沒有影片，
+       * 不影響整體資料顯示。
+       */
 
 
       let timelineHTML = "";
 
 
-      TIMELINE_YEARS.forEach(year => {
+      monthKeys.forEach(
+        monthKey => {
 
-        /*
-         * 年份區塊
-         */
+          const [year, month] =
+            monthKey.split(".");
 
-        timelineHTML += `
-
-          <section
-            id="year-section-${year}"
-            class="scroll-mt-36"
-          >
-
-            <div class="flex items-center gap-3 mb-4 sticky top-28 z-10 bg-slate-50/90 dark:bg-slate-950/90 backdrop-blur-sm py-2">
-
-              <span class="text-base font-bold tracking-wider text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/80 px-4 py-1.5 rounded-lg border border-indigo-100 dark:border-indigo-900/50">
-
-                ${year} 年
-
-              </span>
-
-              <div class="h-px bg-slate-200 dark:bg-slate-800 flex-1"></div>
-
-            </div>
-
-        `;
-
-
-        /*
-         * 12 個月份
-         */
-
-        MONTHS.forEach(month => {
 
           const items =
-            structure[year][month];
+            groupedData[monthKey];
 
 
           timelineHTML += `
 
             <div
-              id="month-section-${year}-${month}"
-              class="scroll-mt-36 mb-8"
+              id="section-${year}-${month}"
+              class="scroll-mt-36"
             >
 
-              <div class="flex items-center gap-3 mb-4">
+              <div
+                class="flex items-center gap-3 mb-4 sticky top-28 z-10 bg-slate-50/90 dark:bg-slate-950/90 backdrop-blur-sm py-2"
+              >
 
-                <span class="text-sm font-bold tracking-wider text-slate-600 dark:text-slate-300 bg-white dark:bg-slate-900 px-3 py-1 rounded-lg border border-slate-200 dark:border-slate-800">
+                <span
+                  class="text-sm font-bold tracking-wider text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/80 px-3 py-1 rounded-lg border border-indigo-100 dark:border-indigo-900/50"
+                >
 
-                  ${parseInt(month)} 月
+                  ${year} 年 ${parseInt(month)} 月
 
                 </span>
 
-                <div class="h-px bg-slate-200 dark:bg-slate-800 flex-1"></div>
 
-                <span class="text-xs text-slate-400 font-normal">
+                <div
+                  class="h-px bg-slate-200 dark:bg-slate-800 flex-1"
+                ></div>
+
+
+                <span
+                  class="text-xs text-slate-400 font-normal"
+                >
 
                   ${items.length} 則影音
 
@@ -2123,62 +2732,24 @@
 
               </div>
 
-          `;
-
-
-          if (
-            items.length > 0
-          ) {
-
-            timelineHTML += `
 
               <div class="space-y-4">
 
                 ${items
-                  .map(item =>
-                    createVideoCardHTML(item)
+                  .map(
+                    item =>
+                      createVideoCardHTML(item)
                   )
                   .join("")}
 
               </div>
 
-            `;
-
-          } else {
-
-            /*
-             * 沒有影片時也保留月份
-             */
-
-            timelineHTML += `
-
-              <div class="py-5 px-4 rounded-xl border border-dashed border-slate-200 dark:border-slate-800 text-center text-xs text-slate-400 dark:text-slate-600">
-
-                尚未整理影片
-
-              </div>
-
-            `;
-
-          }
-
-
-          timelineHTML += `
-
             </div>
 
           `;
 
-        });
-
-
-        timelineHTML += `
-
-          </section>
-
-        `;
-
-      });
+        }
+      );
 
 
       timelineContainer.innerHTML =
@@ -2196,8 +2767,9 @@
 
     function createVideoCardHTML(item) {
 
-
-      /* Members */
+      /*
+       * Members
+       */
 
       const memberBadges =
         (item.members || [])
@@ -2209,7 +2781,9 @@
 
               return `
 
-                <span class="px-2 py-0.5 rounded text-[11px] font-bold bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 border border-indigo-100 dark:border-indigo-900/50">
+                <span
+                  class="px-2 py-0.5 rounded text-[11px] font-bold bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 border border-indigo-100 dark:border-indigo-900/50"
+                >
 
                   #團體 GROUP
 
@@ -2222,9 +2796,11 @@
 
             return `
 
-              <span class="px-2 py-0.5 rounded text-[11px] font-medium bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300">
+              <span
+                class="px-2 py-0.5 rounded text-[11px] font-medium bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300"
+              >
 
-                #${escapeHTML(member)}
+                #${member}
 
               </span>
 
@@ -2234,31 +2810,41 @@
           .join(" ");
 
 
-      /* Tags */
+      /*
+       * Tags
+       */
 
       const tagBadges =
         (item.tags || [])
-          .map(tag => `
+          .map(
+            tag => `
 
-            <span class="px-2 py-0.5 rounded text-[11px] font-semibold bg-emerald-50 dark:bg-emerald-950/50 text-emerald-600 dark:text-emerald-400 border border-emerald-100 dark:border-emerald-900/40">
+              <span
+                class="px-2 py-0.5 rounded text-[11px] font-semibold bg-emerald-50 dark:bg-emerald-950/50 text-emerald-600 dark:text-emerald-400 border border-emerald-100 dark:border-emerald-900/40"
+              >
 
-              #${escapeHTML(tag)}
+                #${tag}
 
-            </span>
+              </span>
 
-          `)
+            `
+          )
           .join(" ");
 
 
-      /* Subtype */
+      /*
+       * Subtype
+       */
 
       const subtypeTag =
         item.subtype
           ? `
 
-            <span class="px-2 py-0.5 rounded text-[11px] font-semibold bg-indigo-100 dark:bg-indigo-950 text-indigo-600 dark:text-indigo-400">
+            <span
+              class="px-2 py-0.5 rounded text-[11px] font-semibold bg-indigo-100 dark:bg-indigo-950 text-indigo-600 dark:text-indigo-400"
+            >
 
-              ${escapeHTML(item.subtype)}
+              ${item.subtype}
 
             </span>
 
@@ -2266,15 +2852,23 @@
           : "";
 
 
-      /* Album */
+      /*
+       * Album
+       */
+
+      const albums =
+        getItemAlbums(item);
+
 
       const albumTag =
-        item.album
+        albums.length > 0
           ? `
 
-            <span class="px-2 py-0.5 rounded text-[11px] font-semibold bg-amber-100 dark:bg-amber-950 text-amber-700 dark:text-amber-400">
+            <span
+              class="px-2 py-0.5 rounded text-[11px] font-semibold bg-violet-100 dark:bg-violet-950 text-violet-600 dark:text-violet-400"
+            >
 
-              💿 ${escapeHTML(item.album)}
+              💿 ${albums.join(" / ")}
 
             </span>
 
@@ -2282,35 +2876,23 @@
           : "";
 
 
-      /* Songs */
+      /*
+       * Songs
+       */
 
-      let songs = [];
-
-
-      if (
-        Array.isArray(item.songs)
-      ) {
-
-        songs = item.songs;
-
-      } else if (
-        item.song
-      ) {
-
-        songs = [item.song];
-
-      }
+      const songs =
+        getSongs(item);
 
 
       const songTag =
         songs.length > 0
           ? `
 
-            <span class="px-2 py-0.5 rounded text-[11px] font-semibold bg-violet-100 dark:bg-violet-950 text-violet-600 dark:text-violet-400">
+            <span
+              class="px-2 py-0.5 rounded text-[11px] font-semibold bg-fuchsia-100 dark:bg-fuchsia-950 text-fuchsia-600 dark:text-fuchsia-400"
+            >
 
-              🎵 ${songs.map(
-                song => escapeHTML(song)
-              ).join(" · ")}
+              🎵 ${songs.join(" + ")}
 
             </span>
 
@@ -2318,7 +2900,9 @@
           : "";
 
 
-      /* Thumbnail */
+      /*
+       * Thumbnail
+       */
 
       const thumbnailUrl =
         `https://img.youtube.com/vi/${item.youtubeId}/hqdefault.jpg`;
@@ -2326,29 +2910,39 @@
 
       return `
 
-        <div class="group bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 hover:border-indigo-300 dark:hover:border-indigo-700/60 rounded-2xl p-3 sm:p-4 transition-all duration-200 shadow-sm hover:shadow-md flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4">
+        <div
+          class="group bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 hover:border-indigo-300 dark:hover:border-indigo-700/60 rounded-2xl p-3 sm:p-4 transition-all duration-200 shadow-sm hover:shadow-md flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4"
+        >
 
-
-          <div class="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 min-w-0 flex-1">
-
+          <div
+            class="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 min-w-0 flex-1"
+          >
 
             <!-- Thumbnail -->
 
-            <div class="relative w-full sm:w-44 aspect-video rounded-xl overflow-hidden bg-slate-100 dark:bg-slate-800 shrink-0 group-hover:shadow-md transition-all">
+            <div
+              class="relative w-full sm:w-44 aspect-video rounded-xl overflow-hidden bg-slate-100 dark:bg-slate-800 shrink-0 group-hover:shadow-md transition-all"
+            >
 
               <img
                 src="${thumbnailUrl}"
-                alt="${escapeHTML(item.title || "")}"
+                alt="${item.title || "影片"}"
                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 loading="lazy"
               >
 
 
-              <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors flex items-center justify-center">
+              <div
+                class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors flex items-center justify-center"
+              >
 
-                <div class="w-8 h-8 rounded-full bg-white/90 text-slate-900 flex items-center justify-center shadow-md group-hover:scale-110 transition-transform">
+                <div
+                  class="w-8 h-8 rounded-full bg-white/90 text-slate-900 flex items-center justify-center shadow-md group-hover:scale-110 transition-transform"
+                >
 
-                  <i class="fa-solid fa-play text-xs ml-0.5"></i>
+                  <i
+                    class="fa-solid fa-play text-xs ml-0.5"
+                  ></i>
 
                 </div>
 
@@ -2357,18 +2951,25 @@
             </div>
 
 
-            <!-- Info -->
+            <!-- Information -->
 
-            <div class="min-w-0 space-y-2 flex-1">
+            <div
+              class="min-w-0 space-y-2 flex-1"
+            >
 
+              <div
+                class="flex flex-wrap items-center gap-1.5"
+              >
 
-              <div class="flex flex-wrap items-center gap-1.5">
+                <span
+                  class="text-xs font-bold text-slate-400 mr-1"
+                >
 
-                <span class="text-xs font-bold text-slate-400 mr-1">
+                  <i
+                    class="fa-regular fa-calendar-days mr-1"
+                  ></i>
 
-                  <i class="fa-regular fa-calendar-days mr-1"></i>
-
-                  ${escapeHTML(item.date || "")}
+                  ${item.date || ""}
 
                 </span>
 
@@ -2382,21 +2983,24 @@
               </div>
 
 
-              <h4 class="font-bold text-slate-900 dark:text-slate-100 text-sm sm:text-base group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors line-clamp-2">
+              <h4
+                class="font-bold text-slate-900 dark:text-slate-100 text-sm sm:text-base group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors line-clamp-2"
+              >
 
-                ${escapeHTML(item.title || "")}
+                ${item.title || "未命名影片"}
 
               </h4>
 
 
-              <div class="flex items-center gap-1.5 flex-wrap pt-0.5">
+              <div
+                class="flex items-center gap-1.5 flex-wrap pt-0.5"
+              >
 
                 ${tagBadges}
 
                 ${memberBadges}
 
               </div>
-
 
             </div>
 
@@ -2405,21 +3009,24 @@
 
           <!-- Play -->
 
-          <div class="shrink-0 flex items-center justify-end border-t sm:border-t-0 pt-3 sm:pt-0 border-slate-100 dark:border-slate-800">
+          <div
+            class="shrink-0 flex items-center justify-end border-t sm:border-t-0 pt-3 sm:pt-0 border-slate-100 dark:border-slate-800"
+          >
 
             <button
-              data-id="${escapeHTML(item.id)}"
+              data-id="${item.id}"
               class="open-video-btn w-full sm:w-auto px-4 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-semibold text-xs transition-all flex items-center justify-center gap-2 shadow-sm shadow-indigo-500/20"
             >
 
-              <i class="fa-solid fa-play text-[10px]"></i>
+              <i
+                class="fa-solid fa-play text-[10px]"
+              ></i>
 
               播放影片
 
             </button>
 
           </div>
-
 
         </div>
 
@@ -2429,7 +3036,7 @@
 
 
     /* =========================================================
-       Card Event
+       Card Events
     ========================================================== */
 
     function attachCardListeners() {
@@ -2458,7 +3065,9 @@
 
               if (videoData) {
 
-                openModal(videoData);
+                openModal(
+                  videoData
+                );
 
               }
 
@@ -2471,7 +3080,7 @@
 
 
     /* =========================================================
-       Open Modal
+       Modal
     ========================================================== */
 
     function openModal(data) {
@@ -2481,27 +3090,19 @@
 
 
       modalVideoTitle.textContent =
-        data.title || "";
-
-
-      modalCategoryBadge.textContent =
-        getCategoryLabel(
-          data.category
-        );
+        data.title || "未命名影片";
 
 
       modalVideoDate.innerHTML = `
 
-        <i class="fa-regular fa-calendar mr-1"></i>
+        <i
+          class="fa-regular fa-calendar mr-1"
+        ></i>
 
-        ${escapeHTML(data.date || "")}
+        ${data.date || ""}
 
       `;
 
-
-      /*
-       * Members
-       */
 
       const modalMembers =
         (data.members || [])
@@ -2516,9 +3117,11 @@
 
       modalVideoMembers.innerHTML = `
 
-        <i class="fa-regular fa-user mr-1"></i>
+        <i
+          class="fa-regular fa-user mr-1"
+        ></i>
 
-        成員: ${escapeHTML(modalMembers)}
+        成員: ${modalMembers}
 
       `;
 
@@ -2539,9 +3142,7 @@
        * Description
        */
 
-      if (
-        data.description
-      ) {
+      if (data.description) {
 
         modalDescription.textContent =
           data.description;
@@ -2564,37 +3165,38 @@
        */
 
       if (
-
-        data.timestamps &&
-
+        Array.isArray(data.timestamps) &&
         data.timestamps.length > 0
-
       ) {
 
         modalTimestampsList.innerHTML =
           data.timestamps
-            .map(ts => `
+            .map(
+              ts => `
 
-              <div class="flex items-center gap-2.5 text-slate-300 hover:text-white transition-colors">
-
-                <button
-                  onclick="seekVideo(${Number(ts.seconds)})"
-                  class="px-2 py-0.5 rounded bg-indigo-950/80 hover:bg-indigo-600 text-indigo-400 hover:text-white font-mono text-[11px] font-bold border border-indigo-800/50 transition-colors"
+                <div
+                  class="flex items-center gap-2.5 text-slate-300 hover:text-white transition-colors"
                 >
 
-                  ${escapeHTML(ts.time || "")}
+                  <button
+                    onclick="seekVideo(${ts.seconds})"
+                    class="px-2 py-0.5 rounded bg-indigo-950/80 hover:bg-indigo-600 text-indigo-400 hover:text-white font-mono text-[11px] font-bold border border-indigo-800/50 transition-colors"
+                  >
 
-                </button>
+                    ${ts.time}
 
-                <span class="text-xs">
+                  </button>
 
-                  ${escapeHTML(ts.label || "")}
+                  <span class="text-xs">
 
-                </span>
+                    ${ts.label}
 
-              </div>
+                  </span>
 
-            `)
+                </div>
+
+              `
+            )
             .join("");
 
 
@@ -2612,7 +3214,7 @@
 
 
       /*
-       * Show
+       * 顯示
        */
 
       videoModal.classList.remove(
@@ -2620,22 +3222,19 @@
       );
 
 
-      setTimeout(
-        () => {
+      setTimeout(() => {
 
-          modalContainer.classList.remove(
-            "scale-95",
-            "opacity-0"
-          );
+        modalContainer.classList.remove(
+          "scale-95",
+          "opacity-0"
+        );
 
-          modalContainer.classList.add(
-            "scale-100",
-            "opacity-100"
-          );
+        modalContainer.classList.add(
+          "scale-100",
+          "opacity-100"
+        );
 
-        },
-        10
-      );
+      }, 10);
 
 
       document.body.style.overflow =
@@ -2645,32 +3244,7 @@
 
 
     /* =========================================================
-       Category Label
-    ========================================================== */
-
-    function getCategoryLabel(category) {
-
-      const labels = {
-
-        official: "官方",
-
-        stage: "舞台",
-
-        variety: "節目",
-
-        other: "其他"
-
-      };
-
-
-      return labels[category] ||
-        "影片";
-
-    }
-
-
-    /* =========================================================
-       Timestamp Seek
+       Seek
     ========================================================== */
 
     window.seekVideo =
@@ -2705,22 +3279,19 @@
       );
 
 
-      setTimeout(
-        () => {
+      setTimeout(() => {
 
-          videoModal.classList.add(
-            "hidden"
-          );
+        videoModal.classList.add(
+          "hidden"
+        );
 
-          youtubeIframe.src = "";
+        youtubeIframe.src = "";
 
-          currentActiveYoutubeId = "";
+        currentActiveYoutubeId = "";
 
-          document.body.style.overflow = "";
+        document.body.style.overflow = "";
 
-        },
-        200
-      );
+      }, 200);
 
     }
 
@@ -2733,8 +3304,8 @@
 
 
       /* =======================================================
-         Main Category
-      ======================================================== */
+         主分類
+      ====================================================== */
 
       document
         .getElementById("mainCategoryNav")
@@ -2766,25 +3337,13 @@
 
 
             btn.className =
-              "cat-nav-btn active px-5 py-2.5 rounded-xl text-xs font-bold bg-indigo-600 text-white shadow-md shadow-indigo-500/20 transition-all duration-200 flex items-center gap-2 whitespace-nowrap";
+              "cat-nav-btn px-5 py-2.5 rounded-xl text-xs font-bold bg-indigo-600 text-white shadow-md shadow-indigo-500/20 transition-all duration-200 flex items-center gap-2 whitespace-nowrap";
 
 
             currentMainCategory =
               btn.getAttribute(
                 "data-cat"
               );
-
-
-            /*
-             * 切換主分類時
-             * 重設舞台專輯 / 歌曲
-             */
-
-            currentSubtype = "all";
-
-            currentAlbum = "all";
-
-            currentSong = "all";
 
 
             updateSubFilterUI();
@@ -2796,8 +3355,39 @@
 
 
       /* =======================================================
+         Desktop Year
+      ====================================================== */
+
+      sidebarTimelineNav.addEventListener(
+        "click",
+        e => {
+
+          const btn =
+            e.target.closest(
+              "[data-timeline-year]"
+            );
+
+
+          if (!btn) {
+            return;
+          }
+
+
+          selectTimelineYear(
+            Number(
+              btn.getAttribute(
+                "data-timeline-year"
+              )
+            )
+          );
+
+        }
+      );
+
+
+      /* =======================================================
          Search
-      ======================================================== */
+      ====================================================== */
 
       const handleSearch =
         e => {
@@ -2813,16 +3403,12 @@
 
 
           /*
-           * 同步桌機 / 手機搜尋
+           * 同步搜尋框
            */
 
           if (
-
             e.target === searchInput &&
-
-            searchInputMobile.value !==
-              currentSearchQuery
-
+            searchInputMobile.value !== currentSearchQuery
           ) {
 
             searchInputMobile.value =
@@ -2832,12 +3418,8 @@
 
 
           if (
-
             e.target === searchInputMobile &&
-
-            searchInput.value !==
-              currentSearchQuery
-
+            searchInput.value !== currentSearchQuery
           ) {
 
             searchInput.value =
@@ -2863,9 +3445,7 @@
       );
 
 
-      /* =======================================================
-         Clear Search
-      ======================================================== */
+      /* Clear Search */
 
       clearSearchBtn.addEventListener(
         "click",
@@ -2889,7 +3469,7 @@
 
       /* =======================================================
          Subtype
-      ======================================================== */
+      ====================================================== */
 
       subtypeSelect.addEventListener(
         "change",
@@ -2906,7 +3486,7 @@
 
       /* =======================================================
          Album
-      ======================================================== */
+      ====================================================== */
 
       albumSelect.addEventListener(
         "change",
@@ -2917,15 +3497,18 @@
 
 
           /*
-           * 換專輯後
-           * 更新歌曲清單
+           * 選專輯後，
+           * 歌曲重新限制為該專輯的歌曲
            */
 
-          currentSong =
-            "all";
+          currentSong = "all";
 
 
-          updateSongOptions();
+          populateSongOptions();
+
+
+          songSelect.value = "all";
+
 
           renderTimeline();
 
@@ -2935,7 +3518,7 @@
 
       /* =======================================================
          Song
-      ======================================================== */
+      ====================================================== */
 
       songSelect.addEventListener(
         "change",
@@ -2952,7 +3535,7 @@
 
       /* =======================================================
          Member
-      ======================================================== */
+      ====================================================== */
 
       memberSelect.addEventListener(
         "change",
@@ -2969,7 +3552,7 @@
 
       /* =======================================================
          Sort
-      ======================================================== */
+      ====================================================== */
 
       sortSelect.addEventListener(
         "change",
@@ -2986,7 +3569,7 @@
 
       /* =======================================================
          Reset
-      ======================================================== */
+      ====================================================== */
 
       resetFilterBtn.addEventListener(
         "click",
@@ -3002,7 +3585,7 @@
 
       /* =======================================================
          Modal
-      ======================================================== */
+      ====================================================== */
 
       closeModalBtn.addEventListener(
         "click",
@@ -3026,22 +3609,15 @@
       );
 
 
-      /* =======================================================
-         ESC
-      ======================================================== */
-
       document.addEventListener(
         "keydown",
         e => {
 
           if (
-
             e.key === "Escape" &&
-
             !videoModal.classList.contains(
               "hidden"
             )
-
           ) {
 
             closeModal();
@@ -3051,66 +3627,11 @@
         }
       );
 
-
-      /* =======================================================
-         Back To Top
-      ======================================================== */
-
-      window.addEventListener(
-        "scroll",
-        () => {
-
-          if (
-            window.scrollY > 500
-          ) {
-
-            backToTopBtn.classList.remove(
-              "opacity-0",
-              "pointer-events-none",
-              "translate-y-3"
-            );
-
-            backToTopBtn.classList.add(
-              "opacity-100",
-              "translate-y-0"
-            );
-
-          } else {
-
-            backToTopBtn.classList.add(
-              "opacity-0",
-              "pointer-events-none",
-              "translate-y-3"
-            );
-
-            backToTopBtn.classList.remove(
-              "opacity-100",
-              "translate-y-0"
-            );
-
-          }
-
-        }
-      );
-
-
-      backToTopBtn.addEventListener(
-        "click",
-        () => {
-
-          window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-          });
-
-        }
-      );
-
     }
 
 
     /* =========================================================
-       Reset All
+       Reset
     ========================================================== */
 
     function resetAllFilters() {
@@ -3131,27 +3652,34 @@
 
 
       /*
-       * Main Category
+       * 重設年份
+       */
+
+      initializeTimeline();
+
+
+      /*
+       * 主分類按鈕
        */
 
       document
         .querySelectorAll(
           ".cat-nav-btn"
         )
-        .forEach(btn => {
+        .forEach(b => {
 
           if (
-            btn.getAttribute(
+            b.getAttribute(
               "data-cat"
             ) === "all"
           ) {
 
-            btn.className =
-              "cat-nav-btn active px-5 py-2.5 rounded-xl text-xs font-bold bg-indigo-600 text-white shadow-md shadow-indigo-500/20 transition-all duration-200 flex items-center gap-2 whitespace-nowrap";
+            b.className =
+              "cat-nav-btn px-5 py-2.5 rounded-xl text-xs font-bold bg-indigo-600 text-white shadow-md shadow-indigo-500/20 transition-all duration-200 flex items-center gap-2 whitespace-nowrap";
 
           } else {
 
-            btn.className =
+            b.className =
               "cat-nav-btn px-5 py-2.5 rounded-xl text-xs font-semibold bg-slate-100/90 dark:bg-slate-800/90 text-slate-600 dark:text-slate-300 hover:bg-slate-200/70 dark:hover:bg-slate-700/70 transition-all duration-200 flex items-center gap-2 whitespace-nowrap";
 
           }
@@ -3168,6 +3696,10 @@
       searchInputMobile.value = "";
 
       subtypeSelect.value = "all";
+
+      albumSelect.value = "all";
+
+      songSelect.value = "all";
 
       memberSelect.value = "all";
 
@@ -3186,38 +3718,8 @@
     }
 
 
-    /* =========================================================
-       HTML Escape
-    ========================================================== */
-
-    function escapeHTML(value) {
-
-      return String(value ?? "")
-        .replace(
-          /&/g,
-          "&amp;"
-        )
-        .replace(
-          /</g,
-          "&lt;"
-        )
-        .replace(
-          />/g,
-          "&gt;"
-        )
-        .replace(
-          /"/g,
-          "&quot;"
-        )
-        .replace(
-          /'/g,
-          "&#039;"
-        );
-
-    }
-
-
   </script>
 
 </body>
+
 </html>
