@@ -988,20 +988,6 @@
         </h3>
 
 
-        <!--
-          年份 / 月份導覽
-
-          桌面：
-          25年
-            01 02 03 ...
-
-          26年
-            01 02 03 ...
-
-          手機：
-          一樣只有一個時間軸區塊
-        -->
-
         <nav
           id="sidebarTimelineNav"
           class="space-y-4"
@@ -1514,10 +1500,6 @@
    基本設定
 ========================================================= */
 
-
-/*
- * 影片主分類
- */
 const SUBTYPES = {
 
   official: [
@@ -1551,22 +1533,6 @@ const SUBTYPES = {
 };
 
 
-/*
- * =========================================================
- * 舞台專輯 / 歌曲設定
- * =========================================================
- *
- * 只有 category === "stage" 時會使用。
- *
- * 結構：
- *
- * 舞台
- * ├── 分類
- * ├── 專輯
- * └── 歌曲
- *
- */
-
 const STAGE_ALBUMS = {
 
   "COLOR OUTSIDE THE LINES": [
@@ -1598,10 +1564,6 @@ const STAGE_ALBUMS = {
 
 };
 
-
-/*
- * 團體成員
- */
 
 const GROUP_MEMBERS = [
 
@@ -2019,11 +1981,6 @@ function matchesMemberFilter(item) {
 
 function updateSubFilterUI() {
 
-  /*
-   * 每次切換主分類，
-   * 重設舞台相關條件。
-   */
-
   currentSubtype = 'all';
 
   currentAlbum = 'all';
@@ -2033,10 +1990,6 @@ function updateSubFilterUI() {
 
   subtypeSelect.value = 'all';
 
-
-  /*
-   * 預設全部隱藏
-   */
 
   subtypeFilterWrapper.classList.add(
     'hidden'
@@ -2062,11 +2015,6 @@ function updateSubFilterUI() {
     'flex'
   );
 
-
-  /*
-   * 不是全部分類：
-   * 顯示分類
-   */
 
   if (
     currentMainCategory !== 'all'
@@ -2101,23 +2049,9 @@ function updateSubFilterUI() {
   }
 
 
-  /*
-   * =======================================================
-   * 只有舞台才顯示：
-   *
-   * 分類
-   * 專輯
-   * 歌曲
-   * =======================================================
-   */
-
   if (
     currentMainCategory === 'stage'
   ) {
-
-    /*
-     * 專輯
-     */
 
     albumFilterWrapper.classList.remove(
       'hidden'
@@ -2148,12 +2082,6 @@ function updateSubFilterUI() {
       'all';
 
 
-    /*
-     * 歌曲
-     *
-     * 一開始顯示全部歌曲。
-     */
-
     songFilterWrapper.classList.remove(
       'hidden'
     );
@@ -2180,12 +2108,6 @@ function updateSongOptions() {
   let songs = [];
 
 
-  /*
-   * 沒選專輯
-   *
-   * → 顯示三張專輯的所有歌曲
-   */
-
   if (
     currentAlbum === 'all'
   ) {
@@ -2204,12 +2126,6 @@ function updateSongOptions() {
 
   }
 
-  /*
-   * 有選專輯
-   *
-   * → 只顯示該專輯歌曲
-   */
-
   else {
 
     songs =
@@ -2220,17 +2136,9 @@ function updateSongOptions() {
   }
 
 
-  /*
-   * 去除重複
-   */
-
   songs =
     [...new Set(songs)];
 
-
-  /*
-   * 產生選項
-   */
 
   songSelect.innerHTML =
 
@@ -2247,12 +2155,6 @@ function updateSongOptions() {
       )
       .join('');
 
-
-  /*
-   * 保留原本歌曲條件
-   * 如果換專輯後原歌曲不存在，
-   * 就自動回到全部。
-   */
 
   if (
     currentSong !== 'all' &&
@@ -2325,10 +2227,6 @@ function getFilteredData() {
       item => {
 
 
-        /*
-         * 主分類
-         */
-
         if (
 
           currentMainCategory !==
@@ -2343,10 +2241,6 @@ function getFilteredData() {
 
         }
 
-
-        /*
-         * 搜尋
-         */
 
         if (
           currentSearchQuery !== ''
@@ -2424,10 +2318,6 @@ function getFilteredData() {
         }
 
 
-        /*
-         * 分類
-         */
-
         if (
 
           currentSubtype !==
@@ -2443,21 +2333,11 @@ function getFilteredData() {
         }
 
 
-        /*
-         * ===================================================
-         * 舞台專輯
-         * ===================================================
-         */
-
         if (
           currentMainCategory ===
           'stage'
         ) {
 
-
-          /*
-           * 專輯
-           */
 
           if (
 
@@ -2474,25 +2354,6 @@ function getFilteredData() {
           }
 
 
-          /*
-           * 歌曲
-           *
-           * 注意：
-           *
-           * item.songs 是陣列。
-           *
-           * 例如：
-           *
-           * songs: [
-           *   "REDRED",
-           *   "ACAI"
-           * ]
-           *
-           * 篩選 REDRED → 找得到
-           *
-           * 篩選 ACAI → 也找得到
-           */
-
           if (
             currentSong !==
             'all'
@@ -2503,16 +2364,6 @@ function getFilteredData() {
                 ? item.songs
                 : [];
 
-
-            /*
-             * 相容舊格式：
-             *
-             * 如果以前寫：
-             *
-             * "song": "REDRED"
-             *
-             * 也可以正常運作。
-             */
 
             if (
               itemSongs.length === 0 &&
@@ -2545,10 +2396,6 @@ function getFilteredData() {
         }
 
 
-        /*
-         * 成員
-         */
-
         if (
           !matchesMemberFilter(item)
         ) {
@@ -2563,10 +2410,6 @@ function getFilteredData() {
       }
     );
 
-
-  /*
-   * 日期排序
-   */
 
   filtered.sort(
     (a, b) => {
@@ -2680,10 +2523,6 @@ function renderTimeline() {
     !isFiltered
   );
 
-
-  /*
-   * 沒資料
-   */
 
   if (
     filteredData.length === 0
@@ -2852,10 +2691,6 @@ function renderSidebarNav(
   monthKeys
 ) {
 
-  /*
-   * 依年份整理
-   */
-
   const yearGroups = {};
 
 
@@ -2884,10 +2719,6 @@ function renderSidebarNav(
   );
 
 
-  /*
-   * 年份排序
-   */
-
   const years =
     Object.keys(
       yearGroups
@@ -2908,22 +2739,12 @@ function renderSidebarNav(
             yearGroups[year];
 
 
-          /*
-           * 月份排序
-           */
-
           months.sort(
             (a, b) =>
               Number(a) -
               Number(b)
           );
 
-
-          /*
-           * 年份完整按鈕
-           *
-           * 點年份 → 跳到該年份第一個月份
-           */
 
           const firstMonth =
             months[0];
@@ -2937,8 +2758,6 @@ function renderSidebarNav(
                 space-y-2
               "
             >
-
-              <!-- 年份 -->
 
               <a
                 href="#section-${year}.${firstMonth}"
@@ -2992,8 +2811,6 @@ function renderSidebarNav(
 
               </a>
 
-
-              <!-- 月份 -->
 
               <div
                 class="
@@ -3198,9 +3015,7 @@ function createVideoCardHTML(
 
 
   /*
-   * =======================================================
    * Album Tag
-   * =======================================================
    */
 
   const albumTag =
@@ -3237,9 +3052,7 @@ function createVideoCardHTML(
 
 
   /*
-   * =======================================================
    * Song Tags
-   * =======================================================
    */
 
   let songs = [];
@@ -3301,6 +3114,15 @@ function createVideoCardHTML(
 
   /*
    * Thumbnail
+   *
+   * 這裡已移除：
+   *
+   * 1. 黑色遮罩
+   * 2. 中央播放按鈕
+   * 3. hover 時的播放按鈕放大效果
+   * 4. hover 時縮圖放大效果
+   *
+   * 現在只顯示 YouTube 縮圖。
    */
 
   const thumbnailUrl =
@@ -3370,8 +3192,6 @@ function createVideoCardHTML(
             bg-slate-100
             dark:bg-slate-800
             shrink-0
-            group-hover:shadow-md
-            transition-all
           "
         >
 
@@ -3382,55 +3202,9 @@ function createVideoCardHTML(
               w-full
               h-full
               object-cover
-              group-hover:scale-105
-              transition-transform
-              duration-300
             "
             loading="lazy"
           >
-
-
-          <div
-            class="
-              absolute
-              inset-0
-              bg-black/20
-              group-hover:bg-black/10
-              transition-colors
-              flex
-              items-center
-              justify-center
-            "
-          >
-
-            <div
-              class="
-                w-8
-                h-8
-                rounded-full
-                bg-white/90
-                text-slate-900
-                flex
-                items-center
-                justify-center
-                shadow-md
-                group-hover:scale-110
-                transition-transform
-              "
-            >
-
-              <i
-                class="
-                  fa-solid
-                  fa-play
-                  text-xs
-                  ml-0.5
-                "
-              ></i>
-
-            </div>
-
-          </div>
 
         </div>
 
@@ -3680,10 +3454,6 @@ function openModal(data) {
   `;
 
 
-  /*
-   * 成員
-   */
-
   const modalMembers =
 
     (data.members || [])
@@ -3718,10 +3488,6 @@ function openModal(data) {
   `;
 
 
-  /*
-   * YouTube
-   */
-
   youtubeIframe.src =
 
     `https://www.youtube-nocookie.com/embed/${encodeURIComponent(
@@ -3735,10 +3501,6 @@ function openModal(data) {
       data.youtubeId
     )}`;
 
-
-  /*
-   * Description
-   */
 
   if (
     data.description
@@ -3760,10 +3522,6 @@ function openModal(data) {
 
   }
 
-
-  /*
-   * Timestamps
-   */
 
   if (
 
@@ -3843,10 +3601,6 @@ function openModal(data) {
 
   }
 
-
-  /*
-   * Show Modal
-   */
 
   videoModal.classList.remove(
     'hidden'
@@ -3948,10 +3702,6 @@ function closeModal() {
 
 function setupBackToTop() {
 
-  /*
-   * 滑動後才顯示按鈕
-   */
-
   window.addEventListener(
     'scroll',
     () => {
@@ -3991,10 +3741,6 @@ function setupBackToTop() {
     }
   );
 
-
-  /*
-   * 必須點擊才回到頂端
-   */
 
   backToTopBtn.addEventListener(
     'click',
@@ -4132,10 +3878,6 @@ function setupEventListeners() {
       );
 
 
-      /*
-       * 同步手機 / Desktop
-       */
-
       if (
 
         e.target === searchInput &&
@@ -4241,10 +3983,6 @@ function setupEventListeners() {
       currentAlbum =
         e.target.value;
 
-
-      /*
-       * 換專輯後更新歌曲清單
-       */
 
       updateSongOptions();
 
@@ -4411,10 +4149,6 @@ function resetAllFilters() {
     'desc';
 
 
-  /*
-   * 主分類按鈕
-   */
-
   document
     .querySelectorAll(
       '.cat-nav-btn'
@@ -4479,10 +4213,6 @@ function resetAllFilters() {
       }
     );
 
-
-  /*
-   * UI
-   */
 
   searchInput.value =
     '';
