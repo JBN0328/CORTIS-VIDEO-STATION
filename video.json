@@ -2600,7 +2600,7 @@
     "category": "stage",
     "subtype": "音樂節/歌謠大戰",
     "album": ["COLOR OUTSIDE THE LINES " ,"其他歌曲"],
-    "song": ["Deja Vu ,FaSHioN"],
+    "song": ["Deja Vu" , "FaSHioN"],
     "members": ["JAMES 趙雨凡"]
   },
   {
@@ -3238,7 +3238,7 @@
     "date": "2025-12-31",
     "category": "stage",
     "subtype": "音樂節/歌謠大戰",
-    "album": "COLOR OUTSIDE THE LINES",
+    "album": ["COLOR OUTSIDE THE LINES", "其他歌曲"],
     "song": ["Deja Vu" , "FaSHioN"],
     "members": ["JUHOON 金主訓"]
   },
