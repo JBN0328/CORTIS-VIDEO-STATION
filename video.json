@@ -2582,80 +2582,36 @@
     "members": ["JAMES 趙雨凡"]
   },
   {
-    "id": "6e0Y_1w-lIk",
-    "youtubeId": "6e0Y_1w-lIk",
-    "title": "CORTIS(코르티스) 'What You Want' (4K) | STUDIO CHOOM ORIGINAL",
-    "date": "2025-08-20",
+    "id": "cbYCfzPNmHk",
+    "youtubeId": "cbYCfzPNmHk",
+    "title": "[2025 가요대전 4K] 코르티스 제임스 'GO!' (CORTIS JAMES FanCam) @SBS GayoDaejeon 251225",
+    "date": "2025-12-25",
     "category": "stage",
-    "subtype": "打歌舞台",
+    "subtype": "音樂節/歌謠大戰",
     "album": "COLOR OUTSIDE THE LINES",
-    "song": "What You Want",
-    "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"]
-  },
-  {
-    "id": "n5IJYhE78t4",
-    "youtubeId": "n5IJYhE78t4",
-    "title": "CORTIS(코르티스) 'What You Want' (4K) | STUDIO CHOOM ORIGINAL",
-    "date": "2025-08-20",
-    "category": "stage",
-    "subtype": "打歌舞台",
-    "album": "COLOR OUTSIDE THE LINES",
-    "song": "What You Want",
-    "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"]
-  },
-  {
-    "id": "kHtQyOYGpbE",
-    "youtubeId": "kHtQyOYGpbE",
-    "title": "[UNFILTERED CAM] CORTIS JAMES(제임스) 'What You Want' 4K | STUDIO CHOOM ORIGINAL",
-    "date": "2025-08-22",
-    "category": "stage",
-    "subtype": "打歌舞台",
-    "album": "COLOR OUTSIDE THE LINES",
-    "song": "What You Want",
+    "song": "GO!",
     "members": ["JAMES 趙雨凡"]
   },
   {
-    "id": "OYR1SUbKLHE",
-    "youtubeId": "OYR1SUbKLHE",
-    "title": "[UNFILTERED CAM] CORTIS JUHOON(주훈) 'What You Want' 4K | STUDIO CHOOM ORIGINAL",
-    "date": "2025-08-22",
+    "id": "lmrPZOuhS4A",
+    "youtubeId": "lmrPZOuhS4A",
+    "title": "[가요대제전] CORTIS JAMES (코르티스 제임스) – Deja Vu+FaSHioN FanCam | 2025 GayoDaejejeon | MBC251231",
+    "date": "2025-12-31",
     "category": "stage",
-    "subtype": "打歌舞台",
-    "album": "COLOR OUTSIDE THE LINES",
-    "song": "What You Want",
-    "members": ["JUHOON 金主訓"]
+    "subtype": "音樂節/歌謠大戰",
+    "album": ["COLOR OUTSIDE THE LINES " ,"其他歌曲"],
+    "song": ["Deja Vu ,FaSHioN"],
+    "members": ["JAMES 趙雨凡"]
   },
   {
-    "id": "rKO5arqu4j0",
-    "youtubeId": "rKO5arqu4j0",
-    "title": "[UNFILTERED CAM] CORTIS MARTIN(마틴) 'What You Want' 4K | STUDIO CHOOM ORIGINAL",
-    "date": "2025-08-22",
+    "id": "hoa34fN6Awk",
+    "youtubeId": "hoa34fN6Awk",
+    "title": "[가요대제전] CORTIS JAMES (코르티스 제임스) – Talk to You FanCam | 2025 Gayo Daejejeon | MBC251231",
+    "date": "2025-12-31",
     "category": "stage",
-    "subtype": "打歌舞台",
-    "album": "COLOR OUTSIDE THE LINES",
-    "song": "What You Want",
-    "members": ["MARTIN 朴宇宙"]
-  },
-  {
-    "id": "Wt9fbegURgc",
-    "youtubeId": "Wt9fbegURgc",
-    "title": "[UNFILTERED CAM] CORTIS SEONGHYEON(성현) 'What You Want' 4K | STUDIO CHOOM ORIGINAL",
-    "date": "2025-08-22",
-    "category": "stage",
-    "subtype": "打歌舞台",
-    "album": "COLOR OUTSIDE THE LINES",
-    "song": "What You Want",
-    "members": ["SEONGHYEON 嚴成玹"]
-  },
-  {
-    "id": "I9tqg4T-dzU",
-    "youtubeId": "I9tqg4T-dzU",
-    "title": "[UNFILTERED CAM] CORTIS KEONHO(건호) 'What You Want' 4K | STUDIO CHOOM ORIGINAL",
-    "date": "2025-08-22",
-    "category": "stage",
-    "subtype": "打歌舞台",
-    "album": "COLOR OUTSIDE THE LINES",
-    "song": "What You Want",
-    "members": ["KEONHO 安乾鎬"]
+    "subtype": "音樂節/歌謠大戰",
+    "album": "其他歌曲",
+    "song": "Talk to You",
+    "members": ["JAMES 趙雨凡"]
   }
 ]
