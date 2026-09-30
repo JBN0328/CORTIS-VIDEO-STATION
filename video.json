@@ -2613,5 +2613,38 @@
     "album": "其他歌曲",
     "song": "Talk to You",
     "members": ["JAMES 趙雨凡"]
+  },
+  {
+    "id": "kHtQyOYGpbE",
+    "youtubeId": "kHtQyOYGpbE",
+    "title": "[UNFILTERED CAM] CORTIS JAMES(제임스) 'What You Want' 4K | STUDIO CHOOM ORIGINAL",
+    "date": "2026-02-05",
+    "category": "stage",
+    "subtype": "Live Session／媒體演出",
+    "album": "COLOR OUTSIDE THE LINES",
+    "song": "What You Want",
+    "members": ["JAMES 趙雨凡"]
+  },
+  {
+    "id": "jQdBH5nD9fc",
+    "youtubeId": "jQdBH5nD9fc",
+    "title": "[보이스캠] 제임스 (CORTIS)｜Voice Focused FanCam｜JAMES of CORTIS 🎵What You Want｜VoiceCam360˚",
+    "date": "2026-02-05",
+    "category": "stage",
+    "subtype": "Live Session／媒體演出",
+    "album": "COLOR OUTSIDE THE LINES",
+    "song": "What You Want",
+    "members": ["JAMES 趙雨凡"]
+  },
+  {
+    "id": "mtpmdynwb6g",
+    "youtubeId": "mtpmdynwb6g",
+    "title": "[FOCUS ON FACE] CORTIS JAMES(제임스) 'FaSHioN' | MOVE TO PERFORMANCE (4K)",
+    "date": "2026-02-05",
+    "category": "stage",
+    "subtype": "Live Session／媒體演出",
+    "album": "COLOR OUTSIDE THE LINES",
+    "song": "FaSHioN",
+    "members": ["JAMES 趙雨凡"]
   }
 ]
