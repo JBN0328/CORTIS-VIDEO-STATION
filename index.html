@@ -7,16 +7,13 @@
 
   <title>CORTIS VIDEO STATION</title>
 
-  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Font Awesome -->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
   >
 
-  <!-- Inter Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -28,7 +25,6 @@
   <script>
     tailwind.config = {
       darkMode: 'class',
-
       theme: {
         extend: {
           fontFamily: {
@@ -47,7 +43,6 @@
   </script>
 
   <style>
-
     ::-webkit-scrollbar {
       width: 6px;
       height: 6px;
@@ -74,9 +69,6 @@
       backdrop-filter: blur(8px);
     }
 
-    /*
-     * 手機版月份橫向滑動
-     */
     .month-scroll {
       overflow-x: auto;
       scrollbar-width: none;
@@ -87,20 +79,14 @@
       display: none;
     }
 
-    /*
-     * 回到頂端按鈕動畫
-     */
     #backToTopBtn {
       transition:
         opacity 0.2s ease,
         transform 0.2s ease,
         visibility 0.2s ease;
     }
-
   </style>
-
 </head>
-
 
 <body
   class="
@@ -115,11 +101,6 @@
   "
 >
 
-
-<!-- =========================================================
-     HEADER
-========================================================= -->
-
 <header
   class="
     sticky
@@ -133,12 +114,9 @@
     dark:border-slate-800
   "
 >
-
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
     <div class="flex items-center justify-between h-16 gap-4">
-
-      <!-- Logo -->
 
       <div class="flex items-center gap-3 shrink-0">
 
@@ -164,7 +142,6 @@
         </div>
 
         <div>
-
           <h1
             class="
               font-bold
@@ -188,13 +165,9 @@
           >
             Video Archive 影音資料庫
           </span>
-
         </div>
 
       </div>
-
-
-      <!-- Desktop Search -->
 
       <div class="hidden md:flex items-center flex-1 max-w-md mx-4">
 
@@ -253,11 +226,7 @@
           </button>
 
         </div>
-
       </div>
-
-
-      <!-- Right -->
 
       <div class="flex items-center gap-2">
 
@@ -281,15 +250,10 @@
             dark:border-indigo-900/50
           "
         >
-
           <i class="fa-solid fa-film text-[10px]"></i>
-
           <span id="totalCount">0</span>
-
           筆影音
-
         </span>
-
 
         <button
           id="themeToggleBtn"
@@ -304,19 +268,12 @@
           "
           title="切換主題模式"
         >
-
           <i class="fa-solid fa-moon dark:hidden"></i>
-
           <i class="fa-solid fa-sun hidden dark:inline"></i>
-
         </button>
 
       </div>
-
     </div>
-
-
-    <!-- Mobile Search -->
 
     <div class="md:hidden pb-3">
 
@@ -357,18 +314,11 @@
         >
 
       </div>
-
     </div>
 
   </div>
-
 </header>
 
-
-
-<!-- =========================================================
-     MAIN CATEGORY
-========================================================= -->
 
 <section
   class="
@@ -379,7 +329,6 @@
     dark:border-slate-800
   "
 >
-
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5">
 
     <nav
@@ -415,7 +364,6 @@
           whitespace-nowrap
         "
       >
-
         <span
           class="
             w-3
@@ -430,11 +378,8 @@
         >
           <i class="fa-solid fa-border-all"></i>
         </span>
-
         全部影片
-
       </button>
-
 
       <button
         data-cat="official"
@@ -459,13 +404,9 @@
           whitespace-nowrap
         "
       >
-
         <span class="w-3 h-3 rounded-full bg-rose-500"></span>
-
         官方
-
       </button>
-
 
       <button
         data-cat="stage"
@@ -490,13 +431,9 @@
           whitespace-nowrap
         "
       >
-
         <span class="w-3 h-3 rounded-full bg-blue-500"></span>
-
         舞台
-
       </button>
-
 
       <button
         data-cat="variety"
@@ -521,13 +458,9 @@
           whitespace-nowrap
         "
       >
-
         <span class="w-3 h-3 rounded-full bg-emerald-500"></span>
-
         節目
-
       </button>
-
 
       <button
         data-cat="other"
@@ -552,24 +485,14 @@
           whitespace-nowrap
         "
       >
-
         <span class="w-3 h-3 rounded-full bg-violet-500"></span>
-
         其他
-
       </button>
 
     </nav>
-
   </div>
-
 </section>
 
-
-
-<!-- =========================================================
-     FILTER TOOLBAR
-========================================================= -->
 
 <section
   class="
@@ -585,7 +508,6 @@
     py-2.5
   "
 >
-
   <div
     class="
       max-w-7xl
@@ -601,8 +523,6 @@
     "
   >
 
-    <!-- Left Filters -->
-
     <div
       id="subFiltersContainer"
       class="
@@ -612,8 +532,6 @@
         flex-wrap
       "
     >
-
-      <!-- Stage Subtype -->
 
       <div
         id="subtypeFilterWrapper"
@@ -630,13 +548,9 @@
             whitespace-nowrap
           "
         >
-
           <i class="fa-solid fa-layer-group mr-1"></i>
-
           分類:
-
         </label>
-
 
         <select
           id="subtypeSelect"
@@ -654,17 +568,11 @@
             cursor-pointer
           "
         >
-
-          <option value="all">
-            全部分類
-          </option>
-
+          <option value="all">全部分類</option>
         </select>
 
       </div>
 
-
-      <!-- Album -->
 
       <div
         id="albumFilterWrapper"
@@ -681,13 +589,9 @@
             whitespace-nowrap
           "
         >
-
           <i class="fa-solid fa-compact-disc mr-1"></i>
-
           專輯:
-
         </label>
-
 
         <select
           id="albumSelect"
@@ -706,17 +610,11 @@
             max-w-[220px]
           "
         >
-
-          <option value="all">
-            全部專輯
-          </option>
-
+          <option value="all">全部專輯</option>
         </select>
 
       </div>
 
-
-      <!-- Song -->
 
       <div
         id="songFilterWrapper"
@@ -733,13 +631,9 @@
             whitespace-nowrap
           "
         >
-
           <i class="fa-solid fa-music mr-1"></i>
-
           歌曲:
-
         </label>
-
 
         <select
           id="songSelect"
@@ -758,19 +652,13 @@
             max-w-[220px]
           "
         >
-
-          <option value="all">
-            全部歌曲
-          </option>
-
+          <option value="all">全部歌曲</option>
         </select>
 
       </div>
 
     </div>
 
-
-    <!-- Right Filters -->
 
     <div
       class="
@@ -781,8 +669,6 @@
         flex-wrap
       "
     >
-
-      <!-- Member -->
 
       <div class="flex items-center gap-1.5">
 
@@ -796,13 +682,9 @@
             whitespace-nowrap
           "
         >
-
           <i class="fa-solid fa-user-group mr-1"></i>
-
           成員篩選:
-
         </label>
-
 
         <select
           id="memberSelect"
@@ -820,41 +702,17 @@
             cursor-pointer
           "
         >
-
-          <option value="all">
-            全部 (ALL)
-          </option>
-
-          <option value="GROUP">
-            團體 (GROUP)
-          </option>
-
-          <option value="JAMES 趙雨凡">
-            JAMES 趙雨凡
-          </option>
-
-          <option value="JUHOON 金主訓">
-            JUHOON 金主訓
-          </option>
-
-          <option value="MARTIN 朴宇宙">
-            MARTIN 朴宇宙
-          </option>
-
-          <option value="SEONGHYEON 嚴成玹">
-            SEONGHYEON 嚴成玹
-          </option>
-
-          <option value="KEONHO 安乾鎬">
-            KEONHO 安乾鎬
-          </option>
-
+          <option value="all">全部 (ALL)</option>
+          <option value="GROUP">團體 (GROUP)</option>
+          <option value="JAMES 趙雨凡">JAMES 趙雨凡</option>
+          <option value="JUHOON 金主訓">JUHOON 金主訓</option>
+          <option value="MARTIN 朴宇宙">MARTIN 朴宇宙</option>
+          <option value="SEONGHYEON 嚴成玹">SEONGHYEON 嚴成玹</option>
+          <option value="KEONHO 安乾鎬">KEONHO 安乾鎬</option>
         </select>
 
       </div>
 
-
-      <!-- Sort -->
 
       <div class="flex items-center gap-1.5">
 
@@ -868,13 +726,9 @@
             whitespace-nowrap
           "
         >
-
           <i class="fa-solid fa-sort mr-1"></i>
-
           排序:
-
         </label>
-
 
         <select
           id="sortSelect"
@@ -892,15 +746,8 @@
             cursor-pointer
           "
         >
-
-          <option value="desc">
-            由新到舊
-          </option>
-
-          <option value="asc">
-            由舊到新
-          </option>
-
+          <option value="desc">由新到舊</option>
+          <option value="asc">由舊到新</option>
         </select>
 
       </div>
@@ -908,14 +755,8 @@
     </div>
 
   </div>
-
 </section>
 
-
-
-<!-- =========================================================
-     MAIN
-========================================================= -->
 
 <main
   class="
@@ -938,11 +779,6 @@
       relative
     "
   >
-
-
-    <!-- =====================================================
-         TIMELINE SIDEBAR
-    ====================================================== -->
 
     <aside
       class="
@@ -980,13 +816,9 @@
             px-2
           "
         >
-
           <i class="fa-regular fa-calendar-check mr-1.5"></i>
-
           時間軸導覽
-
         </h3>
-
 
         <nav
           id="sidebarTimelineNav"
@@ -998,11 +830,6 @@
     </aside>
 
 
-
-    <!-- =====================================================
-         VIDEO CONTENT
-    ====================================================== -->
-
     <section
       class="
         flex-1
@@ -1010,8 +837,6 @@
         min-w-0
       "
     >
-
-      <!-- Filter Status -->
 
       <div
         id="filterStatus"
@@ -1032,15 +857,10 @@
           justify-between
         "
       >
-
         <span>
-
           <i class="fa-solid fa-filter mr-1.5"></i>
-
           已套用篩選條件
-
         </span>
-
 
         <button
           id="resetFilterBtn"
@@ -1053,19 +873,14 @@
         >
           重設所有篩選
         </button>
-
       </div>
 
-
-      <!-- Timeline -->
 
       <div
         id="timelineContainer"
         class="space-y-10"
       ></div>
 
-
-      <!-- Empty -->
 
       <div
         id="emptyState"
@@ -1099,11 +914,8 @@
             text-2xl
           "
         >
-
           <i class="fa-solid fa-ghost"></i>
-
         </div>
-
 
         <h3
           class="
@@ -1116,11 +928,9 @@
           找不到符合條件的影音紀錄
         </h3>
 
-
         <p class="text-sm text-slate-400 mt-1 max-w-sm mx-auto">
           請嘗試變更搜尋條件或重設成員篩選。
         </p>
-
 
         <button
           id="emptyResetBtn"
@@ -1149,11 +959,6 @@
 </main>
 
 
-
-<!-- =========================================================
-     BACK TO TOP
-========================================================= -->
-
 <button
   id="backToTopBtn"
   class="
@@ -1179,16 +984,9 @@
   title="回到最上面"
   aria-label="回到最上面"
 >
-
   <i class="fa-solid fa-arrow-up"></i>
-
 </button>
 
-
-
-<!-- =========================================================
-     VIDEO MODAL
-========================================================= -->
 
 <div
   id="videoModal"
@@ -1229,8 +1027,6 @@
     "
   >
 
-    <!-- Modal Header -->
-
     <div
       class="
         flex
@@ -1270,7 +1066,6 @@
           影片
         </span>
 
-
         <h3
           id="modalVideoTitle"
           class="
@@ -1285,7 +1080,6 @@
         </h3>
 
       </div>
-
 
       <button
         id="closeModalBtn"
@@ -1304,15 +1098,11 @@
           shrink-0
         "
       >
-
         <i class="fa-solid fa-xmark"></i>
-
       </button>
 
     </div>
 
-
-    <!-- Video -->
 
     <div class="relative w-full aspect-video bg-black">
 
@@ -1337,8 +1127,6 @@
 
     </div>
 
-
-    <!-- Info -->
 
     <div
       class="
@@ -1378,13 +1166,11 @@
             <i class="fa-regular fa-calendar mr-1"></i>
           </span>
 
-
           <span id="modalVideoMembers">
             <i class="fa-regular fa-user mr-1"></i>
           </span>
 
         </div>
-
 
         <a
           id="modalExternalLink"
@@ -1400,9 +1186,7 @@
             gap-1
           "
         >
-
           前往 YouTube 觀看
-
           <i
             class="
               fa-solid
@@ -1410,13 +1194,10 @@
               text-[10px]
             "
           ></i>
-
         </a>
 
       </div>
 
-
-      <!-- Description -->
 
       <div
         id="modalDescriptionWrapper"
@@ -1438,7 +1219,6 @@
 
         </h4>
 
-
         <p
           id="modalDescription"
           class="
@@ -1449,8 +1229,6 @@
 
       </div>
 
-
-      <!-- Timestamps -->
 
       <div
         id="modalTimestampsWrapper"
@@ -1478,7 +1256,6 @@
 
         </h4>
 
-
         <div
           id="modalTimestampsList"
           class="space-y-1.5 pl-1"
@@ -1489,9 +1266,7 @@
     </div>
 
   </div>
-
 </div>
-
 
 
 <script>
@@ -1533,6 +1308,12 @@ const SUBTYPES = {
 };
 
 
+/*
+ * 這裡保留作為「預設 / 舊資料」用。
+ *
+ * 現在真正的 album / song 選項會優先
+ * 從 video.json 自動抓取。
+ */
 const STAGE_ALBUMS = {
 
   "COLOR OUTSIDE THE LINES": [
@@ -1658,7 +1439,6 @@ const backToTopBtn =
   document.getElementById('backToTopBtn');
 
 
-
 /* =========================================================
    MODAL DOM
 ========================================================= */
@@ -1711,13 +1491,13 @@ document.addEventListener(
 
     initTheme();
 
-    fetchVideoData();
-
     setupEventListeners();
 
     updateSubFilterUI();
 
     setupBackToTop();
+
+    fetchVideoData();
 
   }
 );
@@ -1796,6 +1576,203 @@ function initTheme() {
 
 
 /* =========================================================
+   ★★★ 核心：把欄位統一轉成陣列 ★★★
+========================================================= */
+
+/*
+ * 不管 JSON 是：
+ *
+ * album: "其他歌曲"
+ *
+ * 或：
+ *
+ * album: ["COLOR OUTSIDE THE LINES", "其他歌曲"]
+ *
+ * 都會轉成陣列。
+ */
+function toArray(value) {
+
+  if (Array.isArray(value)) {
+
+    return value
+      .filter(
+        item =>
+          item !== null &&
+          item !== undefined
+      )
+      .map(
+        item =>
+          String(item).trim()
+      )
+      .filter(
+        item =>
+          item !== ''
+      );
+
+  }
+
+
+  if (
+    value === null ||
+    value === undefined ||
+    value === ''
+  ) {
+
+    return [];
+
+  }
+
+
+  return [
+    String(value).trim()
+  ].filter(
+    item =>
+      item !== ''
+  );
+
+}
+
+
+
+/* =========================================================
+   ★★★ 取得影片 Album ★★★
+========================================================= */
+
+function getItemAlbums(item) {
+
+  return toArray(
+    item?.album
+  );
+
+}
+
+
+
+/* =========================================================
+   ★★★ 取得影片 Songs ★★★
+ *
+ * 支援：
+ *
+ * song: "Deja Vu"
+ *
+ * song: ["Deja Vu", "FaSHioN"]
+ *
+ * songs: ["Deja Vu", "FaSHioN"]
+ *
+ * 三種格式。
+========================================================= */
+
+function getItemSongs(item) {
+
+  let songs = [];
+
+
+  /*
+   * 優先使用 song
+   */
+  if (
+    item &&
+    item.song !== undefined
+  ) {
+
+    songs.push(
+      ...toArray(
+        item.song
+      )
+    );
+
+  }
+
+
+  /*
+   * 舊版 songs 也支援
+   */
+  if (
+    item &&
+    item.songs !== undefined
+  ) {
+
+    songs.push(
+      ...toArray(
+        item.songs
+      )
+    );
+
+  }
+
+
+  /*
+   * 去除重複歌曲
+   */
+  return [
+    ...new Set(
+      songs
+    )
+  ];
+
+}
+
+
+
+/* =========================================================
+   ★★★ 是否包含指定 Album ★★★
+========================================================= */
+
+function itemHasAlbum(
+  item,
+  album
+) {
+
+  if (
+    album === 'all'
+  ) {
+
+    return true;
+
+  }
+
+
+  return getItemAlbums(
+    item
+  ).some(
+    itemAlbum =>
+      itemAlbum === album
+  );
+
+}
+
+
+
+/* =========================================================
+   ★★★ 是否包含指定歌曲 ★★★
+========================================================= */
+
+function itemHasSong(
+  item,
+  song
+) {
+
+  if (
+    song === 'all'
+  ) {
+
+    return true;
+
+  }
+
+
+  return getItemSongs(
+    item
+  ).some(
+    itemSong =>
+      itemSong === song
+  );
+
+}
+
+
+
+/* =========================================================
    讀取 video.json
 ========================================================= */
 
@@ -1816,51 +1793,79 @@ async function fetchVideoData() {
     }
 
 
-    archiveData =
+    const rawData =
       await response.json();
 
 
+    if (
+      !Array.isArray(rawData)
+    ) {
+
+      throw new Error(
+        'video.json 最外層必須是陣列'
+      );
+
+    }
+
+
     /*
-     * 相容舊版 GROUP 格式
+     * 統一資料格式。
+     *
+     * 注意：
+     * 這裡不會破壞原本資料，
+     * 只會確保 album / song 都能正常處理。
      */
-
     archiveData =
-      archiveData.map(item => {
+      rawData.map(
+        item => {
 
-        const members =
-          Array.isArray(item.members)
-            ? item.members
-            : [];
-
-
-        const isFullGroup =
-
-          GROUP_MEMBERS.length ===
-          members.length &&
-
-          GROUP_MEMBERS.every(
-            member =>
-              members.includes(member)
-          );
+          const members =
+            toArray(
+              item.members
+            );
 
 
-        if (isFullGroup) {
+          const isFullGroup =
+
+            GROUP_MEMBERS.length ===
+            members.length &&
+
+            GROUP_MEMBERS.every(
+              member =>
+                members.includes(
+                  member
+                )
+            );
+
 
           return {
 
             ...item,
 
-            members: ["GROUP"]
+            /*
+             * members 維持原本 GROUP 邏輯
+             */
+            members:
+              isFullGroup
+                ? ["GROUP"]
+                : members,
+
+            /*
+             * album / song 這裡直接保留原始值，
+             * 實際使用時會透過 getItemAlbums /
+             * getItemSongs 統一處理。
+             */
 
           };
 
         }
+      );
 
 
-        return item;
-
-      });
-
+    /*
+     * 讀完 JSON 後建立篩選選項
+     */
+    updateSubFilterUI();
 
     renderTimeline();
 
@@ -1928,7 +1933,9 @@ function isGroupVideo(item) {
 
     GROUP_MEMBERS.every(
       member =>
-        item.members.includes(member)
+        item.members.includes(
+          member
+        )
     )
 
   );
@@ -1976,20 +1983,277 @@ function matchesMemberFilter(item) {
 
 
 /* =========================================================
+   ★★★ 從 video.json 動態取得所有 Album ★★★
+========================================================= */
+
+function getAllAlbums() {
+
+  const albums = [];
+
+
+  /*
+   * 先從 video.json 取得
+   */
+  archiveData.forEach(
+    item => {
+
+      getItemAlbums(
+        item
+      ).forEach(
+        album => {
+
+          if (
+            !albums.includes(
+              album
+            )
+          ) {
+
+            albums.push(
+              album
+            );
+
+          }
+
+        }
+      );
+
+    }
+  );
+
+
+  /*
+   * 如果 JSON 沒有資料，
+   * 再使用舊版 STAGE_ALBUMS。
+   */
+  if (
+    albums.length === 0
+  ) {
+
+    Object.keys(
+      STAGE_ALBUMS
+    ).forEach(
+      album => {
+
+        if (
+          !albums.includes(
+            album
+          )
+        ) {
+
+          albums.push(
+            album
+          );
+
+        }
+
+      }
+    );
+
+  }
+
+
+  return albums;
+
+}
+
+
+
+/* =========================================================
+   ★★★ 從 video.json 動態取得所有歌曲 ★★★
+========================================================= */
+
+function getAllSongs() {
+
+  const songs = [];
+
+
+  /*
+   * 從 JSON 所有影片抓歌曲
+   */
+  archiveData.forEach(
+    item => {
+
+      getItemSongs(
+        item
+      ).forEach(
+        song => {
+
+          if (
+            !songs.includes(
+              song
+            )
+          ) {
+
+            songs.push(
+              song
+            );
+
+          }
+
+        }
+      );
+
+    }
+  );
+
+
+  /*
+   * 舊資料沒有歌曲時，
+   * 使用 STAGE_ALBUMS 補充。
+   */
+  if (
+    songs.length === 0
+  ) {
+
+    Object.values(
+      STAGE_ALBUMS
+    ).forEach(
+      albumSongs => {
+
+        albumSongs.forEach(
+          song => {
+
+            if (
+              !songs.includes(
+                song
+              )
+            ) {
+
+              songs.push(
+                song
+              );
+
+            }
+
+          }
+        );
+
+      }
+    );
+
+  }
+
+
+  return songs;
+
+}
+
+
+
+/* =========================================================
+   ★★★ 根據 Album 取得歌曲 ★★★
+ *
+ * 如果選：
+ *
+ * COLOR OUTSIDE THE LINES
+ *
+ * 就只顯示屬於這個 Album 的歌曲。
+ *
+ * 如果影片：
+ *
+ * album: ["COLOR OUTSIDE THE LINES", "其他歌曲"]
+ *
+ * song: ["Deja Vu", "FaSHioN"]
+ *
+ * 那這部影片的兩個 album 都會成立，
+ * 兩首歌也都會成立。
+========================================================= */
+
+function getSongsForAlbum(
+  album
+) {
+
+  const songs = [];
+
+
+  archiveData.forEach(
+    item => {
+
+      if (
+        album === 'all' ||
+        itemHasAlbum(
+          item,
+          album
+        )
+      ) {
+
+        getItemSongs(
+          item
+        ).forEach(
+          song => {
+
+            if (
+              !songs.includes(
+                song
+              )
+            ) {
+
+              songs.push(
+                song
+              );
+
+            }
+
+          }
+        );
+
+      }
+
+    }
+  );
+
+
+  /*
+   * 如果目前沒有資料，
+   * 從舊版 STAGE_ALBUMS 補充。
+   */
+  if (
+    songs.length === 0 &&
+    album !== 'all' &&
+    STAGE_ALBUMS[album]
+  ) {
+
+    return [
+      ...STAGE_ALBUMS[album]
+    ];
+
+  }
+
+
+  /*
+   * 全部歌曲時，也把預設歌曲補進來
+   */
+  if (
+    songs.length === 0 &&
+    album === 'all'
+  ) {
+
+    return getAllSongs();
+
+  }
+
+
+  return songs;
+
+}
+
+
+
+/* =========================================================
    更新分類 / 專輯 / 歌曲 UI
 ========================================================= */
 
 function updateSubFilterUI() {
 
-  currentSubtype = 'all';
-
-  currentAlbum = 'all';
-
-  currentSong = 'all';
-
-
-  subtypeSelect.value = 'all';
-
+  /*
+   * 注意：
+   *
+   * 切換「官方 / 舞台 / 節目」時，
+   * 分類會重設。
+   *
+   * 但是如果只是重新載入資料，
+   * album/song 會依照目前狀態保留。
+   */
 
   subtypeFilterWrapper.classList.add(
     'hidden'
@@ -2016,6 +2280,10 @@ function updateSubFilterUI() {
   );
 
 
+  /*
+   * 分類
+   */
+
   if (
     currentMainCategory !== 'all'
   ) {
@@ -2030,7 +2298,9 @@ function updateSubFilterUI() {
 
 
     const options =
-      SUBTYPES[currentMainCategory] || [];
+      SUBTYPES[
+        currentMainCategory
+      ] || [];
 
 
     subtypeSelect.innerHTML =
@@ -2040,14 +2310,22 @@ function updateSubFilterUI() {
       options
         .map(
           opt =>
-            `<option value="${opt}">
-              ${opt}
+            `<option value="${escapeHtml(opt)}">
+              ${escapeHtml(opt)}
             </option>`
         )
         .join('');
 
+
+    subtypeSelect.value =
+      currentSubtype;
+
   }
 
+
+  /*
+   * 只有「舞台」顯示 Album / Song
+   */
 
   if (
     currentMainCategory === 'stage'
@@ -2062,13 +2340,20 @@ function updateSubFilterUI() {
     );
 
 
+    /*
+     * ★ 從 JSON 建立 Album
+     */
+    const albums =
+      getAllAlbums();
+
+
     albumSelect.innerHTML =
 
       `<option value="all">
         全部專輯
       </option>` +
 
-      Object.keys(STAGE_ALBUMS)
+      albums
         .map(
           album =>
             `<option value="${escapeHtml(album)}">
@@ -2078,8 +2363,28 @@ function updateSubFilterUI() {
         .join('');
 
 
-    albumSelect.value =
-      'all';
+    /*
+     * 如果目前選擇的 album 還存在，
+     * 就保留。
+     */
+    if (
+      albums.includes(
+        currentAlbum
+      )
+    ) {
+
+      albumSelect.value =
+        currentAlbum;
+
+    } else {
+
+      currentAlbum =
+        'all';
+
+      albumSelect.value =
+        'all';
+
+    }
 
 
     songFilterWrapper.classList.remove(
@@ -2100,44 +2405,15 @@ function updateSubFilterUI() {
 
 
 /* =========================================================
-   更新歌曲選單
+   ★★★ 更新歌曲選單 ★★★
 ========================================================= */
 
 function updateSongOptions() {
 
-  let songs = [];
-
-
-  if (
-    currentAlbum === 'all'
-  ) {
-
-    Object.values(
-      STAGE_ALBUMS
-    ).forEach(
-      albumSongs => {
-
-        songs.push(
-          ...albumSongs
-        );
-
-      }
+  const songs =
+    getSongsForAlbum(
+      currentAlbum
     );
-
-  }
-
-  else {
-
-    songs =
-      STAGE_ALBUMS[
-        currentAlbum
-      ] || [];
-
-  }
-
-
-  songs =
-    [...new Set(songs)];
 
 
   songSelect.innerHTML =
@@ -2156,9 +2432,15 @@ function updateSongOptions() {
       .join('');
 
 
+  /*
+   * 如果目前歌曲不在新 Album 的歌曲裡，
+   * 自動重設為全部歌曲。
+   */
   if (
     currentSong !== 'all' &&
-    !songs.includes(currentSong)
+    !songs.includes(
+      currentSong
+    )
   ) {
 
     currentSong =
@@ -2217,6 +2499,30 @@ function escapeHtml(value) {
 
 
 /* =========================================================
+   ★★★ 搜尋文字：支援 album / song 陣列 ★★★
+========================================================= */
+
+function arrayContainsSearch(
+  value,
+  query
+) {
+
+  return toArray(
+    value
+  ).some(
+    item =>
+      item
+        .toLowerCase()
+        .includes(
+          query
+        )
+  );
+
+}
+
+
+
+/* =========================================================
    取得篩選後資料
 ========================================================= */
 
@@ -2226,6 +2532,10 @@ function getFilteredData() {
     archiveData.filter(
       item => {
 
+
+        /*
+         * 主分類
+         */
 
         if (
 
@@ -2242,19 +2552,24 @@ function getFilteredData() {
         }
 
 
+        /*
+         * 搜尋
+         */
+
         if (
           currentSearchQuery !== ''
         ) {
 
           const q =
-            currentSearchQuery.toLowerCase();
+            currentSearchQuery
+              .toLowerCase();
 
 
           const matchTitle =
 
             item.title &&
 
-            item.title
+            String(item.title)
               .toLowerCase()
               .includes(q);
 
@@ -2263,37 +2578,47 @@ function getFilteredData() {
 
             item.description &&
 
-            item.description
+            String(item.description)
               .toLowerCase()
               .includes(q);
 
 
           const matchTags =
 
-            item.tags &&
+            Array.isArray(item.tags) &&
 
             item.tags.some(
               tag =>
-                tag
+                String(tag)
                   .toLowerCase()
                   .includes(q)
             );
 
 
+          /*
+           * ★ album 支援陣列
+           */
           const matchAlbum =
-
-            item.album &&
-
-            item.album
-              .toLowerCase()
-              .includes(q);
+            arrayContainsSearch(
+              item.album,
+              q
+            );
 
 
+          /*
+           * ★ song 支援：
+           *
+           * song: "Deja Vu"
+           *
+           * song: ["Deja Vu", "FaSHioN"]
+           *
+           * songs: [...]
+           */
           const matchSongs =
 
-            Array.isArray(item.songs) &&
-
-            item.songs.some(
+            getItemSongs(
+              item
+            ).some(
               song =>
                 song
                   .toLowerCase()
@@ -2318,6 +2643,10 @@ function getFilteredData() {
         }
 
 
+        /*
+         * Subtype
+         */
+
         if (
 
           currentSubtype !==
@@ -2333,20 +2662,44 @@ function getFilteredData() {
         }
 
 
+        /*
+         * ★★★ 舞台的 Album / Song 篩選 ★★★
+         */
+
         if (
           currentMainCategory ===
           'stage'
         ) {
 
 
+          /*
+           * Album
+           *
+           * ★ 這裡已經從：
+           *
+           * item.album === currentAlbum
+           *
+           * 改成：
+           *
+           * itemHasAlbum(item, currentAlbum)
+           *
+           *
+           * 所以：
+           *
+           * album:
+           * [
+           *   "COLOR OUTSIDE THE LINES",
+           *   "其他歌曲"
+           * ]
+           *
+           * 兩個都可以篩到。
+           */
           if (
-
-            currentAlbum !==
-            'all' &&
-
-            item.album !==
-            currentAlbum
-
+            currentAlbum !== 'all' &&
+            !itemHasAlbum(
+              item,
+              currentAlbum
+            )
           ) {
 
             return false;
@@ -2354,47 +2707,41 @@ function getFilteredData() {
           }
 
 
+          /*
+           * Song
+           *
+           * ★ 支援 song 陣列。
+           *
+           * 例如：
+           *
+           * song:
+           * [
+           *   "Deja Vu",
+           *   "FaSHioN"
+           * ]
+           *
+           * 選 Deja Vu → 通過
+           *
+           * 選 FaSHioN → 也通過
+           */
           if (
-            currentSong !==
-            'all'
+            currentSong !== 'all' &&
+            !itemHasSong(
+              item,
+              currentSong
+            )
           ) {
 
-            const itemSongs =
-              Array.isArray(item.songs)
-                ? item.songs
-                : [];
-
-
-            if (
-              itemSongs.length === 0 &&
-              item.song
-            ) {
-
-              if (
-                item.song !==
-                currentSong
-              ) {
-
-                return false;
-
-              }
-
-            }
-
-            else if (
-              !itemSongs.includes(
-                currentSong
-              )
-            ) {
-
-              return false;
-
-            }
+            return false;
 
           }
 
         }
 
+
+        /*
+         * Member
+         */
 
         if (
           !matchesMemberFilter(item)
@@ -2410,6 +2757,10 @@ function getFilteredData() {
       }
     );
 
+
+  /*
+   * 排序
+   */
 
   filtered.sort(
     (a, b) => {
@@ -2553,7 +2904,9 @@ function renderTimeline() {
 
 
   renderSidebarNav(
-    Object.keys(groupedData)
+    Object.keys(
+      groupedData
+    )
   );
 
 
@@ -2563,7 +2916,6 @@ function renderTimeline() {
   Object.keys(groupedData)
     .forEach(
       monthKey => {
-
 
         const [
           year,
@@ -2733,7 +3085,7 @@ function renderSidebarNav(
 
     years
       .map(
-        (year, yearIndex) => {
+        year => {
 
           const months =
             yearGroups[year];
@@ -2879,11 +3231,6 @@ function createVideoCardHTML(
   item
 ) {
 
-
-  /*
-   * 成員
-   */
-
   const memberBadges =
 
     (item.members || [])
@@ -2945,10 +3292,6 @@ function createVideoCardHTML(
       .join(' ');
 
 
-  /*
-   * Tags
-   */
-
   const tagBadges =
 
     (item.tags || [])
@@ -2978,10 +3321,6 @@ function createVideoCardHTML(
       )
       .join(' ');
 
-
-  /*
-   * Subtype
-   */
 
   const subtypeTag =
 
@@ -3015,66 +3354,64 @@ function createVideoCardHTML(
 
 
   /*
-   * Album Tag
+   * ★ Album 現在支援陣列
    */
+  const albums =
+    getItemAlbums(
+      item
+    );
+
 
   const albumTag =
 
     item.category === 'stage' &&
-    item.album
+    albums.length > 0
 
-      ? `
+      ? albums
+          .map(
+            album => `
 
-        <span
-          class="
-            px-2
-            py-0.5
-            rounded
-            text-[11px]
-            font-semibold
-            bg-violet-100
-            dark:bg-violet-950
-            text-violet-600
-            dark:text-violet-400
-          "
-        >
+              <span
+                class="
+                  px-2
+                  py-0.5
+                  rounded
+                  text-[11px]
+                  font-semibold
+                  bg-violet-100
+                  dark:bg-violet-950
+                  text-violet-600
+                  dark:text-violet-400
+                "
+              >
 
-          💿
-          ${escapeHtml(
-            item.album
-          )}
+                💿
+                ${escapeHtml(
+                  album
+                )}
 
-        </span>
+              </span>
 
-      `
+            `
+          )
+          .join(' ')
 
       : '';
 
 
   /*
-   * Song Tags
+   * ★ Song 現在支援：
+   *
+   * song: "Deja Vu"
+   *
+   * song: ["Deja Vu", "FaSHioN"]
+   *
+   * songs: [...]
    */
-
-  let songs = [];
-
-
-  if (
-    Array.isArray(item.songs)
-  ) {
-
-    songs =
-      item.songs;
-
-  }
-
-  else if (
-    item.song
-  ) {
-
-    songs =
-      [item.song];
-
-  }
+  const songs =
+    getItemSongs(
+      item
+    );
 
 
   const songTags =
@@ -3101,7 +3438,9 @@ function createVideoCardHTML(
               >
 
                 🎵
-                ${escapeHtml(song)}
+                ${escapeHtml(
+                  song
+                )}
 
               </span>
 
@@ -3111,19 +3450,6 @@ function createVideoCardHTML(
 
       : '';
 
-
-  /*
-   * Thumbnail
-   *
-   * 這裡已移除：
-   *
-   * 1. 黑色遮罩
-   * 2. 中央播放按鈕
-   * 3. hover 時的播放按鈕放大效果
-   * 4. hover 時縮圖放大效果
-   *
-   * 現在只顯示 YouTube 縮圖。
-   */
 
   const thumbnailUrl =
 
@@ -3161,9 +3487,6 @@ function createVideoCardHTML(
       "
     >
 
-
-      <!-- 左側 -->
-
       <div
         class="
           flex
@@ -3177,9 +3500,6 @@ function createVideoCardHTML(
           flex-1
         "
       >
-
-
-        <!-- Thumbnail -->
 
         <div
           class="
@@ -3209,8 +3529,6 @@ function createVideoCardHTML(
         </div>
 
 
-        <!-- Information -->
-
         <div
           class="
             min-w-0
@@ -3218,9 +3536,6 @@ function createVideoCardHTML(
             flex-1
           "
         >
-
-
-          <!-- Date / subtype / album / song -->
 
           <div
             class="
@@ -3264,8 +3579,6 @@ function createVideoCardHTML(
           </div>
 
 
-          <!-- Title -->
-
           <h4
             class="
               font-bold
@@ -3287,8 +3600,6 @@ function createVideoCardHTML(
           </h4>
 
 
-          <!-- Tags / Members -->
-
           <div
             class="
               flex
@@ -3309,8 +3620,6 @@ function createVideoCardHTML(
 
       </div>
 
-
-      <!-- Play Button -->
 
       <div
         class="
@@ -3852,6 +4161,19 @@ function setupEventListeners() {
           );
 
 
+        /*
+         * ★ 切換主分類時重設子篩選
+         */
+        currentSubtype =
+          'all';
+
+        currentAlbum =
+          'all';
+
+        currentSong =
+          'all';
+
+
         updateSubFilterUI();
 
         renderTimeline();
@@ -3982,6 +4304,13 @@ function setupEventListeners() {
 
       currentAlbum =
         e.target.value;
+
+
+      /*
+       * ★ Album 改變後重新建立 Song 選單
+       */
+      currentSong =
+        'all';
 
 
       updateSongOptions();
