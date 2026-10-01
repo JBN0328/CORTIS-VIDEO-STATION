@@ -4506,5 +4506,82 @@
     "album": "GREENGREEN",
     "song": "YOUNGCREATORCREW",
     "members": ["SEONGHYEON 嚴成玹"]
+  },
+  {
+    "id": "4Hyx7TZ2cXg",
+    "youtubeId": "4Hyx7TZ2cXg",
+    "title": "[가요대제전] CORTIS SEONGHYEON (코르티스 성현) – Deja Vu+FaSHioN FanCam | 2025 GayoDaejejeon | MBC251231",
+    "date": "2025-12-31",
+    "category": "stage",
+    "subtype": "音樂節/歌謠大戰",
+    "album": ["COLOR OUTSIDE THE LINES", "其他歌曲"],
+    "song": ["FaSHioN", "Deja Vu"],
+    "members": ["SEONGHYEON 嚴成玹"]
+  },
+  {
+    "id": "53lSqyK8qe8",
+    "youtubeId": "53lSqyK8qe8",
+    "title": "[2025 가요대전 4K] 루돌프즈 코르티스 성현 'Jingle Bell Rock' (CORTIS SEONGHYEON FanCam) @SBS GayoDaejeon 251225",
+    "date": "2025-12-25",
+    "category": "stage",
+    "subtype": "音樂節/歌謠大戰",
+    "album": ["其他歌曲"],
+    "song": ["Jingle Bell Rock"],
+    "members": ["SEONGHYEON 嚴成玹"]
+  },
+  {
+    "id": "rQqk4OqDlvk",
+    "youtubeId": "rQqk4OqDlvk",
+    "title": "[가요대제전] CORTIS SEONGHYEON (코르티스 성현) – Fly (원곡:에픽하이) FanCam | 2025 GayoDaejejeon | MBC251231",
+    "date": "2025-12-31",
+    "category": "stage",
+    "subtype": "音樂節/歌謠大戰",
+    "album": ["其他歌曲"],
+    "song": ["Fly"],
+    "members": ["SEONGHYEON 嚴成玹"]
+  },
+  {
+    "id": "Wt9fbegURgc",
+    "youtubeId": "Wt9fbegURgc",
+    "title": "[UNFILTERED CAM] CORTIS SEONGHYEON(성현) 'What You Want' 4K | STUDIO CHOOM ORIGINAL",
+    "date": "2025-08-22",
+    "category": "stage",
+    "subtype": "Live Session／媒體演出",
+    "album": "COLOR OUTSIDE THE LINES",
+    "song": "What You Want",
+    "members": ["SEONGHYEON 嚴成玹"]
+  },
+  {
+    "id": "MaP3KOq-VmY",
+    "youtubeId": "MaP3KOq-VmY",
+    "title": "[보이스캠] 성현 (CORTIS)｜Voice Focused FanCam｜SEONGHYEON of CORTIS 🎵What You Want｜VoiceCam360˚",
+    "date": "2025-08-27",
+    "category": "stage",
+    "subtype": "Live Session／媒體演出",
+    "album": "COLOR OUTSIDE THE LINES",
+    "song": "What You Want",
+    "members": ["SEONGHYEON 嚴成玹"]
+  },
+  {
+    "id": "M7MXunmcldk",
+    "youtubeId": "M7MXunmcldk",
+    "title": "[FOCUS ON FACE] CORTIS SEONG HYEON(성현) 'FaSHioN' | MOVE TO PERFORMANCE (4K)",
+    "date": "2025-09-12",
+    "category": "stage",
+    "subtype": "Live Session／媒體演出",
+    "album": "COLOR OUTSIDE THE LINES",
+    "song": "FaSHioN",
+    "members": ["SEONGHYEON 嚴成玹"]
+  },
+  {
+    "id": "Kg5_jewv0vM",
+    "youtubeId": "Kg5_jewv0vM",
+    "title": "[UNFILTERED CAM] CORTIS SEONGHYEON(성현) 'REDRED' 4K | STUDIO CHOOM ORIGINAL",
+    "date": "2026-04-24",
+    "category": "stage",
+    "subtype": "Live Session／媒體演出",
+    "album": "GREENGREEN",
+    "song": "REDRED",
+    "members": ["SEONGHYEON 嚴成玹"]
   }
 ]
