@@ -3791,5 +3791,60 @@
     "album": "GREENGREEN",
     "song": "YOUNGCREATORCREW",
     "members": ["MARTIN 朴宇宙"]
+  },
+  {
+    "id": "HbKxur1iI5M",
+    "youtubeId": "HbKxur1iI5M",
+    "title": "[2025 가요대전 4K] 코르티스 마틴 'GO!' (CORTIS MARTIN FanCam) @SBS GayoDaejeon 251225",
+    "date": "2025-12-25",
+    "category": "stage",
+    "subtype": "音樂節/歌謠大戰",
+    "album": "COLOR OUTSIDE THE LINES",
+    "song": "GO!",
+    "members": ["MARTIN 朴宇宙"]
+  },
+  {
+    "id": "a4TB2wi7sP4",
+    "youtubeId": "a4TB2wi7sP4",
+    "title": "[가요대제전] CORTIS MARTIN (코르티스 마틴) – Deja Vu+FaSHioN FanCam | 2025 GayoDaejejeon | MBC251231",
+    "date": "2025-12-31",
+    "category": "stage",
+    "subtype": "音樂節/歌謠大戰",
+    "album": ["COLOR OUTSIDE THE LINES", "其他歌曲"],
+    "song": ["FaSHioN", "Deja Vu"],
+    "members": ["MARTIN 朴宇宙"]
+  },
+  {
+    "id": "rKO5arqu4j0",
+    "youtubeId": "rKO5arqu4j0",
+    "title": "[UNFILTERED CAM] CORTIS MARTIN(마틴) 'What You Want' 4K | STUDIO CHOOM ORIGINAL",
+    "date": "2025-08-22",
+    "category": "stage",
+    "subtype": "Live Session／媒體演出",
+    "album": "COLOR OUTSIDE THE LINES",
+    "song": "What You Want",
+    "members": ["MARTIN 朴宇宙"]
+  },
+  {
+    "id": "2azvJj4u5D4",
+    "youtubeId": "2azvJj4u5D4",
+    "title": "[보이스캠] 마틴 (CORTIS)｜Voice Focused FanCam｜MARTIN of CORTIS 🎵What You Want｜VoiceCam360˚",
+    "date": "2025-08-27",
+    "category": "stage",
+    "subtype": "Live Session／媒體演出",
+    "album": "COLOR OUTSIDE THE LINES",
+    "song": "What You Want",
+    "members": ["MARTIN 朴宇宙"]
+  },
+  {
+    "id": "B6B58GAaLw8",
+    "youtubeId": "B6B58GAaLw8",
+    "title": "[FOCUS ON FACE] CORTIS MARTIN(마틴) 'FaSHioN' | MOVE TO PERFORMANCE (4K)",
+    "date": "2025-09-12",
+    "category": "stage",
+    "subtype": "Live Session／媒體演出",
+    "album": "COLOR OUTSIDE THE LINES",
+    "song": "FaSHioN",
+    "members": ["MARTIN 朴宇宙"]
   }
 ]
