@@ -6112,5 +6112,104 @@
     "album": "GREENGREEN",
     "song": "YOUNGCREATORCREW",
     "members": ["GROUP"]
+  },
+  {
+    "id": "3XSULsLznZo",
+    "youtubeId": "3XSULsLznZo",
+    "title": "[FULL] 빅히트 막내 등장✨ 입덕을 부르는 열정과 패기 가득한 CORTIS(코르티스) 보는 라디오 | 두시탈출 컬투쇼 | 250914",
+    "date": "2025-09-14",
+    "category": "stage",
+    "subtype": "電台",
+    "album": "COLOR OUTSIDE THE LINES",
+    "song": ["What You Want", "JoyRide"],
+    "members": ["GROUP"]
+  },
+  {
+    "id": "mmAlq8waCj0",
+    "youtubeId": "mmAlq8waCj0",
+    "title": "[집방캠][4K] CORTIS(코르티스) - ‘What You Want’ LIVE | 두시탈출 컬투쇼 | 250914",
+    "date": "2025-09-14",
+    "category": "stage",
+    "subtype": "電台",
+    "album": "COLOR OUTSIDE THE LINES",
+    "song": "What You Want",
+    "members": ["GROUP"]
+  },
+  {
+    "id": "i5bzgZddMjM",
+    "youtubeId": "i5bzgZddMjM",
+    "title": "[집방캠][4K] CORTIS(코르티스) - ‘JoyRide’ LIVE | 두시탈출 컬투쇼 | 250914",
+    "date": "2025-09-14",
+    "category": "stage",
+    "subtype": "電台",
+    "album": "COLOR OUTSIDE THE LINES",
+    "song": "JoyRide",
+    "members": ["GROUP"]
+  },
+  {
+    "id": "ubyV9V7dxJE",
+    "youtubeId": "ubyV9V7dxJE",
+    "title": "[ALLIVE] CORTIS(코르티스) - FaSHioN + JoyRide | 올라이브 | 친한친구 이현입니다｜MBC 250909 방송",
+    "date": "2025-09-09",
+    "category": "stage",
+    "subtype": "電台",
+    "album": "COLOR OUTSIDE THE LINES",
+    "song": ["FaSHioN" , "JoyRide"],
+    "members": ["GROUP"]
+  },
+  {
+    "id": "cemNeCOt_wM",
+    "youtubeId": "cemNeCOt_wM",
+    "title": "[4K직캠] CORTIS - JoyRide",
+    "date": "2025-09-09",
+    "category": "stage",
+    "subtype": "電台",
+    "album": "COLOR OUTSIDE THE LINES",
+    "song": "JoyRide",
+    "members": ["GROUP"]
+  },
+  {
+    "id": "JD9J303Kxs0",
+    "youtubeId": "JD9J303Kxs0",
+    "title": "[4K직캠] CORTIS - FaSHioN",
+    "date": "2025-09-09",
+    "category": "stage",
+    "subtype": "電台",
+    "album": "COLOR OUTSIDE THE LINES",
+    "song": "FaSHioN",
+    "members": ["GROUP"]
+  },
+  {
+    "id": "TSNozfB4_jA",
+    "youtubeId": "TSNozfB4_jA",
+    "title": "(ENG) [FULL] 돈, 멋, 명예 Love 그리고 ✨CORTIS✨ 따끈한 신인 그룹 친친에 새벽 배송 완료📦😎 | 친한친구 이현입니다 | MBC 250909 방송",
+    "date": "2025-09-09",
+    "category": "stage",
+    "subtype": "電台",
+    "album": "COLOR OUTSIDE THE LINES",
+    "song": ["FaSHioN" , "JoyRide"],
+    "members": ["GROUP"]
+  },
+  {
+    "id": "LzX-kZFOX8A",
+    "youtubeId": "LzX-kZFOX8A",
+    "title": "쿨룩 Live ▷ 코르티스 'What You Want' 라이브 / [박명수의 라디오쇼]｜KBS 250825 방송",
+    "date": "2025-08-25",
+    "category": "stage",
+    "subtype": "電台",
+    "album": "COLOR OUTSIDE THE LINES",
+    "song": "What You Want",
+    "members": ["GROUP"]
+  },
+  {
+    "id": "R2OQ5Atbku0",
+    "youtubeId": "R2OQ5Atbku0",
+    "title": "박명수의 휘낭시에 with 코르티스 full ver. / [박명수의 라디오쇼] | KBS 250825 방송",
+    "date": "2025-08-25",
+    "category": "stage",
+    "subtype": "電台",
+    "album": "COLOR OUTSIDE THE LINES",
+    "song": "What You Want",
+    "members": ["GROUP"]
   }
 ]
