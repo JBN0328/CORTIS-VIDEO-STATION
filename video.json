@@ -6241,7 +6241,7 @@
     "date": "2026-09-01",
     "category": "stage",
     "subtype": "音樂節/歌謠大戰",
-    "album": ["COLOR OUTSIDE THE LINES", "GREENGREEN"],
+    "album": ["COLOR OUTSIDE THE LINES", "GREENGREEN","其他歌曲"],
     "song": ["GO!", "What You Want", "FaSHioN", "JoyRide", "REDRED", "TNT", "ACAI", "YOUNGCREATORCREW", 
       "Wassup", "MOTION"],
     "members": ["GROUP"]
@@ -6297,7 +6297,7 @@
     "date": "2025-12-31",
     "category": "stage",
     "subtype": "音樂節/歌謠大戰",
-    "album": ["其他歌曲", "COLOR OUTSIDE THE LINES"],
+    "album": ["COLOR OUTSIDE THE LINES", "其他歌曲"],
     "song": ["Deja Vu","FaSHioN"],
     "members": ["GROUP"]
   },
