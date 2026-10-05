@@ -6313,17 +6313,6 @@
     "members": ["GROUP"]
   },
   {
-    "id": "zo3Sewq9ytM",
-    "youtubeId": "zo3Sewq9ytM",
-    "title": "[제40회 골든디스크] CORTIS (코르티스) - 'What You Want' ♪",
-    "date": "2026-01-11",
-    "category": "stage",
-    "subtype": "音樂節/歌謠大戰",
-    "album": ["COLOR OUTSIDE THE LINES"],
-    "song": "What You Want",
-    "members": ["GROUP"]
-  },
-  {
     "id": "15ywOe-Eohg",
     "youtubeId": "15ywOe-Eohg",
     "title": "CORTIS - REDRED | ARTIST STAGE | KCON JAPAN 2026",
@@ -6442,6 +6431,17 @@
     "subtype": "頒獎典禮",
     "album": ["GREENGREEN"],
     "song": ["TNT", "REDRED"],
+    "members": ["GROUP"]
+  },
+  {
+    "id": "zo3Sewq9ytM",
+    "youtubeId": "zo3Sewq9ytM",
+    "title": "[제40회 골든디스크] CORTIS (코르티스) - 'What You Want' ♪",
+    "date": "2026-01-11",
+    "category": "stage",
+    "subtype": "頒獎典禮",
+    "album": ["COLOR OUTSIDE THE LINES"],
+    "song": "What You Want",
     "members": ["GROUP"]
   }
 ]
