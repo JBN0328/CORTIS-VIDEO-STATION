@@ -6443,5 +6443,126 @@
     "album": ["COLOR OUTSIDE THE LINES"],
     "song": "What You Want",
     "members": ["GROUP"]
+  },
+  {
+    "id": "dxO1vEB6MNo",
+    "youtubeId": "dxO1vEB6MNo",
+    "title": "CORTIS (코르티스) ‘FaSHioN’ + ‘REDRED’ + ‘What You Want’ Live Performance @ KYUNG HEE UNIV.",
+    "date": "2026-06-12",
+    "category": "stage",
+    "subtype": "校唱",
+    "album": ["COLOR OUTSIDE THE LINES", "GREENGREEN"],
+    "song": ["What You Want", "FaSHioN", "REDRED"],
+    "members": ["GROUP"]
+  },
+  {
+    "id": "4E0e4SBmy8Q",
+    "youtubeId": "4E0e4SBmy8Q",
+    "title": "CORTIS (코르티스) ‘YOUNGCREATORCREW’ Live Performance @ KOREA UNIV.",
+    "date": "2026-06-11",
+    "category": "stage",
+    "subtype": "校唱",
+    "album": "GREENGREEN",
+    "song": "YOUNGCREATORCREW",
+    "members": ["GROUP"]
+  },
+  {
+    "id": "k7YEbwKYWdA",
+    "youtubeId": "k7YEbwKYWdA",
+    "title": "CORTIS (코르티스) ‘What You Want’ + ‘GO!’ Live Performance @ DANKOOK UNIV.",
+    "date": "2026-06-11",
+    "category": "stage",
+    "subtype": "校唱",
+    "album": "COLOR OUTSIDE THE LINES",
+    "song": ["What You Want", "GO!"],
+    "members": ["GROUP"]
+  },
+  {
+    "id": "d7a54sD6Qto",
+    "youtubeId": "d7a54sD6Qto",
+    "title": "CORTIS (코르티스) ‘REDRED’ + ‘YOUNGCREATORCREW’ + ‘FaSHioN’ Live Performance @ HONGIK UNIV.",
+    "date": "2026-06-10",
+    "category": "stage",
+    "subtype": "校唱",
+    "album": ["COLOR OUTSIDE THE LINES", "GREENGREEN"],
+    "song": ["FaSHioN", "YOUNGCREATORCREW+FaSHioN", "REDRED"],
+    "members": ["GROUP"]
+  },
+  {
+    "id": "dvRUX64OqEI",
+    "youtubeId": "dvRUX64OqEI",
+    "title": "[4K] 코르티스(CORTIS) - What You Want | 260519 고려대학교 석탑대동제 1일차",
+    "date": "2026-05-19",
+    "category": "stage",
+    "subtype": "校唱",
+    "album": "COLOR OUTSIDE THE LINES",
+    "song": "What You Want",
+    "members": ["GROUP"]
+  },
+  {
+    "id": "Uiu1y6LS3FQ",
+    "youtubeId": "Uiu1y6LS3FQ",
+    "title": "[4K] 코르티스(CORTIS) - REDRED | 260519 고려대학교 석탑대동제 1일차",
+    "date": "2026-05-19",
+    "category": "stage",
+    "subtype": "校唱",
+    "album": "GREENGREEN",
+    "song": "REDRED",
+    "members": ["GROUP"]
+  },
+  {
+    "id": "7BwGzr1_DuU",
+    "youtubeId": "7BwGzr1_DuU",
+    "title": "[4K] 코르티스(CORTIS) - GO! | 260519 고려대학교 석탑대동제 1일차",
+    "date": "2026-05-19",
+    "category": "stage",
+    "subtype": "校唱",
+    "album": "COLOR OUTSIDE THE LINES",
+    "song": "GO!",
+    "members": ["GROUP"]
+  },
+  {
+    "id": "0TF-IP38VVU",
+    "youtubeId": "0TF-IP38VVU",
+    "title": "[4K] 코르티스(CORTIS) - YOUNGCREATORCREW | 260519 고려대학교 석탑대동제 1일차",
+    "date": "2026-05-19",
+    "category": "stage",
+    "subtype": "校唱",
+    "album": "GREENGREEN",
+    "song": "YOUNGCREATORCREW",
+    "members": ["GROUP"]
+  },
+  {
+    "id": "4GmJ5pT-6KE",
+    "youtubeId": "4GmJ5pT-6KE",
+    "title": "[4K] 코르티스(CORTIS) - FaSHioN | 260519 고려대학교 석탑대동제 1일차",
+    "date": "2026-05-19",
+    "category": "stage",
+    "subtype": "校唱",
+    "album": "COLOR OUTSIDE THE LINES",
+    "song": "FaSHioN",
+    "members": ["GROUP"]
+  },
+  {
+    "id": "LZv83SkOJmc",
+    "youtubeId": "LZv83SkOJmc",
+    "title": "260513 코르티스 CORTIS Full ver 'TNT+ACAI+GO!+What You Want+REDRED+영크크+FaSHioN' 8K 직캠 @단국대 축제",
+    "date": "2026-05-13",
+    "category": "stage",
+    "subtype": "校唱",
+    "album": ["COLOR OUTSIDE THE LINES", "GREENGREEN"],
+    "song": ["TNT", "ACAI", "GO!", "What You Want", "REDRED", "YOUNGCREATORCREW", "FaSHioN"],
+    "members": ["GROUP"]
+  },
+  {
+    "id": "FAH7QmiJ4mA",
+    "youtubeId": "FAH7QmiJ4mA",
+    "title": "코르티스(CORTIS) Full ver. (REDRED + TNT + GO! + FaSHioN + What You Want + 영크크 외 3곡) | 경희대 축제 • 260528",
+    "date": "2026-05-28",
+    "category": "stage",
+    "subtype": "校唱",
+    "album": ["COLOR OUTSIDE THE LINES", "GREENGREEN"],
+    "song": ["REDRED", "TNT", "GO!", "FaSHioN", "What You Want", "YOUNGCREATORCREW"],
+    "members": ["GROUP"]
   }
 ]
