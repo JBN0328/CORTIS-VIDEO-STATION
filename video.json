@@ -6377,5 +6377,71 @@
     "album": ["其他歌曲"],
     "song": "MIC Drop",
     "members": ["GROUP"]
+  },
+  {
+    "id": "gPKNIWiLssA",
+    "youtubeId": "gPKNIWiLssA",
+    "title": "[LIVE] 코르티스 CORTIS - Go! + FaShioN | 🏆 TikTok Awards Korea 2025 'Global Rookie'",
+    "date": "2025-10-25",
+    "category": "stage",
+    "subtype": "頒獎典禮",
+    "album": ["COLOR OUTSIDE THE LINES"],
+    "song": ["GO!", "FaSHioN"],
+    "members": ["GROUP"]
+  },
+  {
+    "id": "koED8KSXfeo",
+    "youtubeId": "koED8KSXfeo",
+    "title": "[#2025MAMA] CORTIS - GO! + FaSHioN | Mnet 251129 방송",
+    "date": "2025-11-29",
+    "category": "stage",
+    "subtype": "頒獎典禮",
+    "album": ["COLOR OUTSIDE THE LINES"],
+    "song": ["GO!", "FaSHioN"],
+    "members": ["GROUP"]
+  },
+  {
+    "id": "OPPowVJ7B6c",
+    "youtubeId": "OPPowVJ7B6c",
+    "title": "[#AAA2025] CORTIS(코르티스) -‘GO!+What You Want’ Broadcast Stage | Official Video",
+    "date": "2025-12-10",
+    "category": "stage",
+    "subtype": "頒獎典禮",
+    "album": ["COLOR OUTSIDE THE LINES"],
+    "song": ["GO!", "What You Want"],
+    "members": ["GROUP"]
+  },
+  {
+    "id": "hRGC0fS-MW4",
+    "youtubeId": "hRGC0fS-MW4",
+    "title": "CORTIS Performance 'GO!' at the Nippon TV’s Annual Music Awards 2025 #코르티스 #CORTIS",
+    "date": "2025-12-29",
+    "category": "stage",
+    "subtype": "頒獎典禮",
+    "album": ["COLOR OUTSIDE THE LINES"],
+    "song": "GO!",
+    "members": ["GROUP"]
+  },
+  {
+    "id": "tvhcq29jKoc",
+    "youtubeId": "tvhcq29jKoc",
+    "title": "[#AAA2025] 🎥 코르티스(CORTIS) 'GO!+What You Want' | 4K Stage |",
+    "date": "2025-12-07",
+    "category": "stage",
+    "subtype": "頒獎典禮",
+    "album": ["COLOR OUTSIDE THE LINES"],
+    "song": ["GO!", "What You Want"],
+    "members": ["GROUP"]
+  },
+  {
+    "id": "MXmRg87Bufg",
+    "youtubeId": "MXmRg87Bufg",
+    "title": "|260919|CORTIS(코르티스) FULL[4K]’TNT+REDRED’@2026 THE FACT MUSIC AWARDS (TMA) #cortis #TMA #코르티스",
+    "date": "2026-09-19",
+    "category": "stage",
+    "subtype": "頒獎典禮",
+    "album": ["GREENGREEN"],
+    "song": ["TNT", "REDRED"],
+    "members": ["GROUP"]
   }
 ]
