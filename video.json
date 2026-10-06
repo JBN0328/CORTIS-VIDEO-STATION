@@ -6740,5 +6740,49 @@
     "album": "COLOR OUTSIDE THE LINES",
     "song": "GO!",
     "members": ["GROUP"]
+  },
+  {
+    "id": "HpXgaOucHfk",
+    "youtubeId": "HpXgaOucHfk",
+    "title": "[MOVE TO PERFORMANCE] CORTIS(코르티스) - FaSHioN (4K)",
+    "date": "2025-09-10",
+    "category": "stage",
+    "subtype": "Live Session／媒體演出",
+    "album": "COLOR OUTSIDE THE LINES",
+    "song": "FaSHioN",
+    "members": ["GROUP"]
+  },
+  {
+    "id": "iOVq25ZX73E",
+    "youtubeId": "iOVq25ZX73E",
+    "title": "CORTIS Performs \"FaSHioN\" | iHeartRadio LIVE",
+    "date": "2025-10-28",
+    "category": "stage",
+    "subtype": "Live Session／媒體演出",
+    "album": "COLOR OUTSIDE THE LINES",
+    "song": "FaSHioN",
+    "members": ["GROUP"]
+  },
+  {
+    "id": "827zYcetgX4",
+    "youtubeId": "827zYcetgX4",
+    "title": "CORTIS (FaSHioN) on CDTV LIVE LIVE #CORTIS",
+    "date": "2025-11-04",
+    "category": "stage",
+    "subtype": "Live Session／媒體演出",
+    "album": "COLOR OUTSIDE THE LINES",
+    "song": "FaSHioN",
+    "members": ["GROUP"]
+  },
+  {
+    "id": "QpMYPtCGXK4",
+    "youtubeId": "QpMYPtCGXK4",
+    "title": "CORTIS Performs "JoyRide" | iHeartRadio LIVE",
+    "date": "2025-10-27",
+    "category": "stage",
+    "subtype": "Live Session／媒體演出",
+    "album": "COLOR OUTSIDE THE LINES",
+    "song": "JoyRide",
+    "members": ["GROUP"]
   }
 ]
