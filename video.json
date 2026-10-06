@@ -6453,7 +6453,8 @@
     "subtype": "頒獎典禮",
     "album": ["COLOR OUTSIDE THE LINES"],
     "song": "What You Want",
-    "members": ["GROUP"]
+    "members": ["GROUP"],
+    "tags": ["金唱片"]
   },
   {
     "id": "dxO1vEB6MNo",
@@ -6904,6 +6905,70 @@
     "subtype": "其他演出",
     "album": "COLOR OUTSIDE THE LINES",
     "song": ["GO!", "FaSHioN"],
+    "members": ["GROUP"]
+  },
+  {
+    "id": "jofsfE2ZbVg",
+    "youtubeId": "jofsfE2ZbVg",
+    "title": "코르티스, \"틱톡 어워즈 2025 글로벌 루키상 수상🎊🎉👏\" l CORTIS, \"WON! TikTok Awards 2025 Global Rookie Award🎊🎉👏\" [현장]",
+    "date": "2025-10-25",
+    "category": "other",
+    "subtype": "得獎感言",
+    "members": ["GROUP"]
+  },
+  {
+    "id": "5nVr0E3U-48",
+    "youtubeId": "5nVr0E3U-48",
+    "title": "【2025 MAMA】BEST NEW ARTIST - CORTIS, Hearts2Hearts '수상소감 Acceptance Speech' 4K Fancam 직캠 251128",
+    "date": "2025-11-29",
+    "category": "other",
+    "subtype": "得獎感言",
+    "members": ["GROUP"]
+  },
+  {
+    "id": "vTQ7JzrlhrY",
+    "youtubeId": "vTQ7JzrlhrY",
+    "title": "🏆AAA 베스트 퍼포먼스 코르티스 (AAA Best Performance | CORTIS)🏆",
+    "date": "2025-12-10",
+    "category": "other",
+    "subtype": "得獎感言",
+    "members": ["GROUP"]
+  },
+  {
+    "id": "kiduFepjD0g",
+    "youtubeId": "kiduFepjD0g",
+    "title": "🏆AAA 신인상 코르티스 (AAA Rookie of the Year | CORTIS)🏆",
+    "date": "2025-12-11",
+    "category": "other",
+    "subtype": "得獎感言",
+    "members": ["GROUP"]
+  },
+  {
+    "id": "xXpQAgEg1kE",
+    "youtubeId": "xXpQAgEg1kE",
+    "title": "[#AAA2025] 코르티스 리액션 비디오 CORTIS Reaction Video | 2025 Asia Artist Awards #AAA #CORTIS",
+    "date": "2025-12-31",
+    "category": "other",
+    "subtype": "得獎感言",
+    "members": ["GROUP"]
+  },
+  {
+    "id": "0raCUO66UnA",
+    "youtubeId": "0raCUO66UnA",
+    "title": "[제40회 골든디스크] 신인상 - CORTIS (코르티스)",
+    "date": "2026-01-11",
+    "category": "other",
+    "subtype": "得獎感言",
+    "members": ["GROUP"],
+    "tags": ["金唱片"]
+  },
+  {
+    "id": "3vRhJAG1lO0",
+    "youtubeId": "3vRhJAG1lO0",
+    "title": "Cortis Acceptance Speech - Best New Artist (KPOP) | 2026 iHeartRadio Music Awards",
+    "date": "2026-03-27",
+    "category": "other",
+    "subtype": "得獎感言",
     "members": ["GROUP"]
   }
 ]
