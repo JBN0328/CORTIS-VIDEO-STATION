@@ -6894,5 +6894,16 @@
     "album": "GREENGREEN",
     "song": "Blue Lips",
     "members": ["GROUP"]
+  },
+  {
+    "id": "o2tZspvsn7k",
+    "youtubeId": "o2tZspvsn7k",
+    "title": "CORTIS (코르티스) ‘GO!’, ‘FaSHioN' Live Performance @ 2026 NBA All-Star Celebrity Game Halftime",
+    "date": "2026-03-06",
+    "category": "stage",
+    "subtype": "其他演出",
+    "album": "COLOR OUTSIDE THE LINES",
+    "song": ["GO!", "FaSHioN"],
+    "members": ["GROUP"]
   }
 ]
