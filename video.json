@@ -7105,5 +7105,71 @@
     "subtype": "廣告",
     "members": ["GROUP"],
     "tags": []
+  },
+  {
+    "id": "aa6Dje0r8i8",
+    "youtubeId": "aa6Dje0r8i8",
+    "title": "CORTIS (코르티스) 'What You Want' Live Performance @ RELEASE PARTY",
+    "date": "2025-10-03",
+    "category": "stage",
+    "subtype": "專場",
+    "album": "COLOR OUTSIDE THE LINES",
+    "song": "What You Want",
+    "members": ["GROUP"]
+  },
+  {
+    "id": "iiFBJZF7Dr8",
+    "youtubeId": "iiFBJZF7Dr8",
+    "title": "CORTIS (코르티스) 'GO!' Live Performance @ RELEASE PARTY",
+    "date": "2025-10-03",
+    "category": "stage",
+    "subtype": "專場",
+    "album": "COLOR OUTSIDE THE LINES",
+    "song": "GO!",
+    "members": ["GROUP"]
+  },
+  {
+    "id": "Ys9SRswg7jY",
+    "youtubeId": "Ys9SRswg7jY",
+    "title": "CORTIS (코르티스) 'FaSHioN' Live Performance @ RELEASE PARTY",
+    "date": "2025-10-03",
+    "category": "stage",
+    "subtype": "專場",
+    "album": "COLOR OUTSIDE THE LINES",
+    "song": "FaSHioN",
+    "members": ["GROUP"]
+  },
+  {
+    "id": "C6u6Q1VNjYQ",
+    "youtubeId": "C6u6Q1VNjYQ",
+    "title": "CORTIS (코르티스) 'FaSHioN' Live Performance (Encore) @ RELEASE PARTY",
+    "date": "2025-10-04",
+    "category": "stage",
+    "subtype": "專場",
+    "album": "COLOR OUTSIDE THE LINES",
+    "song": "FaSHioN",
+    "members": ["GROUP"]
+  },
+  {
+    "id": "501FXu_Cdd8",
+    "youtubeId": "501FXu_Cdd8",
+    "title": "CORTIS (코르티스) 'PACK IT UP' Live Performance @ PYPD BIRTHDAY PARTY",
+    "date": "2026-08-25",
+    "category": "stage",
+    "subtype": "專場",
+    "album": "GREENGREEN",
+    "song": "PACK IT UP",
+    "members": ["GROUP"]
+  },
+  {
+    "id": "kI-ntAp2vPI",
+    "youtubeId": "kI-ntAp2vPI",
+    "title": "CORTIS (코르티스) 'MONEYMONEYMONEY' Live Performance @ PYPD BIRTHDAY PARTY",
+    "date": "2026-08-25",
+    "category": "stage",
+    "subtype": "專場",
+    "album": "GREENGREEN",
+    "song": "MONEYMONEYMONEY",
+    "members": ["GROUP"]
   }
 ]
