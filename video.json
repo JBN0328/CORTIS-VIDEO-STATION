@@ -7821,5 +7821,55 @@
     "subtype": "綜藝",
     "members": ["GROUP"],
     "tags": []
+  },
+  {
+    "id": "1neJU-a_0xk",
+    "youtubeId": "1neJU-a_0xk",
+    "title": "[리무진서비스] EP.195 코르티스 마틴 | CORTIS MARTIN | Lullaby, Thinking Out Loud, 그땐 미처 알지 못했지, 난춘",
+    "date": "2025-12-16",
+    "category": "variety",
+    "subtype": "綜藝",
+    "members": ["MARTIN 朴宇宙"],
+    "tags": []
+  },
+  {
+    "id": "TI5mgDL7eF0",
+    "youtubeId": "TI5mgDL7eF0",
+    "title": "마틴 붐은 이미 왔다! 새깅과 영크크를 유행시킨 장본인💥코르티스 마틴 | #라디오스타 #마틴 #코르티스 MBC260805방송",
+    "date": "2026-08-06",
+    "category": "variety",
+    "subtype": "綜藝",
+    "members": ["MARTIN 朴宇宙"],
+    "tags": []
+  },
+  {
+    "id": "Lj-aVRh1Jlg",
+    "youtubeId": "Lj-aVRh1Jlg",
+    "title": "[LIVE] CORTIS 성현 - 잊어버리지마 (Feat. 태연) (원곡: 크러쉬) | 우쥬레코드 코르티스 편",
+    "date": "2025-09-16",
+    "category": "variety",
+    "subtype": "綜藝",
+    "members": ["SEONGHYEON 嚴成玹"],
+    "tags": []
+  },
+  {
+    "id": "7B9XR97PqTw",
+    "youtubeId": "7B9XR97PqTw",
+    "title": "[LIVE] CORTIS 건호 - 내 마음에 비친 내 모습 (원곡: 유재하) | 우쥬레코드 코르티스 편",
+    "date": "2025-09-16",
+    "category": "variety",
+    "subtype": "綜藝",
+    "members": ["KEONHO 安乾鎬"],
+    "tags": []
+  },
+  {
+    "id": "6q-6NwTymiM",
+    "youtubeId": "6q-6NwTymiM",
+    "title": "[리무진서비스] EP.213 코르티스 건호 |CORTIS KEONHO | Blue Lips, Great Pretender, 그대 작은 나의 세상이 되어, 나의 외로움이 널 부를 때",
+    "date": "2026-05-05",
+    "category": "variety",
+    "subtype": "綜藝",
+    "members": ["KEONHO 安乾鎬"],
+    "tags": []
   }
 ]
