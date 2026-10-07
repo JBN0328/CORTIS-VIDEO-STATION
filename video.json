@@ -8050,7 +8050,7 @@
     "category": "other",
     "subtype": "花絮",
     "members": ["JAMES 趙雨凡", "KEONHO 安乾鎬"],
-    "tags": []
+    "tags": ["開球"]
   },
   {
     "id": "kOkL1ky6gb8",
@@ -8080,7 +8080,7 @@
     "category": "other",
     "subtype": "花絮",
     "members": ["SEONGHYEON 嚴成玹"],
-    "tags": []
+    "tags": ["開球"]
   },
   {
     "id": "Rza0rICcz4c",
@@ -8091,5 +8091,29 @@
     "subtype": "花絮",
     "members": ["GROUP"],
     "tags": []
+  },
+  {
+    "id": "r6vn1ZeYC5I",
+    "youtubeId": "r6vn1ZeYC5I",
+    "title": "LA album photo shoot",
+    "date": "2026-10-02",
+    "category": "official",
+    "subtype": "八點檔",
+    "members": ["GROUP"],
+    "tags": [],
+    "description": "CORTIS 在洛杉磯進行「GREENGREEN」專輯拍攝的幕後花絮",
+    "timestamps": []
+  },
+  {
+    "id": "k6UI2mi1cTY",
+    "youtubeId": "k6UI2mi1cTY",
+    "title": "I'm flying, Jack!",
+    "date": "2026-10-04",
+    "category": "official",
+    "subtype": "八點檔",
+    "members": ["GROUP"],
+    "tags": [],
+    "description": "馬丁和安乾鎬兩隻大小狗在錄音室唱歌，唱了《My Heart Will Go On》和《End Of The Road》",
+    "timestamps": []
   }
 ]
