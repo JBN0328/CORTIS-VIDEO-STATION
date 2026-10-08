@@ -79,6 +79,41 @@
       display: none;
     }
 
+    /* =========================================================
+       Desktop：月份列顯示可拖曳的水平捲軸
+       手機版維持原本隱藏捲軸的設計，不做任何改動
+    ========================================================= */
+    @media (min-width: 768px) {
+      .month-scroll {
+        scrollbar-width: thin;
+        scrollbar-color: #cbd5e1 transparent;
+        padding-bottom: 7px;
+      }
+
+      .month-scroll::-webkit-scrollbar {
+        display: block;
+        height: 6px;
+      }
+
+      .month-scroll::-webkit-scrollbar-track {
+        background: transparent;
+        border-radius: 9999px;
+      }
+
+      .month-scroll::-webkit-scrollbar-thumb {
+        background: #cbd5e1;
+        border-radius: 9999px;
+      }
+
+      .dark .month-scroll {
+        scrollbar-color: #475569 transparent;
+      }
+
+      .dark .month-scroll::-webkit-scrollbar-thumb {
+        background: #475569;
+      }
+    }
+
     #backToTopBtn {
       transition:
         opacity 0.2s ease,
@@ -3589,6 +3624,45 @@ function createVideoCardHTML(
             )}
 
           </h4>
+
+
+          ${
+            item.subtype === '八點檔' &&
+            item.description
+              ? `
+                <div
+                  class="
+                    mt-1
+                    text-xs
+                    leading-relaxed
+                    text-slate-500
+                    dark:text-slate-400
+                    bg-slate-50
+                    dark:bg-slate-800/60
+                    border
+                    border-slate-100
+                    dark:border-slate-700/70
+                    rounded-lg
+                    px-3
+                    py-2
+                    line-clamp-3
+                  "
+                >
+                  <span
+                    class="
+                      font-semibold
+                      text-slate-600
+                      dark:text-slate-300
+                      mr-1
+                    "
+                  >
+                    內容：
+                  </span>
+                  ${escapeHtml(item.description)}
+                </div>
+              `
+              : ''
+          }
 
 
           <div
