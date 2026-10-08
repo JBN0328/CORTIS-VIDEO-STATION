@@ -80,23 +80,6 @@
     }
 
     /* =========================================================
-       日夜模式切換動畫
-       只在切換主題的短暫期間啟用，避免平常操作變卡
-    ========================================================= */
-    html.theme-transition,
-    html.theme-transition * {
-      transition-property: background-color, color, border-color, box-shadow, fill, stroke !important;
-      transition-duration: 280ms !important;
-      transition-timing-function: ease !important;
-    }
-
-    html.theme-transition img,
-    html.theme-transition video,
-    html.theme-transition iframe {
-      transition: none !important;
-    }
-
-    /* =========================================================
        Desktop：月份列顯示可拖曳的水平捲軸
        手機版維持原本隱藏捲軸的設計，不做任何改動
     ========================================================= */
@@ -1793,13 +1776,6 @@ function initTheme() {
       const isDark =
         root.classList.contains('dark');
 
-      /*
-       * 只在切換的瞬間加入 theme-transition，
-       * 讓背景、文字、邊框等顏色平滑過渡。
-       * 動畫結束後移除 class，避免平常網頁操作受到影響。
-       */
-      root.classList.add('theme-transition');
-
       if (isDark) {
 
         root.classList.remove('dark');
@@ -1813,15 +1789,6 @@ function initTheme() {
         localStorage.theme = 'dark';
 
       }
-
-      window.setTimeout(
-        () => {
-          root.classList.remove(
-            'theme-transition'
-          );
-        },
-        300
-      );
 
     }
   );
