@@ -582,7 +582,22 @@
    "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
    "tags": ["中秋節", "煮飯", "黃花魚", "韓牛"],
    "description": "CORTIS成員分成兩隊比賽烹飪，並請工作人員品嘗決勝負。",
-   "timestamps": []
+   "timestamps": [{ "time": "02:07", "seconds": 127, "label": "Are you single? No, I am album." },
+      { "time": "03:44", "seconds": 224, "label": "開始挑選禮盒" },
+      { "time": "06:02", "seconds": 362, "label": "超市採買" },
+      { "time": "09:15", "seconds": 555, "label": "拿零食的小朋友安" },
+      { "time": "09:57", "seconds": 597, "label": "中秋工作服" },
+      { "time": "11:19", "seconds": 679, "label": "開始烹飪" },
+      { "time": "12:16", "seconds": 736, "label": "安乾鎬打電話給媽媽" },
+      { "time": "15:32", "seconds": 932, "label": "魚要洗嗎?" },
+      { "time": "16:39", "seconds": 999, "label": "怕魚的主訓" },
+      { "time": "17:27", "seconds": 1047, "label": "馬丁的LA排骨" },
+      { "time": "19:10", "seconds": 1150, "label": "安安的油豆腐壽司工廠" },
+      { "time": "20:08", "seconds": 1208, "label": "雨凡的一條龍服務" },
+      { "time": "20:37", "seconds": 1237, "label": "調味魚湯時間" },
+      { "time": "25:21", "seconds": 1521, "label": "展示各隊料理" },
+      { "time": "26:21", "seconds": 1581, "label": "評審盲測時間" },
+      { "time": "33:27", "seconds": 2007, "label": "最終選擇" }]
  },
   {
     "id": "0S9FK_Zmz50",
