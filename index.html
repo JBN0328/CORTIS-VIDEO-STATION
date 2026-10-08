@@ -1770,23 +1770,27 @@ function initTheme() {
     'click',
     () => {
 
-      const root =
-        document.documentElement;
+      if (
+        document.documentElement.classList.contains(
+          'dark'
+        )
+      ) {
 
-      const isDark =
-        root.classList.contains('dark');
+        document.documentElement.classList.remove(
+          'dark'
+        );
 
-      if (isDark) {
-
-        root.classList.remove('dark');
-
-        localStorage.theme = 'light';
+        localStorage.theme =
+          'light';
 
       } else {
 
-        root.classList.add('dark');
+        document.documentElement.classList.add(
+          'dark'
+        );
 
-        localStorage.theme = 'dark';
+        localStorage.theme =
+          'dark';
 
       }
 
@@ -3623,9 +3627,8 @@ function createVideoCardHTML(
 
 
           ${
-            item.description !== undefined &&
-            item.description !== null &&
-            String(item.description).trim() !== ''
+            item.subtype === '八點檔' &&
+            item.description
               ? `
                 <div
                   class="
