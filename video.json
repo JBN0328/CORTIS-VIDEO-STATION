@@ -8115,5 +8115,54 @@
     "tags": ["唱歌", "My Heart Will Go On", "End Of The Road", "鐵達尼號"],
     "description": "馬丁和安乾鎬兩隻大小狗在錄音室唱歌，唱了《My Heart Will Go On》和《End Of The Road》。",
     "timestamps": []
+  },
+  {
+    "id": "Gt_lekLfVHg",
+    "youtubeId": "Gt_lekLfVHg",
+    "title": "REDRED - CORTIS [2026 뮤직뱅크 인 바르셀로나] | KBS 261007 방송",
+    "date": "2026-10-07",
+    "category": "stage",
+    "subtype": "音樂節/歌謠大戰",
+    "album": "GREENGREEN",
+    "song": "REDRED",
+    "members": ["GROUP"]
+  },
+  {
+    "id": "W786zeTKpMA",
+    "youtubeId": "W786zeTKpMA",
+    "title": "FaSHioN - CORTIS [2026 뮤직뱅크 인 바르셀로나] | KBS 261007 방송",
+    "date": "2026-10-07",
+    "category": "stage",
+    "subtype": "音樂節/歌謠大戰",
+    "album": "GREENGREEN",
+    "song": "FaSHioN",
+    "members": ["GROUP"]
+  },
+  {
+    "id": "mzxW8_KN5y8",
+    "youtubeId": "mzxW8_KN5y8",
+    "title": "ACAI - CORTIS [2026 뮤직뱅크 인 바르셀로나] | KBS 261007 방송",
+    "date": "2026-10-07",
+    "category": "stage",
+    "subtype": "音樂節/歌謠大戰",
+    "album": "GREENGREEN",
+    "song": "ACAI",
+    "members": ["GROUP"]
+  },
+  {
+    "id": "VSgODnbc-UA",
+    "youtubeId": "VSgODnbc-UA",
+    "title": "Dynamite (원곡 : 방탄소년단) - 전출연자 [2026 뮤직뱅크 인 바르셀로나] | KBS 261007 방송",
+    "date": "2026-10-07",
+    "category": "stage",
+    "subtype": "音樂節/歌謠大戰",
+    "album": "其他歌曲",
+    "song": "Dynamite",
+    "members": ["GROUP"],
+    "timestamps": [ { "time": "00:28", "seconds": 28, "label": "CORTIS" },
+    { "time": "01:40", "seconds": 100, "label": "CORTIS" },
+    { "time": "02:39", "seconds": 159, "label": "MARTIN KEONHO" },
+    { "time": "03:23", "seconds": 203, "label": "CORTIS" }]
+ }
   }
 ]
