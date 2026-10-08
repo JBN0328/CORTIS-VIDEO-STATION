@@ -609,7 +609,17 @@
     "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
     "tags": ["幻覺博物館", "古著店", "黑膠唱片"],
     "description": "CORTIS成員們先去古著店挑選喜歡的衣服和唱片，接著去幻覺博物館分組拍照，贏的可以獲得衣服。",
-    "timestamps": []
+    "timestamps": [{ "time": "00:20", "seconds": 20, "label": "挑衣服時間" },
+      { "time": "01:22", "seconds": 82, "label": "安乾鎬已經有的衣服" },
+      { "time": "09:03", "seconds": 543, "label": "海豹安和海豹馬丁" },
+      { "time": "10:43", "seconds": 643, "label": "幻覺博物館" },
+      { "time": "15:40", "seconds": 940, "label": "蝴蝶馬丁" },
+      { "time": "17:14", "seconds": 1034, "label": "非常滿意照片的凡" },
+      { "time": "18:55", "seconds": 1135, "label": "嚴成玹!!!!!靠辣麼近!!!!!" },
+      { "time": "20:39", "seconds": 1239, "label": "幫敵隊拍照的嚴 隊友傻眼" },
+      { "time": "23:49", "seconds": 1429, "label": "挑選貼文配樂" },
+      { "time": "25:34", "seconds": 1534, "label": "勝負揭曉" },
+      { "time": "27:13", "seconds": 643, "label": "CORTIS友情萬歲" }]
   },
   {
     "id": "yPS8y3w_9Ow",
@@ -635,9 +645,16 @@
     "category": "official",
     "subtype": "八點檔",
     "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
-    "tags": [],
-    "description": "",
-    "timestamps": []
+    "tags": ["日本", "VLOG", "路人安乾鎬"],
+    "description": "CORTIS 日本VLOG接力",
+    "timestamps": [{ "time": "00:03", "seconds": 3, "label": "馬丁的VLOG" },
+      { "time": "02:34", "seconds": 154, "label": "雨凡的VLOG" },
+      { "time": "02:49", "seconds": 169, "label": "路人安乾鎬" },
+      { "time": "04:31", "seconds": 271, "label": "主訓的VLOG" },
+      { "time": "05:14", "seconds": 314, "label": "成玹的VLOG" },
+      { "time": "05:42", "seconds": 342, "label": "呀啊啊啊啊" },
+      { "time": "06:16", "seconds": 376, "label": "哭哭安乾鎬" },
+      { "time": "07:24", "seconds": 444, "label": "乾鎬的VLOG" }]
   },
   {
     "id": "YvwjeHSkMws",
