@@ -3627,8 +3627,9 @@ function createVideoCardHTML(
 
 
           ${
-            item.subtype === '八點檔' &&
-            item.description
+            item.description !== undefined &&
+            item.description !== null &&
+            String(item.description).trim() !== ''
               ? `
                 <div
                   class="
