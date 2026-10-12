@@ -8208,15 +8208,31 @@
     { "time": "03:23", "seconds": 203, "label": "CORTIS" }]
   },
   {
-  "id": "_k0mhOl5zOc",
-  "youtubeId": "_k0mhOl5zOc",
-  "title": "CORTIS (코르티스) Full Live Performance @ ROCK IN JAPAN FESTIVAL 2026",
-  "date": "2026-10-10",
-  "category": "stage",
-  "subtype": "音樂節/歌謠大戰",
-  "album": ["COLOR OUTSIDE THE LINES", "GREENGREEN"],
-  "song": ["REDRED",  "TNT",  "ACAI","Wassup", "Blue Lips", "What You Want",
-    "GO!",  "YOUNGCREATORCREW",  "FaSHioN" ],
-  "members": ["GROUP"]
+    "id": "_k0mhOl5zOc",
+    "youtubeId": "_k0mhOl5zOc",
+    "title": "CORTIS (코르티스) Full Live Performance @ ROCK IN JAPAN FESTIVAL 2026",
+    "date": "2026-10-10",
+    "category": "stage",
+    "subtype": "音樂節/歌謠大戰",
+    "album": ["COLOR OUTSIDE THE LINES", "GREENGREEN"],
+    "song": ["REDRED",  "TNT",  "ACAI","Wassup", "Blue Lips", "What You Want",
+      "GO!",  "YOUNGCREATORCREW",  "FaSHioN" ],
+    "members": ["GROUP"]
+  },
+  {
+    "id": "kaYrFZGjY7g",
+    "youtubeId": "kaYrFZGjY7g",
+    "title": "martin pov in busan TMA",
+    "date": "2026-10-08",
+    "category": "official",
+    "subtype": "八點檔",
+    "members": ["GROUP"],
+    "tags": ["TMA", "釜山", "martin pov"],
+    "description": "用MARTIN的視角記錄在釜山參加TMA的花絮。",
+    "timestamps": [{ "time": "01:35", "seconds": 95, "label": "乖乖擺餐具的忙內" },
+    { "time": "02:03", "seconds": 123, "label": "安乾鎬餵手機鏡頭吃肉肉" },
+    { "time": "04:24", "seconds": 264, "label": "暈碳主訓" },
+    { "time": "14:11", "seconds": 851, "label": "學拳擊時間" },
+    { "time": "15:35", "seconds": 935, "label": "🎤Reflection of You in Your Smile" }]
   }
 ]
