@@ -8206,5 +8206,17 @@
     { "time": "01:40", "seconds": 100, "label": "CORTIS" },
     { "time": "02:39", "seconds": 159, "label": "MARTIN KEONHO" },
     { "time": "03:23", "seconds": 203, "label": "CORTIS" }]
- }
+  },
+  {
+  "id": "_k0mhOl5zOc",
+  "youtubeId": "_k0mhOl5zOc",
+  "title": "CORTIS (코르티스) Full Live Performance @ ROCK IN JAPAN FESTIVAL 2026",
+  "date": "2026-10-10",
+  "category": "stage",
+  "subtype": "音樂節/歌謠大戰",
+  "album": ["COLOR OUTSIDE THE LINES", "GREENGREEN"],
+  "song": ["REDRED",  "TNT",  "ACAI","Wassup", "Blue Lips", "What You Want",
+    "GO!",  "YOUNGCREATORCREW",  "FaSHioN" ],
+  "members": ["GROUP"]
+  }
 ]
