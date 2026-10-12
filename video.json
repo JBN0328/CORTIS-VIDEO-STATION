@@ -664,8 +664,8 @@
     "category": "official",
     "subtype": "八點檔",
     "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
-    "tags": [],
-    "description": "",
+    "tags": ["芝加哥", "Lollapalooza", "Juicy J"],
+    "description": " CORTIS 在參加芝加哥 Lollapalooza 音樂節的幕後花絮與演出過程。",
     "timestamps": []
   },
   {
@@ -676,8 +676,8 @@
     "category": "official",
     "subtype": "八點檔",
     "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
-    "tags": [],
-    "description": "",
+    "tags": ["Pororo", "泡泡機"],
+    "description": "CORTIS進行一場「保護Pororo」的比賽，要保護保險箱裡的Pororo。",
     "timestamps": []
   },
   {
@@ -688,9 +688,14 @@
     "category": "official",
     "subtype": "八點檔",
     "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
-    "tags": [],
-    "description": "",
-    "timestamps": []
+    "tags": ["MONEYMONEYMONEY", "ASMR", "Pororo"],
+    "description": "以《MONEYMONEYMONEY》歌詞為主題進行ASMR，讓COER們獲得招財的祝福。",
+    "timestamps": [{ "time": "00:51", "seconds": 51, "label": "安乾鎬的ASMR" },
+      { "time": "02:21", "seconds": 141, "label": "嚴成玹的ASMR" },
+      { "time": "03:33", "seconds": 213, "label": "Pororo!!!!!!!!!!" },
+      { "time": "04:37", "seconds": 277, "label": "金主訓的ASMR" },
+      { "time": "09:17", "seconds": 557, "label": "趙雨凡的ASMR" },
+      { "time": "11:41", "seconds": 701, "label": "朴宇宙的ASMR" }]
   },
   {
     "id": "V8xSTZAvKxg",
@@ -701,7 +706,7 @@
     "subtype": "八點檔",
     "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
     "tags": [],
-    "description": "",
+    "description": "成員們對以前拍的影片做reaction。",
     "timestamps": []
   },
   {
