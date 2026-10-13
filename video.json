@@ -561,7 +561,7 @@
    "category": "official",
    "subtype": "八點檔",
    "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
-   "tags": ["大田", "聖心堂", "麵包", "開球", "牛奶"],
+   "tags": ["大田", "聖心堂", "麵包", "開球", "牛奶", "棒球"],
    "description": "CORTIS成員們寫信列清單給要去大田開球的嚴成玹，最主要是要買聖心堂麵包。",
    "timestamps": [ { "time": "00:40", "seconds": 40, "label": "寫信" },
       { "time": "01:29", "seconds": 89, "label": "喵喵拳" },
@@ -8098,7 +8098,7 @@
     "category": "other",
     "subtype": "花絮",
     "members": ["JAMES 趙雨凡", "KEONHO 安乾鎬"],
-    "tags": ["開球"]
+    "tags": ["開球", "棒球"]
   },
   {
     "id": "kOkL1ky6gb8",
@@ -8128,7 +8128,7 @@
     "category": "other",
     "subtype": "花絮",
     "members": ["SEONGHYEON 嚴成玹"],
-    "tags": ["開球"]
+    "tags": ["開球", "棒球"]
   },
   {
     "id": "Rza0rICcz4c",
