@@ -8304,5 +8304,18 @@
     "members": ["KEONHO 安乾鎬"],
     "tags": ["Torriden"],
     "description": "Torriden 個人廣告，只有最後聲音不一樣。"
-  }
+  },
+  {
+    "id": "hhrvUa1wcvU",
+    "youtubeId": "hhrvUa1wcvU",
+    "title": "martin pov in barcelona",
+    "date": "2026-10-12",
+    "category": "official",
+    "subtype": "八點檔",
+    "members": ["GROUP"],
+    "tags": ["巴塞隆納", "西班牙"],
+    "description": "記錄了CORTIS成員們在巴塞隆納的旅行過程，去餐廳品嘗當地食物、街區閒逛等。",
+    "timestamps": [ { "time": "00:40", "seconds": 40, "label": "寫信" },
+      { "time": "01:29", "seconds": 89, "label": "喵喵拳" }]
+ }
 ]
