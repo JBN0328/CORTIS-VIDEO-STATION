@@ -8313,9 +8313,16 @@
     "category": "official",
     "subtype": "八點檔",
     "members": ["GROUP"],
-    "tags": ["巴塞隆納", "西班牙"],
-    "description": "記錄了CORTIS成員們在巴塞隆納的旅行過程，去餐廳品嘗當地食物、街區閒逛等。",
-    "timestamps": [ { "time": "00:40", "seconds": 40, "label": "寫信" },
-      { "time": "01:29", "seconds": 89, "label": "喵喵拳" }]
+    "tags": ["巴塞隆納", "西班牙", "iberia", "海底撈", "gelato", "Hey Jude"],
+    "description": "記錄了CORTIS成員們在巴塞隆納去餐廳品嘗當地食物、街區閒逛。",
+    "timestamps": [ { "time": "02:55", "seconds": 175, "label": "iberia的秘密" },
+      { "time": "03:25", "seconds": 205, "label": "安凡大臉" },
+      { "time": "03:30", "seconds": 210, "label": "hideout 海底撈" },
+      { "time": "11:16", "seconds": 676, "label": "凡拍reels花絮" },
+      { "time": "12:27", "seconds": 747, "label": "gelato" },
+      { "time": "14:44", "seconds": 884, "label": "西班牙語對話" },
+      { "time": "15:04", "seconds": 904, "label": "在約會的建築" },,
+      { "time": "17:35", "seconds": 1055, "label": "安乾鎬家" },,
+      { "time": "18:27", "seconds": 1107, "label": "照片花絮 Hey Jude" },]
  }
 ]
