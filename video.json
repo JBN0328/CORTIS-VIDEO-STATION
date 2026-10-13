@@ -7052,7 +7052,7 @@
     "category": "other",
     "subtype": "廣告",
     "members": ["GROUP"],
-    "tags": []
+    "tags": ["iPhone 17 Pro"]
   },
   {
     "id": "HtiL1M2zLWA",
@@ -7062,7 +7062,7 @@
     "category": "other",
     "subtype": "廣告",
     "members": ["GROUP"],
-    "tags": []
+    "tags": ["iPhone 17 Pro"]
   },
   {
     "id": "OHhXemZ1fWw",
@@ -7072,7 +7072,7 @@
     "category": "other",
     "subtype": "廣告",
     "members": ["GROUP"],
-    "tags": []
+    "tags": ["Torriden"]
   },
   {
     "id": "Rza3AssS1Tw",
@@ -7082,7 +7082,7 @@
     "category": "other",
     "subtype": "廣告",
     "members": ["GROUP"],
-    "tags": []
+    "tags": ["VANS"]
   },
   {
     "id": "78JGb-vZJWQ",
@@ -7092,7 +7092,7 @@
     "category": "other",
     "subtype": "廣告",
     "members": ["GROUP"],
-    "tags": []
+    "tags": ["足球", "世足"]
   },
   {
     "id": "eQfIGC-JLMA",
@@ -7102,7 +7102,7 @@
     "category": "other",
     "subtype": "廣告",
     "members": ["GROUP"],
-    "tags": ["演唱會直播"]
+    "tags": ["演唱會直播", "Put Your Phone Down"]
   },
   {
     "id": "eroTbXC8NOU",
@@ -7112,7 +7112,7 @@
     "category": "other",
     "subtype": "廣告",
     "members": ["GROUP"],
-    "tags": []
+    "tags": ["KOD"]
   },
   {
     "id": "MEu5NnGzkIw",
@@ -7122,7 +7122,7 @@
     "category": "other",
     "subtype": "廣告",
     "members": ["GROUP"],
-    "tags": []
+    "tags": ["KOD"]
   },
   {
     "id": "vkJdY3LASA8",
@@ -7132,7 +7132,7 @@
     "category": "other",
     "subtype": "廣告",
     "members": ["GROUP"],
-    "tags": []
+    "tags": ["KOD"]
   },
   {
     "id": "MNEl1uN7Kr0",
@@ -7142,7 +7142,7 @@
     "category": "other",
     "subtype": "廣告",
     "members": ["GROUP"],
-    "tags": []
+    "tags": ["KOD"]
   },
   {
     "id": "saoZ6E-QFLg",
@@ -7152,7 +7152,7 @@
     "category": "other",
     "subtype": "廣告",
     "members": ["GROUP"],
-    "tags": []
+    "tags": ["KOD"]
   },
   {
     "id": "aa6Dje0r8i8",
@@ -8239,5 +8239,15 @@
     { "time": "04:24", "seconds": 264, "label": "暈碳主訓" },
     { "time": "14:11", "seconds": 851, "label": "學拳擊時間" },
     { "time": "15:35", "seconds": 935, "label": "🎤Reflection of You in Your Smile" }]
+  },
+  {
+    "id": "DJTmof4DeUM",
+    "youtubeId": "DJTmof4DeUM",
+    "title": "[속보] CORTIS와 함께한 DEEP DIVE NEWS 비하인드 🎥💙",
+    "date": "2026-10-11",
+    "category": "other",
+    "subtype": "花絮",
+    "members": ["GROUP"],
+    "tags": ["Torriden"]
   }
 ]
