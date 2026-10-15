@@ -8590,5 +8590,31 @@
       { "time": "05:41", "seconds": 341, "label": "馬安訓嚴跳然竣前輩的歌" },
       { "time": "20:54", "seconds": 1254, "label": "CORTIS MONEYMONEYMONEY" },
       { "time": "21:07", "seconds": 1267, "label": "嚴安" }]
+  },
+  {
+    "id": "kQj_VeIJy7Y",
+    "youtubeId": "kQj_VeIJy7Y",
+    "title": "CORTIS讚美挑戰唸到要斷氣：James聊超級英雄停不下來、金主訓玩滑板像發抖的無尾熊？嚴成玹適合演古裝劇？｜人物專訪｜Vogue Taiwan",
+    "date": "2026-10-14",
+    "category": "variety",
+    "subtype": "綜藝",
+    "members": ["GROUP"],
+    "tags": []
+  },
+  {
+    "id": "4XXjTUDtvJs",
+    "youtubeId": "4XXjTUDtvJs",
+    "title": "Cooking james BDAY",
+    "date": "2026-10-14",
+    "category": "official",
+    "subtype": "八點檔",
+    "members": ["JAMES 趙雨凡"],
+    "tags": ["生日企劃", "幕後花絮"],
+    "description": "記錄了雨凡為了慶祝生日拍攝短片的拍攝過程。",
+    "timestamps": [{ "time": "00:26", "seconds": 26, "label": "拍攝規劃" },
+      { "time": "12:41", "seconds": 761, "label": "找要拍攝的地方" },
+      { "time": "17:54", "seconds": 1074, "label": "到拍攝現場" },
+      { "time": "18:17", "seconds": 1097, "label": "開始拍攝" },
+      { "time": "27:17", "seconds": 1637, "label": "拍攝最後 和拍攝最後的最後的最後" }]
   }
 ]
