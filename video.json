@@ -8616,5 +8616,65 @@
       { "time": "17:54", "seconds": 1074, "label": "到拍攝現場" },
       { "time": "18:17", "seconds": 1097, "label": "開始拍攝" },
       { "time": "27:17", "seconds": 1637, "label": "拍攝最後 和拍攝最後的最後的最後" }]
+  },
+  {
+    "id": "CHXKOpj5LRA",
+    "youtubeId": "CHXKOpj5LRA",
+    "title": "CORTIS (코르티스) Documentary ‘What We Want' Trailer",
+    "date": "2025-08-29",
+    "category": "official",
+    "subtype": "紀錄片",
+    "members": ["GROUP"],
+    "tags": ["What We Want", "紀錄片", "出道準備", "專輯製作"],
+    "description": "CORTIS紀錄片《What We Want》預告片，記錄五位成員為出道專輯《COLOR OUTSIDE THE LINES》尋找團體獨特音樂風格、創作歌曲與準備出道的過程。",
+    "timestamps": []
+  },
+  {
+    "id": "v1d4Rj1pnMY",
+    "youtubeId": "v1d4Rj1pnMY",
+    "title": "CORTIS (코르티스) Documentary ‘What We Want' EPISODE 01",
+    "date": "2025-09-01",
+    "category": "official",
+    "subtype": "紀錄片",
+    "members": ["GROUP"],
+    "tags": ["What We Want", "EPISODE 01", "紀錄片", "出道準備", "專輯製作"],
+    "description": "CORTIS紀錄片《What We Want》第一集，記錄成員們在出道前的音樂創作、練習與團體活動，呈現打造出道專輯及尋找團體風格的過程。",
+    "timestamps": []
+  },
+  {
+    "id": "o_WOlIxOZDs",
+    "youtubeId": "o_WOlIxOZDs",
+    "title": "CORTIS (코르티스) Documentary ‘What We Want' EPISODE 02",
+    "date": "2025-09-01",
+    "category": "official",
+    "subtype": "紀錄片",
+    "members": ["GROUP"],
+    "tags": ["What We Want", "EPISODE 02", "紀錄片", "舞蹈創作", "編舞", "音樂創作"],
+    "description": "CORTIS紀錄片《What We Want》第二集，聚焦成員們的舞蹈與表演創作，分享編舞靈感、動作設計，以及如何將獨特想法發展成具有團體特色的表演。",
+    "timestamps": []
+  },
+  {
+    "id": "VrFDKz2eo0I",
+    "youtubeId": "VrFDKz2eo0I",
+    "title": "CORTIS (코르티스) Documentary ‘What We Want' EPISODE 03",
+    "date": "2025-09-01",
+    "category": "official",
+    "subtype": "紀錄片",
+    "members": ["GROUP"],
+    "tags": ["What We Want", "EPISODE 03", "紀錄片", "游泳", "成長故事"],
+    "description": "CORTIS紀錄片《What We Want》第三集，透過安建昊分享過去的游泳經歷、成為練習生後的心境變化，以及成員們對彼此個性與特質的觀察，呈現成長與追夢的歷程。",
+    "timestamps": []
+  },
+  {
+    "id": "W3xhrW33qCI",
+    "youtubeId": "W3xhrW33qCI",
+    "title": "CORTIS (코르티스) Documentary ‘What We Want' EPISODE 04",
+    "date": "2025-09-01",
+    "category": "official",
+    "subtype": "紀錄片",
+    "members": ["GROUP"],
+    "tags": ["What We Want", "EPISODE 04", "紀錄片", "編舞課程", "成長故事"],
+    "description": "CORTIS紀錄片《What We Want》第四集，記錄主訓加入團體的過程、成為藝人的選擇，以及成員們參與編舞課程與團體訓練的日常，呈現CORTIS在音樂與表演上的努力。",
+    "timestamps": []
   }
 ]
