@@ -8,6 +8,245 @@
   <title>CORTIS VIDEO STATION</title>
 
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+/* =========================================================
+   網站選單與資訊頁（使用 hash，無需額外建立 HTML 檔案）
+========================================================= */
+function setupSiteMenu() {
+  const toggle = document.getElementById('siteMenuToggle');
+  const panel = document.getElementById('siteMenuPanel');
+  const backdrop = document.getElementById('siteMenuBackdrop');
+  const closeBtn = document.getElementById('siteMenuClose');
+  const page = document.getElementById('siteInfoPage');
+  const pageContent = document.getElementById('siteInfoContent');
+  const backBtn = document.getElementById('sitePageBack');
+
+  const pages = {
+    'how-to-use': `
+      <p class="eyebrow">Help Center</p>
+      <h1>使用說明｜How to Use</h1>
+      <p>歡迎來到 CORTIS VIDEO STATION！本站整理 CORTIS 相關影音，並透過主分類、子分類、成員篩選、日期排序，以及舞台分類中的專輯與歌曲篩選，協助你更快速地找到想看的影片。</p>
+
+      <div class="info-card">
+        <h2 class="!mt-0">一、基本使用方式</h2>
+        <h3 class="font-bold mt-4">1. 搜尋影片</h3>
+        <p>可以使用網站上方的搜尋欄，透過影片標題、標籤或關鍵字尋找內容，也可以搭配各項分類及篩選功能縮小搜尋範圍。</p>
+        <h3 class="font-bold mt-4">2. 觀看影片</h3>
+        <p>點擊影片卡片或播放按鈕，即可在網站上觀看影片；也可以點選「前往 YouTube 觀看」到 YouTube 開啟原始影片。</p>
+        <h3 class="font-bold mt-4">3. 開啟網站選單</h3>
+        <p>點擊畫面右上角的三條線圖示（☰），即可查看使用說明、關於本站、隱私權政策及更新公告，也可以前往意見回饋表單或查看聯絡方式。</p>
+        <h3 class="font-bold mt-4">4. 提供意見</h3>
+        <p>如果發現影片無法播放、網站功能有問題、有任何遺漏的影片，或有其他建議，歡迎透過意見回饋表單告訴我。</p>
+        <p class="mt-2"><a href="https://docs.google.com/forms/d/e/1FAIpQLSeIwiZZdkhSsQOQ7JTlUdYgXcIhR1fEMqE1bmDi9R2qUybh-A/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">前往 Google 意見回饋表單</a></p>
+      </div>
+
+      <h2>二、各類別定義與收錄標準</h2>
+      <p>本站依據影片的主要內容與性質，將影音資料分為「官方」、「舞台」、「節目」及「其他」四大類別，並透過子分類，以及「舞台」中的專輯與歌曲分類，讓使用者能更快速地查找想看的影片。</p>
+
+      <div class="info-card">
+        <h2 class="!mt-0">01｜官方 Official</h2>
+        <p>收錄 CORTIS 官方發布的音樂作品、練習影片及相關官方影音內容。</p>
+        <ul>
+          <li><strong>MV：</strong>官方音樂錄影帶。</li>
+          <li><strong>八點檔：</strong>官方於八點發布的影片。</li>
+          <li><strong>練習室：</strong>官方舞蹈練習室及相關練習影片。</li>
+          <li><strong>紀錄片：</strong>官方發布，以團體歷程、活動紀錄或人物紀錄為主要內容的紀錄性影音。</li>
+        </ul>
+
+        <h2>02｜舞台 Stage</h2>
+        <p>依據演出形式、活動性質、專輯及歌曲進行分類，方便查找不同場合的表演紀錄。</p>
+        <p><strong>演出類型</strong></p>
+        <ul>
+          <li><strong>打歌舞台：</strong>韓國音樂節目中的正式打歌表演。</li>
+          <li><strong>Live Session／媒體演出：</strong>Live Session 及媒體平台上的表演內容。</li>
+          <li><strong>音樂節／歌謠大戰：</strong>音樂節、年末歌謠大戰等相關演出。</li>
+          <li><strong>安可舞台：</strong>打歌活動中得到一位的安可舞台。</li>
+          <li><strong>電台：</strong>韓國電台節目中的現場演唱、表演。</li>
+          <li><strong>專場：</strong>專場演出、RELEASE PARTY。</li>
+          <li><strong>校唱：</strong>校園演出。</li>
+          <li><strong>頒獎典禮：</strong>頒獎典禮中的表演。</li>
+          <li><strong>其他演出：</strong>不屬於上述類型的其他公開演出。</li>
+        </ul>
+
+        <h2>03｜節目 Program</h2>
+        <p>依據影片的主要呈現形式，分為「訪問」與「綜藝」兩類。</p>
+        <ul>
+          <li><strong>訪問：</strong>以主持人提問、藝人回答及人物訪談為主要內容，不以遊戲或企劃活動為核心。</li>
+          <li><strong>綜藝：</strong>包含遊戲、挑戰、任務、特別企劃或其他以互動及娛樂內容為主的節目。</li>
+        </ul>
+        <p>若影片同時包含訪問與遊戲環節，則依據主要內容判定分類。</p>
+
+        <h2>04｜其他 Others</h2>
+        <p>收錄不屬於上述三大類別的相關影音。</p>
+        <ul>
+          <li><strong>花絮：</strong>非 CORTIS 官方發布的幕後紀錄、拍攝花絮及活動側拍。</li>
+          <li><strong>得獎感言：</strong>頒獎典禮獲獎後的感言及相關致詞。</li>
+          <li><strong>雜誌：</strong>雜誌拍攝影片。</li>
+          <li><strong>廣告：</strong>品牌廣告、商業合作及相關宣傳影片。</li>
+        </ul>
+      </div>
+
+      <h2>三、共通功能</h2>
+      <div class="info-card">
+        <p>所有主分類皆提供成員篩選及影片日期排序功能。</p>
+        <h3 class="font-bold mt-4">成員篩選</h3>
+        <ul>
+          <li><strong>全部（ALL）：</strong>顯示所有成員相關影片。</li>
+          <li><strong>團體（GROUP）：</strong>五位成員皆有參與的團體活動。</li>
+          <li><strong>個別成員：</strong>JAMES 趙雨凡、JUHOON 金主訓、MARTIN 朴宇宙、SEONGHYEON 嚴成玹、KEONHO 安乾鎬。</li>
+        </ul>
+        <p>個別成員的篩選包含該成員個人，或與隊友兩人、三人、四人共同參與的內容。</p>
+        <h3 class="font-bold mt-4">影片日期排序</h3>
+        <ul>
+          <li>由新到舊</li>
+          <li>由舊到新</li>
+        </ul>
+        <p>「舞台」分類另提供專輯及歌曲篩選功能。</p>
+      </div>
+
+      <h2>四、舞台分類：專輯與歌曲篩選</h2>
+      <p>舞台分類可依專輯或歌曲查找演出紀錄。專輯及歌曲篩選項目如下：</p>
+      <div class="info-card">
+        <h3 class="font-bold mt-0">COLOR OUTSIDE THE LINES</h3>
+        <ul>
+          <li>GO!</li>
+          <li>What You Want</li>
+          <li>FaSHioN</li>
+          <li>JoyRide</li>
+          <li>Lullaby</li>
+        </ul>
+        <h3 class="font-bold mt-4">GREENGREEN</h3>
+        <p>包含 GREENGREEN_playextended。</p>
+        <h3 class="font-bold mt-4">REDRED</h3>
+        <ul>
+          <li>TNT</li>
+          <li>ACAI</li>
+          <li>YOUNGCREATORCREW</li>
+          <li>Wassup</li>
+          <li>Blue Lips</li>
+          <li>PACK IT UP</li>
+          <li>MONEYMONEYMONEY</li>
+        </ul>
+        <h3 class="font-bold mt-4">其他歌曲</h3>
+        <p>收錄翻唱（Cover）及不屬於上述兩張專輯的歌曲表演。</p>
+        <ul>
+          <li>MIC Drop</li>
+          <li>Deja Vu</li>
+          <li>Jingle Bell Rock</li>
+          <li>Fly</li>
+          <li>Talk to You</li>
+        </ul>
+        <h3 class="font-bold mt-4">MOTION</h3>
+        <ul><li>Dynamite</li></ul>
+      </div>
+
+      <h2>五、收錄範圍說明</h2>
+      <p>本站以官方發布、節目內容及公開演出相關影音為主要收錄範圍，原則上不收錄粉絲拍攝的飯拍（Fancam）。</p>
+      <p class="mt-5 text-sm">本站為非官方粉絲製作的影片整理網站；影片的實際播放、可用性及相關權利依原始發布平台與權利人規定為準。</p>`,
+    'about': `
+      <p class="eyebrow">About This Site</p>
+      <h1>關於本站</h1>
+      <p>歡迎來到 CORTIS VIDEO STATION！</p>
+      <p>這是一個由 COER 製作的非官方粉絲網站，希望讓大家能更方便地尋找、瀏覽自己喜歡的 CORTIS 影片。</p>
+      <h2>這個網站是怎麼誕生的？</h2>
+      <p>一開始只是因為剪片時需要某部影片的片段，明明腦中已經有畫面，卻怎麼也想不起來是出自哪部影片，只能一部接著一部慢慢找。</p>
+      <p>後來想到，如果能替影片加上各種元素標籤，讓大家可以直接搜尋，是不是就方便多了？</p>
+      <p>原先只想到整理八點檔影片，加上各種標籤，像是「中秋」、「吹泡泡」、「烤肉」等；但後來覺得既然決定做一個影音搜尋站，那不如把所有影片統整起來。於是就從整理影片、建立分類開始，把舞台、節目和各種類型的影片統整在一起，CORTIS VIDEO STATION 就這樣誕生了！</p>
+      <h2>關於本站的性質</h2>
+      <div class="info-card">
+        <p>本站為 COER 自發製作的非官方整理網站，並非 CORTIS 或其所屬公司的官方網站。影片及相關素材的權利歸原始權利人所有。</p>
+        <p class="mt-4 font-semibold">Made with love by COER ♡</p>
+      </div>`,
+    'privacy': `
+      <p class="eyebrow">Privacy</p>
+      <h1>隱私權政策</h1>
+      <p>本政策說明 CORTIS VIDEO STATION（以下簡稱「本站」）如何處理使用本站時可能涉及的資訊。</p>
+      <h2>1. 本站蒐集的資料</h2>
+      <p>本站主要提供 CORTIS 相關影片的分類、搜尋與瀏覽功能。本站本身不要求訪客註冊帳號，也不會透過本站頁面主動要求你提供姓名、電話或地址等個人資料。</p>
+      <h2>2. 第三方服務</h2>
+      <p>本站可能嵌入 YouTube 影片，並使用 Google 表單收集訪客自願提交的意見。當你觀看嵌入影片、前往 YouTube 或填寫 Google 表單時，相關服務可能依其自身的隱私權政策處理資料、使用 Cookie 或記錄使用資訊；該等處理由各服務提供者負責。</p>
+      <p><a href="https://policies.google.com/privacy?hl=zh-TW" target="_blank" rel="noopener noreferrer">Google 隱私權政策</a>　·　<a href="https://www.youtube.com/howyoutubeworks/our-commitments/protecting-user-data/" target="_blank" rel="noopener noreferrer">YouTube 使用者資料說明</a></p>
+      <h2>3. 意見回饋</h2>
+      <p>若你透過 Google 表單提交意見，請避免填寫與回饋無關的敏感個人資料。表單所蒐集的資料將依表單設定及 Google 的相關政策處理。</p>
+      <h2>4. 外部連結</h2>
+      <p>本站含有 YouTube、Google 表單等外部連結。離開本站後，請參閱該外部網站的隱私權政策與使用條款。</p>
+      <h2>5. 政策更新</h2>
+      <p>本站可能因功能或服務調整而更新本政策。更新後的內容會刊載於本頁，並以本頁所示版本為準。</p>
+      <h2>6. 聯絡方式</h2>
+      <p>如對本政策有任何疑問，請寄信至 <a href="mailto:cortisvideostation0818@gmail.com">cortisvideostation0818@gmail.com</a>。</p>
+      <p class="mt-6 text-sm">最後更新日期：2026 年 10 月 16 日</p>`,
+    'updates': `
+      <p class="eyebrow">What's New</p>
+      <h1>更新公告</h1>
+      <p>這裡會整理本站的功能調整、資料更新與重要公告，方便大家快速查看近期變動。</p>
+      <div class="info-card">
+        <p class="text-xs font-bold !text-indigo-500">2026 年 10 月 16 日</p>
+        <h2 class="!mt-2">網站資訊選單上線</h2>
+        <p>新增漢堡選單，整合使用說明、關於本站、隱私權政策、更新公告、意見回饋與聯絡方式，讓大家更容易找到需要的資訊。</p>
+      </div>
+      <p class="mt-5 text-sm">後續若有新影片整理完成、分類調整或功能更新，也會在此頁補充公告。</p>`
+  };
+
+  function openMenu() {
+    backdrop.classList.remove('hidden');
+    panel.classList.remove('translate-x-full');
+    panel.setAttribute('aria-hidden', 'false');
+    toggle.setAttribute('aria-expanded', 'true');
+    document.body.classList.add('overflow-hidden');
+  }
+  function closeMenu() {
+    backdrop.classList.add('hidden');
+    panel.classList.add('translate-x-full');
+    panel.setAttribute('aria-hidden', 'true');
+    toggle.setAttribute('aria-expanded', 'false');
+    if (page.classList.contains('hidden')) document.body.classList.remove('overflow-hidden');
+  }
+  function showPage(key, updateHash = true) {
+    if (!pages[key]) return;
+    closeMenu();
+    pageContent.innerHTML = pages[key];
+    page.classList.remove('hidden');
+    document.body.classList.add('overflow-hidden');
+    if (updateHash) history.pushState({ siteInfoPage: key }, '', `#${key}`);
+    window.scrollTo(0, 0);
+  }
+  function closePage(updateHash = true) {
+    page.classList.add('hidden');
+    document.body.classList.remove('overflow-hidden');
+    if (updateHash && ['how-to-use', 'about', 'privacy', 'updates'].includes(location.hash.slice(1))) {
+      history.pushState({}, '', location.pathname + location.search);
+    }
+  }
+
+  // 樣式只作用於本站資訊選單，不更動原有影片篩選與主題功能。
+  toggle.addEventListener('click', () => {
+    if (panel.classList.contains('translate-x-full')) openMenu();
+    else closeMenu();
+  });
+  closeBtn.addEventListener('click', closeMenu);
+  backdrop.addEventListener('click', closeMenu);
+  document.querySelectorAll('[data-site-page]').forEach(button => {
+    button.addEventListener('click', () => showPage(button.dataset.sitePage));
+  });
+  backBtn.addEventListener('click', () => closePage());
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape') {
+      closeMenu();
+      if (!page.classList.contains('hidden')) closePage();
+    }
+  });
+  window.addEventListener('popstate', () => {
+    const key = location.hash.slice(1);
+    if (pages[key]) showPage(key, false);
+    else closePage(false);
+  });
+  // 支援直接開啟含有資訊頁 hash 的網址。
+  const initialKey = location.hash.slice(1);
+  if (pages[initialKey]) showPage(initialKey, false);
+}
+
+
+</script>
 
   <link
     rel="stylesheet"
@@ -120,6 +359,36 @@
         transform 0.2s ease,
         visibility 0.2s ease;
     }
+
+    /* 網站漢堡選單與資訊頁 */
+    .site-menu-link {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      width: 100%;
+      padding: 0.9rem 0.85rem;
+      border-radius: 0.85rem;
+      text-align: left;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #334155;
+      transition: background-color 0.15s ease;
+    }
+    .dark .site-menu-link { color: #e2e8f0; }
+    .site-menu-link:hover { background: #f1f5f9; }
+    .dark .site-menu-link:hover { background: #1e293b; }
+    .site-info-content h1 { font-size: clamp(1.7rem, 4vw, 2.25rem); font-weight: 800; letter-spacing: -0.03em; margin-bottom: 0.65rem; color: #0f172a; }
+    .dark .site-info-content h1 { color: #f8fafc; }
+    .site-info-content h2 { font-size: 1.15rem; font-weight: 750; margin: 1.8rem 0 0.65rem; color: #312e81; }
+    .dark .site-info-content h2 { color: #a5b4fc; }
+    .site-info-content p, .site-info-content li { font-size: 0.96rem; line-height: 1.9; color: #475569; }
+    .dark .site-info-content p, .dark .site-info-content li { color: #cbd5e1; }
+    .site-info-content ol, .site-info-content ul { padding-left: 1.4rem; margin: 0.6rem 0; }
+    .site-info-content li { padding-left: 0.2rem; margin: 0.35rem 0; }
+    .site-info-content .info-card { margin-top: 1.2rem; padding: 1.1rem 1.2rem; border: 1px solid #e2e8f0; border-radius: 1rem; background: rgba(255,255,255,.75); }
+    .dark .site-info-content .info-card { border-color: #334155; background: rgba(15,23,42,.7); }
+    .site-info-content a { color: #6366f1; text-decoration: underline; text-underline-offset: 3px; overflow-wrap: anywhere; }
+    .site-info-content .eyebrow { color: #6366f1; font-size: .75rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; margin-bottom: .6rem; }
   </style>
 </head>
 
@@ -329,6 +598,22 @@
 
         </button>
 
+        <button
+          id="siteMenuToggle"
+          type="button"
+          class="p-2.5 rounded-full text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+          title="開啟網站選單"
+          aria-label="開啟網站選單"
+          aria-expanded="false"
+          aria-controls="siteMenuPanel"
+        >
+          <span class="flex flex-col gap-1.5 w-5" aria-hidden="true">
+            <span class="block h-0.5 w-5 rounded-full bg-current"></span>
+            <span class="block h-0.5 w-5 rounded-full bg-current"></span>
+            <span class="block h-0.5 w-5 rounded-full bg-current"></span>
+          </span>
+        </button>
+
       </div>
 
     </div>
@@ -381,6 +666,65 @@
   </div>
 
 </header>
+
+<!-- =========================================================
+     SITE MENU + INFORMATION PAGES
+========================================================= -->
+<div id="siteMenuBackdrop" class="fixed inset-0 z-40 hidden bg-slate-950/40 backdrop-blur-[2px]" aria-hidden="true"></div>
+
+<aside
+  id="siteMenuPanel"
+  class="fixed right-0 top-0 z-50 h-full w-[min(88vw,360px)] translate-x-full overflow-y-auto bg-white dark:bg-slate-900 shadow-2xl border-l border-slate-200 dark:border-slate-800 transition-transform duration-200"
+  aria-label="網站選單"
+  aria-hidden="true"
+>
+  <div class="flex items-center justify-between border-b border-slate-200 dark:border-slate-800 px-5 py-4">
+    <div>
+      <p class="font-bold text-slate-900 dark:text-white">CORTIS VIDEO STATION</p>
+      <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">網站選單</p>
+    </div>
+    <button id="siteMenuClose" type="button" class="w-9 h-9 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-500 dark:text-slate-300" aria-label="關閉選單">
+      <i class="fa-solid fa-xmark text-lg"></i>
+    </button>
+  </div>
+  <nav class="p-3 space-y-1" aria-label="網站資訊">
+    <button type="button" data-site-page="how-to-use" class="site-menu-link">
+      <i class="fa-regular fa-circle-question w-5 text-center"></i><span>使用說明 <span class="text-xs text-slate-400">How to Use</span></span>
+    </button>
+    <button type="button" data-site-page="about" class="site-menu-link">
+      <i class="fa-regular fa-heart w-5 text-center"></i><span>關於本站</span>
+    </button>
+    <button type="button" data-site-page="privacy" class="site-menu-link">
+      <i class="fa-solid fa-shield-halved w-5 text-center"></i><span>隱私權政策</span>
+    </button>
+    <button type="button" data-site-page="updates" class="site-menu-link">
+      <i class="fa-regular fa-bell w-5 text-center"></i><span>更新公告</span>
+    </button>
+    <a class="site-menu-link" href="https://docs.google.com/forms/d/e/1FAIpQLSeIwiZZdkhSsQOQ7JTlUdYgXcIhR1fEMqE1bmDi9R2qUybh-A/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">
+      <i class="fa-regular fa-comment-dots w-5 text-center"></i><span>意見回饋 <span class="text-xs text-slate-400">Google 表單</span></span><i class="fa-solid fa-arrow-up-right-from-square ml-auto text-xs text-slate-400"></i>
+    </a>
+    <a class="site-menu-link" href="mailto:cortisvideostation0818@gmail.com">
+      <i class="fa-regular fa-envelope w-5 text-center"></i><span>聯絡方式 <span class="text-xs text-slate-400">Gmail</span></span>
+    </a>
+  </nav>
+  <div class="mx-5 mt-2 rounded-xl bg-indigo-50 dark:bg-indigo-950/40 p-4 text-xs leading-relaxed text-indigo-700 dark:text-indigo-300">
+    本站為非官方粉絲製作的 CORTIS 影音整理網站。
+  </div>
+</aside>
+
+<section id="siteInfoPage" class="fixed inset-0 z-[60] hidden overflow-y-auto bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100">
+  <header class="sticky top-0 z-10 border-b border-slate-200 dark:border-slate-800 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 py-4 flex items-center gap-3">
+      <button id="sitePageBack" type="button" class="flex items-center gap-2 rounded-xl px-3 py-2 text-sm font-semibold hover:bg-slate-100 dark:hover:bg-slate-800">
+        <i class="fa-solid fa-arrow-left"></i><span>返回主頁</span>
+      </button>
+      <span class="ml-auto text-xs font-semibold tracking-wide text-slate-400">CORTIS VIDEO STATION</span>
+    </div>
+  </header>
+  <main class="max-w-3xl mx-auto px-5 sm:px-8 py-8 sm:py-12">
+    <div id="siteInfoContent" class="site-info-content"></div>
+  </main>
+</section>
 
 
 <!-- =========================================================
@@ -1724,6 +2068,8 @@ document.addEventListener(
     updateSubFilterUI();
 
     setupBackToTop();
+
+    setupSiteMenu();
 
     fetchVideoData();
 
