@@ -8662,7 +8662,7 @@
     "subtype": "紀錄片",
     "members": ["GROUP"],
     "tags": ["What We Want", "EPISODE 03", "紀錄片", "游泳", "成長故事"],
-    "description": "CORTIS紀錄片《What We Want》第三集，透過安建昊分享過去的游泳經歷、成為練習生後的心境變化，以及成員們對彼此個性與特質的觀察，呈現成長與追夢的歷程。",
+    "description": "CORTIS紀錄片《What We Want》第三集，透過安乾鎬分享過去的游泳經歷、成為練習生後的心境變化，以及成員們對彼此個性與特質的觀察，呈現成長與追夢的歷程。",
     "timestamps": []
   },
   {
@@ -8675,6 +8675,29 @@
     "members": ["GROUP"],
     "tags": ["What We Want", "EPISODE 04", "紀錄片", "編舞課程", "成長故事"],
     "description": "CORTIS紀錄片《What We Want》第四集，記錄主訓加入團體的過程、成為藝人的選擇，以及成員們參與編舞課程與團體訓練的日常，呈現CORTIS在音樂與表演上的努力。",
+    "timestamps": []
+  },
+  {
+    "id": "MriGjS6yXoM",
+    "youtubeId": "MriGjS6yXoM",
+    "title": "[EN] 코르티스 성현의 추구미는 마틴? 성현을 둘러싼 소문의 진실 | FAKE NEWS",
+    "date": "2026-10-17",
+    "category": "variety",
+    "subtype": "訪問",
+    "members": ["SEONGHYEON 嚴成玹"],
+    "description": "",
+    "tags": []
+  },
+  {
+    "id": "ISkAWt8_aqI",
+    "youtubeId": "ISkAWt8_aqI",
+    "title": "relay cam LA",
+    "date": "2026-10-16",
+    "category": "official",
+    "subtype": "八點檔",
+    "members": ["GROUP"],
+    "tags": ["LA"],
+    "description": "記錄了 CORTIS 成員前往洛杉磯進行Song Camp的過程，展示了成員在洛杉磯期間的日常生活。",
     "timestamps": []
   }
 ]
