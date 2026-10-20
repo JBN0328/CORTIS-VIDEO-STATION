@@ -8699,5 +8699,21 @@
     "tags": ["LA"],
     "description": "記錄了 CORTIS 成員前往洛杉磯進行Song Camp的過程，展示了成員在洛杉磯期間的日常生活。",
     "timestamps": []
+  },
+  {
+    "id": "M_VN5rC9CzU",
+    "youtubeId": "M_VN5rC9CzU",
+    "title": "[D'FESTA THE ORIGIN] KANON NO.48 찰나의 순간을 영원한 기록으로-",
+    "date": "2026-10-14",
+    "category": "other",
+    "subtype": "廣告",
+    "members": ["GROUP"],
+    "tags": [],
+    "description": "D社展覽宣傳片。",
+    "timestamps": [ { "time": "00:12", "seconds": 12, "label": "KEONHO 安乾鎬" },
+      { "time": "00:17", "seconds": 17, "label": "JUHOON 金主訓" },
+      { "time": "00:21", "seconds": 21, "label": "JAMES 趙雨凡" },
+      { "time": "00:47", "seconds": 47, "label": "SEONGHYEON 嚴成玹" },
+      { "time": "00:48", "seconds": 48, "label": "MARTIN 朴宇宙" }]
   }
 ]
