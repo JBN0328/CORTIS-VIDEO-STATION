@@ -8715,5 +8715,17 @@
       { "time": "00:21", "seconds": 21, "label": "JAMES 趙雨凡" },
       { "time": "00:47", "seconds": 47, "label": "SEONGHYEON 嚴成玹" },
       { "time": "00:48", "seconds": 48, "label": "MARTIN 朴宇宙" }]
+  },
+  {
+    "id": "t90kL72BjfY",
+    "youtubeId": "t90kL72BjfY",
+    "title": "morning samgyeopsal",
+    "date": "2026-10-20",
+    "category": "official",
+    "subtype": "八點檔",
+    "members": ["GROUP"],
+    "tags": ["LA", "Airbnb"],
+    "description": "CORTIS成員在LA的Airbnb準備早餐的過程。",
+    "timestamps": []
   }
 ]
