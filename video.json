@@ -8778,5 +8778,30 @@
     "tags": ["LA", "Airbnb"],
     "description": "CORTIS成員在LA的Airbnb準備早餐的過程。",
     "timestamps": []
+  },
+  {
+    "id": "KAr4jccxTI8",
+    "youtubeId": "KAr4jccxTI8",
+    "title": "화제의 MC 라인업 어떻게 했냐고요? [🗼TOKYO BEHIND EP.02] @SBS 2026 INKIGAYO LIVE in TOKYO",
+    "date": "2026-10-21",
+    "category": "other",
+    "subtype": "花絮",
+    "members": ["GROUP"],
+    "tags": ["人氣歌謠"],
+    "timestamps": [ { "time": "00:09", "seconds": 9, "label": "嚴安的大臉" },
+      { "time": "00:15", "seconds": 15, "label": "嚴安開心跳跳跳" },
+      { "time": "00:21", "seconds": 21, "label": "CORTIS" },
+      { "time": "00:25", "seconds": 25, "label": "MC 嚴成玹" },
+      { "time": "00:27", "seconds": 27, "label": "MC 安乾鎬" },
+      { "time": "00:32", "seconds": 32, "label": "MC 嚴安" },
+      { "time": "02:07", "seconds": 127, "label": "嚴成玹 波浪舞" },
+      { "time": "02:12", "seconds": 132, "label": "安乾鎬 機器人舞" },
+      { "time": "02:16", "seconds": 136, "label": "採訪嚴安" },
+      { "time": "03:15", "seconds": 195, "label": "嚴安打電動" },
+      { "time": "03:19", "seconds": 199, "label": "小嚴撞到頭" },
+      { "time": "03:21", "seconds": 201, "label": "嚴安抱抱" },
+      { "time": "03:24", "seconds": 204, "label": "採訪嚴安" },
+      { "time": "03:34", "seconds": 214, "label": "看書安和耳機嚴" },
+      { "time": "03:48", "seconds": 228, "label": "採訪嚴安" }]
   }
 ]
