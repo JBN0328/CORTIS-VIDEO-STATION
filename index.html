@@ -331,17 +331,9 @@ function setupSiteMenu() {
       transform: rotate(90deg);
     }
 
-    /* 影片月份區塊可收合，避免未觀看內容直接顯示 */
-    .timeline-month-content.is-collapsed {
-      display: none;
-    }
-
-    .timeline-month-chevron {
-      transition: transform 0.2s ease;
-    }
-
-    .timeline-month-toggle[aria-expanded="true"] .timeline-month-chevron {
-      transform: rotate(180deg);
+    /* 影片清單不收合：只精簡側邊／手機時間軸導覽，影片內容一律直接顯示 */
+    .timeline-month-content {
+      display: block;
     }
 
     @media (max-width: 767px) {
@@ -3326,7 +3318,6 @@ function renderTimeline() {
 
             <div
               class="
-                timeline-month-toggle
                 flex
                 items-center
                 gap-2
@@ -3341,14 +3332,7 @@ function renderTimeline() {
                 dark:bg-slate-950/95
                 backdrop-blur-sm
                 py-2
-                cursor-pointer
-                select-none
               "
-              data-month-toggle="${monthKey}"
-              role="button"
-              tabindex="0"
-              aria-expanded="true"
-              aria-controls="month-content-${monthKey}"
             >
 
               <span
@@ -3401,7 +3385,6 @@ function renderTimeline() {
 
               </span>
 
-              <i class="fa-solid fa-chevron-down timeline-month-chevron text-[10px] text-slate-400 mr-1" aria-hidden="true"></i>
 
             </div>
 
@@ -3445,38 +3428,15 @@ function renderTimeline() {
    手機版時間軸收合控制
 ========================================================= */
 function setupTimelineCollapse() {
-  const isMobile = window.matchMedia('(max-width: 767px)').matches;
-
-  document.querySelectorAll('[data-month-toggle]').forEach(toggle => {
-    const monthKey = toggle.getAttribute('data-month-toggle');
-    const content = document.getElementById(`month-content-${monthKey}`);
-    if (!content) return;
-
-    // 手機版預設收合影片清單；桌面版維持原本展開狀態。
-    content.classList.toggle('is-collapsed', isMobile);
-    toggle.setAttribute('aria-expanded', String(!isMobile));
-
-    const toggleContent = () => {
-      const willExpand = content.classList.contains('is-collapsed');
-      content.classList.toggle('is-collapsed', !willExpand);
-      toggle.setAttribute('aria-expanded', String(willExpand));
-    };
-
-    toggle.addEventListener('click', toggleContent);
-    toggle.addEventListener('keydown', event => {
-      if (event.key === 'Enter' || event.key === ' ') {
-        event.preventDefault();
-        toggleContent();
-      }
-    });
-  });
-
+  // 僅控制時間軸導覽中的年份／月份展開；主要影片清單永遠直接顯示。
   document.querySelectorAll('[data-year-toggle]').forEach(toggle => {
     toggle.addEventListener('click', event => {
       if (!window.matchMedia('(max-width: 767px)').matches) return;
       event.preventDefault();
 
       const yearBlock = toggle.closest('.timeline-year');
+      if (!yearBlock) return;
+
       const isExpanded = yearBlock.classList.toggle('is-expanded');
       toggle.setAttribute('aria-expanded', String(isExpanded));
     });
