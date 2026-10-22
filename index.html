@@ -117,8 +117,8 @@ function setupSiteMenu() {
         </ul>
         <h3 class="font-bold mt-4">GREENGREEN</h3>
         <p>包含 GREENGREEN_playextended。</p>
+        <h3 class="font-bold mt-4">REDRED</h3>
         <ul>
-          <li>REDRED</li>
           <li>TNT</li>
           <li>ACAI</li>
           <li>YOUNGCREATORCREW</li>
@@ -136,7 +136,7 @@ function setupSiteMenu() {
           <li>Fly</li>
           <li>Talk to You</li>
         </ul>
-        <ul><li>MOTION</li></ul>
+        <h3 class="font-bold mt-4">MOTION</h3>
         <ul><li>Dynamite</li></ul>
       </div>
 
@@ -316,6 +316,42 @@ function setupSiteMenu() {
 
     .month-scroll::-webkit-scrollbar {
       display: none;
+    }
+
+    /* 手機版時間軸：年份精簡、月份點擊後才展開 */
+    .timeline-month-list {
+      display: flex;
+    }
+
+    .timeline-year-chevron {
+      transition: transform 0.2s ease;
+    }
+
+    .timeline-year.is-expanded .timeline-year-chevron {
+      transform: rotate(90deg);
+    }
+
+    /* 影片月份區塊可收合，避免未觀看內容直接顯示 */
+    .timeline-month-content.is-collapsed {
+      display: none;
+    }
+
+    .timeline-month-chevron {
+      transition: transform 0.2s ease;
+    }
+
+    .timeline-month-toggle[aria-expanded="true"] .timeline-month-chevron {
+      transform: rotate(180deg);
+    }
+
+    @media (max-width: 767px) {
+      .timeline-month-list {
+        display: none !important;
+      }
+
+      .timeline-year.is-expanded .timeline-month-list {
+        display: flex !important;
+      }
     }
 
     /* =========================================================
@@ -3290,30 +3326,43 @@ function renderTimeline() {
 
             <div
               class="
+                timeline-month-toggle
                 flex
                 items-center
-                gap-3
-                mb-4
+                gap-2
+                md:gap-3
+                mb-3
+                md:mb-4
                 sticky
-                top-28
+                top-20
+                md:top-28
                 z-10
-                bg-slate-50/90
-                dark:bg-slate-950/90
+                bg-slate-50/95
+                dark:bg-slate-950/95
                 backdrop-blur-sm
                 py-2
+                cursor-pointer
+                select-none
               "
+              data-month-toggle="${monthKey}"
+              role="button"
+              tabindex="0"
+              aria-expanded="true"
+              aria-controls="month-content-${monthKey}"
             >
 
               <span
                 class="
-                  text-sm
+                  text-xs
+                  md:text-sm
                   font-bold
                   tracking-wider
                   text-indigo-600
                   dark:text-indigo-400
                   bg-indigo-50
                   dark:bg-indigo-950/80
-                  px-3
+                  px-2.5
+                  md:px-3
                   py-1
                   rounded-lg
                   border
@@ -3352,10 +3401,15 @@ function renderTimeline() {
 
               </span>
 
+              <i class="fa-solid fa-chevron-down timeline-month-chevron text-[10px] text-slate-400 mr-1" aria-hidden="true"></i>
+
             </div>
 
 
-            <div class="space-y-4">
+            <div
+              id="month-content-${monthKey}"
+              class="timeline-month-content space-y-4"
+            >
 
               ${items
                 .map(
@@ -3380,8 +3434,53 @@ function renderTimeline() {
     timelineHTML;
 
 
+  setupTimelineCollapse();
+
   attachCardListeners();
 
+}
+
+
+/* =========================================================
+   手機版時間軸收合控制
+========================================================= */
+function setupTimelineCollapse() {
+  const isMobile = window.matchMedia('(max-width: 767px)').matches;
+
+  document.querySelectorAll('[data-month-toggle]').forEach(toggle => {
+    const monthKey = toggle.getAttribute('data-month-toggle');
+    const content = document.getElementById(`month-content-${monthKey}`);
+    if (!content) return;
+
+    // 手機版預設收合影片清單；桌面版維持原本展開狀態。
+    content.classList.toggle('is-collapsed', isMobile);
+    toggle.setAttribute('aria-expanded', String(!isMobile));
+
+    const toggleContent = () => {
+      const willExpand = content.classList.contains('is-collapsed');
+      content.classList.toggle('is-collapsed', !willExpand);
+      toggle.setAttribute('aria-expanded', String(willExpand));
+    };
+
+    toggle.addEventListener('click', toggleContent);
+    toggle.addEventListener('keydown', event => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        toggleContent();
+      }
+    });
+  });
+
+  document.querySelectorAll('[data-year-toggle]').forEach(toggle => {
+    toggle.addEventListener('click', event => {
+      if (!window.matchMedia('(max-width: 767px)').matches) return;
+      event.preventDefault();
+
+      const yearBlock = toggle.closest('.timeline-year');
+      const isExpanded = yearBlock.classList.toggle('is-expanded');
+      toggle.setAttribute('aria-expanded', String(isExpanded));
+    });
+  });
 }
 
 
@@ -3457,18 +3556,23 @@ function renderSidebarNav(
             <div
               class="
                 timeline-year
-                space-y-2
+                space-y-1.5
               "
             >
 
               <a
                 href="#section-${year}.${firstMonth}"
+                data-year-toggle="${year}"
+                aria-expanded="false"
+                aria-controls="year-months-${year}"
                 class="
                   flex
                   items-center
                   justify-between
-                  px-3
-                  py-2
+                  px-2
+                  md:px-3
+                  py-1.5
+                  md:py-2
                   rounded-xl
                   text-slate-700
                   dark:text-slate-200
@@ -3476,7 +3580,8 @@ function renderSidebarNav(
                   dark:hover:bg-slate-800/80
                   transition-all
                   font-bold
-                  text-sm
+                  text-xs
+                  md:text-sm
                 "
               >
 
@@ -3506,6 +3611,7 @@ function renderSidebarNav(
                   class="
                     fa-solid
                     fa-chevron-right
+                    timeline-year-chevron
                     text-[10px]
                     opacity-40
                   "
@@ -3515,7 +3621,9 @@ function renderSidebarNav(
 
 
               <div
+                id="year-months-${year}"
                 class="
+                  timeline-month-list
                   month-scroll
                   flex
                   gap-1.5
