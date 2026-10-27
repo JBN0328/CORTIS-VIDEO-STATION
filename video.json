@@ -8816,5 +8816,16 @@
     "tags": ["IKEA", "沙發", "娃娃"],
     "description": "CORTIS 成員去IKEA挑選宿舍的沙發還有玩秘密朋友。",
     "timestamps": []
+  },
+  {
+    "id": "SblRCXBeKno",
+    "youtubeId": "SblRCXBeKno",
+    "title": "2026 Weverse Con Festival 'Artist Zone' Behind",
+    "date": "2026-07-23",
+    "category": "other",
+    "subtype": "花絮",
+    "members": ["GROUP"],
+    "tags": [],
+    "timestamps": [{ "time": "12:54", "seconds": 774, "label": "CORTIS" }]
   }
 ]
