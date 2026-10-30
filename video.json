@@ -705,9 +705,11 @@
     "category": "official",
     "subtype": "八點檔",
     "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
-    "tags": [],
-    "description": "成員們對以前拍的影片做reaction。",
-    "timestamps": []
+    "tags": ["reaction", "Pack Up Bro", "Laundry in LA", "Yoga Challenge"],
+    "description": "成員們對以前拍的影片\"Pack Up Bro\"、\"Laundry in LA\"、\"Yoga Challenge\"做reaction。",
+    "timestamps": [{ "time": "00:41", "seconds": 41, "label": "reaction Pack Up Bro" },
+      { "time": "16:03", "seconds": 972, "label": "reaction Laundry in LA" },
+      { "time": "22:38", "seconds": 1358, "label": "reaction Yoga Challenge" }]
   },
   {
     "id": "Vvl_qDDOTo0",
@@ -717,8 +719,8 @@
     "category": "official",
     "subtype": "八點檔",
     "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
-    "tags": [],
-    "description": "",
+    "tags": ["枕頭仗", "修學旅行"],
+    "description": "CORTIS 成員在修學旅行期間在房間的互動。",
     "timestamps": []
   },
   {
@@ -729,8 +731,8 @@
     "category": "official",
     "subtype": "八點檔",
     "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
-    "tags": [],
-    "description": "",
+    "tags": ["健康操", "修學旅行"],
+    "description": "CORTIS 成員在修學旅行的早晨跳健康操。",
     "timestamps": []
   },
   {
