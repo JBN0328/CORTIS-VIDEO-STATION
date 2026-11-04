@@ -9015,8 +9015,8 @@
     "category": "official",
     "subtype": "八點檔",
     "members": ["GROUP"],
-    "tags": ["PUT YOUR PHONE DOWN 巡演", "演唱會", "幕後"],
-    "description": "CORTIS 在PUT YOUR PHONE DOWN 美巡的幕後。",
+    "tags": ["PUT YOUR PHONE DOWN 巡演", "演唱會", "幕後", "北美"],
+    "description": "CORTIS 在PUT YOUR PHONE DOWN 北美巡迴的幕後。",
     "timestamps": []
   },
   {
@@ -9042,5 +9042,28 @@
   "tags": ["KOD"],
   "description": "CORTIS 拍攝KOD廣告的花絮。",
   "timestamps": []
+  },
+  {
+    "id": "ODo-pDMzm1Q",
+    "youtubeId": "ODo-pDMzm1Q",
+    "title": "PYPD NA tour 2",
+    "date": "2026-11-03",
+    "category": "official",
+    "subtype": "八點檔",
+    "members": ["GROUP"],
+    "tags": ["PUT YOUR PHONE DOWN 巡演", "演唱會", "幕後", "北美"],
+    "description": "CORTIS 在PUT YOUR PHONE DOWN 北美巡迴的幕後。",
+    "timestamps": []
+  },
+  {
+    "id": "rwbipNqoLr8",
+    "youtubeId": "rwbipNqoLr8",
+    "title": "코르티스💚는 유명한 도가니 사리기🙅🏻‍♂️ 그룹임...🔥 이 레드카펫을 봐ㅣ2026 TMA 인터뷰ㅣ",
+    "date": "2026-11-03",
+    "category": "variety",
+    "subtype": "訪問",
+    "members": ["GROUP"],
+    "tags": ["TMA"],
+    "description": "CORTIS 在「2026 더팩트 뮤직 어워즈(TMA)」中獲得三項大獎後的後台訪談。"
   }
 ]
