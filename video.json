@@ -781,7 +781,7 @@
     "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
     "tags": ["Bruno Mars - Versace On The Floor", "ILLIT – Tick-Tack", "ILLIT – Cherish My Love", "自我介紹", "J. Cole - ATM", "Count it up", "GO!", "gopro"],
     "description": "CORTIS每個成員出道前的影片，在第一次release party上放的影片。",
-    "timestamps": [{ "time": "00:00", "seconds": 00, "label": "MARTIN 朴宇宙" },
+    "timestamps": [{ "time": "00:00", "seconds": 0, "label": "MARTIN 朴宇宙" },
       { "time": "00:44", "seconds": 44, "label": "JAMES 趙雨凡" },
       { "time": "01:45", "seconds": 105, "label": "JUHOON 金主訓" },
       { "time": "02:47", "seconds": 167, "label": "SEONGHYEON 嚴成玹" },
