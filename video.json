@@ -9065,5 +9065,17 @@
     "members": ["GROUP"],
     "tags": ["TMA"],
     "description": "CORTIS 在「2026 더팩트 뮤직 어워즈(TMA)」中獲得三項大獎後的後台訪談。"
+  },
+  {
+    "id": "efGuRedKxmM",
+    "youtubeId": "efGuRedKxmM",
+    "title": "1주년 티꾸",
+    "date": "2026-11-04",
+    "category": "official",
+    "subtype": "八點檔",
+    "members": ["GROUP"],
+    "tags": ["出道一周年", "衣服", "設計", "氣球"],
+    "description": "CORTIS 成員在設計出道一周年衣服。",
+    "timestamps": []
   }
 ]
