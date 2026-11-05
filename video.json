@@ -743,8 +743,8 @@
     "category": "official",
     "subtype": "八點檔",
     "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
-    "tags": [],
-    "description": "",
+    "tags": ["修學旅行", "搜查包包", "德國心臟病", "了不起的番茄", "趣味活動", "投接球", "躲攝影機", "恐怖故事", "手寫信"],
+    "description": "CORTIS一週年修學旅行-下集，玩了團康活動還有用手寫信表達對成員及COER的內心話。",
     "timestamps": []
   },
   {
@@ -755,8 +755,8 @@
     "category": "official",
     "subtype": "八點檔",
     "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
-    "tags": [],
-    "description": "",
+    "tags": ["一週年", "週歲抓周", "切水果", "芒果", "西瓜", "香蕉", "哈密瓜"],
+    "description": "CORTIS慶祝一週年，舉行了週歲抓周活動，成員們後來開始用各種方法吃桌上的水果。",
     "timestamps": []
   },
   {
@@ -767,8 +767,8 @@
     "category": "official",
     "subtype": "八點檔",
     "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
-    "tags": [],
-    "description": "",
+    "tags": ["修學旅行", "扶餘", "buyeo", "班服", "百濟歷史博物館", "點讚貼紙", "宮殿", "水槍", "電動遊覽車"],
+    "description": "CORTIS一週年修學旅行-上集，參觀博物館，蒐集點讚貼紙、寫考卷，還有遊玩園區內的遊樂項目。",
     "timestamps": []
   },
   {
@@ -779,9 +779,13 @@
     "category": "official",
     "subtype": "八點檔",
     "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
-    "tags": [],
-    "description": "",
-    "timestamps": []
+    "tags": ["Bruno Mars - Versace On The Floor", "ILLIT – Tick-Tack", "ILLIT – Cherish My Love", "自我介紹", "J. Cole - ATM", "Count it up", "GO!", "gopro"],
+    "description": "CORTIS每個成員出道前的影片，在第一次release party上放的影片。",
+    "timestamps": [{ "time": "00:00", "seconds": 00, "label": "MARTIN 朴宇宙" },
+      { "time": "00:44", "seconds": 44, "label": "JAMES 趙雨凡" },
+      { "time": "01:45", "seconds": 105, "label": "JUHOON 金主訓" },
+      { "time": "02:47", "seconds": 167, "label": "SEONGHYEON 嚴成玹" },
+      { "time": "03:26", "seconds": 206, "label": "KEONHO 安乾鎬" }]
   },
   {
     "id": "mdY1s0TZf6g",
@@ -791,8 +795,8 @@
     "category": "official",
     "subtype": "八點檔",
     "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
-    "tags": [],
-    "description": "",
+    "tags": ["Put Your Phone Down", "PYPD", "巡演", "仁川", "incheon"],
+    "description": "CORTIS Put Your Phone Down巡演仁川場幕後花絮。",
     "timestamps": []
   },
   {
