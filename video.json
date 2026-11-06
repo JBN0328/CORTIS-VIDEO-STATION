@@ -2108,8 +2108,10 @@
     "subtype": "八點檔",
     "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
     "tags": [],
-    "description": "",
-    "timestamps": []
+    "description": "CORTIS成員設計‘What You Want’、‘GO!’、‘FaSHioN’的粉絲應援法。",
+    "timestamps": [{ "time": "00:23", "seconds": 23, "label": "What You Want" },
+      { "time": "01:59", "seconds": 119, "label": "GO!" },
+      { "time": "03:01", "seconds": 181, "label": "FaSHioN"}]
   },
   {
     "id": "WpIJOr9IHhI",
@@ -2120,7 +2122,7 @@
     "subtype": "八點檔",
     "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
     "tags": [],
-    "description": "",
+    "description": "What You Want 官方MV的製作與背後故事解析。",
     "timestamps": []
   },
   {
@@ -2132,7 +2134,7 @@
     "subtype": "八點檔",
     "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
     "tags": [],
-    "description": "",
+    "description": "CORTIS的瑜珈挑戰，超過30分可以外出吃飯。",
     "timestamps": []
   },
   {
@@ -2143,9 +2145,16 @@
     "category": "official",
     "subtype": "八點檔",
     "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
-    "tags": [],
-    "description": "",
-    "timestamps": []
+    "tags": ["LA", "海邊", "自助洗衣店", "內褲"],
+    "description": "CORTIS在LA的海邊玩耍，以及去自助洗衣店的日常。",
+    "timestamps": [{ "time": "00:03", "seconds": 3, "label": "在海邊玩耍" },
+      { "time": "01:47", "seconds": 107, "label": "前往自助洗衣店" },
+      { "time": "02:56", "seconds": 176, "label": "主訓 This is my right eye."},
+      { "time": "03:28", "seconds": 208, "label": "We spinnin" },
+      { "time": "04:09", "seconds": 249, "label": "不會操作的主訓" },
+      { "time": "04:41", "seconds": 281, "label": "玩攝影機的嚴" },
+      { "time": "04:55", "seconds": 295, "label": "摘隱眼主訓" },
+      { "time": "05:36", "seconds": 336, "label": "嚴成玹的縮水內褲" }]
   },
   {
     "id": "GsnPafjuXDw",
@@ -2155,8 +2164,8 @@
     "category": "official",
     "subtype": "八點檔",
     "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
-    "tags": [],
-    "description": "",
+    "tags": ["整理行李", "PACK IT UP"],
+    "description": "CORTIS去美國前整理行李的日常，馬嚴安創作了PACK IT UP出來。",
     "timestamps": []
   },{
     "id": "u36lcrRJ-lE",
