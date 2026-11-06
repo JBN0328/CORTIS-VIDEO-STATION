@@ -2107,7 +2107,7 @@
     "category": "official",
     "subtype": "八點檔",
     "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
-    "tags": [],
+    "tags": ["應援法"],
     "description": "CORTIS成員設計‘What You Want’、‘GO!’、‘FaSHioN’的粉絲應援法。",
     "timestamps": [{ "time": "00:23", "seconds": 23, "label": "What You Want" },
       { "time": "01:59", "seconds": 119, "label": "GO!" },
@@ -2133,7 +2133,7 @@
     "category": "official",
     "subtype": "八點檔",
     "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
-    "tags": [],
+    "tags": ["瑜珈", "ONE SIP"],
     "description": "CORTIS的瑜珈挑戰，超過30分可以外出吃飯。",
     "timestamps": []
   },
