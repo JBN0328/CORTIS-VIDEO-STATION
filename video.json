@@ -9170,5 +9170,28 @@
     "members": ["GROUP"],
     "tags": [],
     "description": "CORTIS 為迎接 2026 MAMA AWARDS 所進行的預熱宣傳活動，並進行了一項趣味挑戰遊戲。"
+  },
+  {
+    "id": "tfbvbOThPMI",
+    "youtubeId": "tfbvbOThPMI",
+    "title": "PYPD BIRTHDAY PARTY",
+    "date": "2026-11-10",
+    "category": "official",
+    "subtype": "八點檔",
+    "members": ["GROUP"],
+    "tags": ["演唱會", "巡演", "生日"],
+    "description": "PYPD BIRTHDAY PARTY的幕後花絮與演出過程。",
+    "timestamps": []
+  },
+  {
+    "id": "tN3w07uyodk",
+    "youtubeId": "tN3w07uyodk",
+    "title": "[DICON] 지금은 약간 왈츠?🕺 | MAKING FILM (CORTIS)",
+    "date": "2026-11-11",
+    "category": "other",
+    "subtype": "花絮",
+    "members": ["GROUP"],
+    "tags": ["D社", "DFESTA"],
+    "description": "CORTIS 參與 DICON「DFESTA」企劃的幕後花絮。"
   }
 ]
