@@ -9205,5 +9205,57 @@
     "tags": ["尾音押韻"],
     "description": "CORTIS在練習室玩尾音押韻的遊戲。",
     "timestamps": []
+  },
+  {
+    "id": "r_lbamw4Yy0",
+    "youtubeId": "r_lbamw4Yy0",
+    "title": "CORTIS (코르티스) MMA 2026 ‘MONEYMONEYMONEY’ + ‘REDRED’ + ‘YOUNGCREATORCREW’ Rehearsal",
+    "date": "2026-11-16",
+    "category": "official",
+    "subtype": "練習室",
+    "song": ["MONEYMONEYMONEY", "REDRED", "YOUNGCREATORCREW"],
+    "members": ["GROUP"],
+    "description": "CORTIS MMA舞台的練習室版本"
+  },
+  {
+    "id": "DMZ2qAbtO18",
+    "youtubeId": "DMZ2qAbtO18",
+    "title": "[#MMA2026] CORTIS (코르티스) - 올해의 레코드 #수상소감 | #CORTIS #코르티스 #멜론뮤직어워드 #20261115",
+    "date": "2026-11-16",
+    "category": "other",
+    "subtype": "得獎感言",
+    "members": ["GROUP"],
+    "tags": []
+  },
+  {
+    "id": "aq8DYRmOTKY",
+    "youtubeId": "aq8DYRmOTKY",
+    "title": "[#MMA2026] CORTIS (코르티스) - 글로벌 TOP10 #수상소감 | #CORTIS #코르티스 #멜론뮤직어워드 #20261115",
+    "date": "2026-11-16",
+    "category": "other",
+    "subtype": "得獎感言",
+    "members": ["GROUP"],
+    "tags": []
+  },
+  {
+    "id": "cbvFBHlhAoM",
+    "youtubeId": "cbvFBHlhAoM",
+    "title": "[#MMA2026] CORTIS (코르티스) - TOP10 #수상소감 | #CORTIS #코르티스 #멜론뮤직어워드 #20261115",
+    "date": "2026-11-16",
+    "category": "other",
+    "subtype": "得獎感言",
+    "members": ["GROUP"],
+    "tags": []
+  },
+  {
+    "id": "R-HyvYNIGY0",
+    "youtubeId": "R-HyvYNIGY0",
+    "title": "【MMA2026】CORTIS駕到！《REDRED》《YOUNGCREATORCREW》狂野節奏讓人停不下來",
+    "date": "2026-11-15",
+    "category": "stage",
+    "subtype": "頒獎典禮",
+    "album": "GREENGREEN",
+    "song": ["MONEYMONEYMONEY","REDRED","YOUNGCREATORCREW"],
+    "members": ["GROUP"]
   }
 ]
