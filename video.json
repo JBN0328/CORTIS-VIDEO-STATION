@@ -9257,5 +9257,55 @@
     "album": "GREENGREEN",
     "song": ["MONEYMONEYMONEY","REDRED","YOUNGCREATORCREW"],
     "members": ["GROUP"]
+  },
+  {
+    "id": "5XQKKw2zFh0",
+    "youtubeId": "5XQKKw2zFh0",
+    "title": "[DICON] 너에게 닿기를 (eng/jpn sub) | DEAR YOU (KEONHO)",
+    "date": "2026-11-14",
+    "category": "other",
+    "subtype": "廣告",
+    "members": ["GROUP"],
+    "tags": []
+  },
+  {
+    "id": "hghopKXzfZM",
+    "youtubeId": "hghopKXzfZM",
+    "title": "[DICON] 너에게 닿기를 (eng/jpn sub) | DEAR YOU (SEONGHYEON)",
+    "date": "2026-11-14",
+    "category": "other",
+    "subtype": "廣告",
+    "members": ["GROUP"],
+    "tags": []
+  },
+   {
+    "id": "VZHxtczoXGA",
+    "youtubeId": "VZHxtczoXGA",
+    "title": "[DICON] 너에게 닿기를 (eng/jpn sub) | DEAR YOU (MARTIN)",
+    "date": "2026-11-14",
+    "category": "other",
+    "subtype": "廣告",
+    "members": ["GROUP"],
+    "tags": []
+  },
+   {
+    "id": "PkOV3ZRqDxk",
+    "youtubeId": "PkOV3ZRqDxk",
+    "title": "[DICON] 너에게 닿기를 (eng/jpn sub) | DEAR YOU (JUHOON)",
+    "date": "2026-11-14",
+    "category": "other",
+    "subtype": "廣告",
+    "members": ["GROUP"],
+    "tags": []
+  },
+   {
+    "id": "xNHitEYP4R4",
+    "youtubeId": "xNHitEYP4R4",
+    "title": "[DICON] 너에게 닿기를 (eng/jpn sub) | DEAR YOU (JAMES)",
+    "date": "2026-11-14",
+    "category": "other",
+    "subtype": "廣告",
+    "members": ["GROUP"],
+    "tags": []
   }
 ]
