@@ -9265,8 +9265,9 @@
     "date": "2026-11-14",
     "category": "other",
     "subtype": "廣告",
-    "members": ["GROUP"],
-    "tags": []
+    "members": ["KEONHO 安乾鎬"],
+    "tags": ["D社", "DFESTA"],
+    "description": "KEONHO 的《DICON》特別宣傳片「DEAR YOU」透過電話訪談分享心路歷程的內容"
   },
   {
     "id": "hghopKXzfZM",
@@ -9275,8 +9276,9 @@
     "date": "2026-11-14",
     "category": "other",
     "subtype": "廣告",
-    "members": ["GROUP"],
-    "tags": []
+    "members": ["SEONGHYEON 嚴成玹"],
+    "tags": ["D社", "DFESTA"],
+    "description": "SEONGHYEON 的《DICON》特別宣傳片「DEAR YOU」透過電話訪談分享心路歷程的內容"
   },
    {
     "id": "VZHxtczoXGA",
@@ -9285,8 +9287,9 @@
     "date": "2026-11-14",
     "category": "other",
     "subtype": "廣告",
-    "members": ["GROUP"],
-    "tags": []
+    "members": ["MARTIN 朴宇宙"],
+    "tags": ["D社", "DFESTA"],
+    "description": "MARTIN 的《DICON》特別宣傳片「DEAR YOU」透過電話訪談分享心路歷程的內容"
   },
    {
     "id": "PkOV3ZRqDxk",
@@ -9295,8 +9298,9 @@
     "date": "2026-11-14",
     "category": "other",
     "subtype": "廣告",
-    "members": ["GROUP"],
-    "tags": []
+    "members": ["JUHOON 金主訓"],
+    "tags": ["D社", "DFESTA"],
+    "description": "JUHOON 的《DICON》特別宣傳片「DEAR YOU」透過電話訪談分享心路歷程的內容"
   },
    {
     "id": "xNHitEYP4R4",
@@ -9305,7 +9309,8 @@
     "date": "2026-11-14",
     "category": "other",
     "subtype": "廣告",
-    "members": ["GROUP"],
-    "tags": []
+    "members": ["JAMES 趙雨凡"],
+    "tags": ["D社", "DFESTA"],
+    "description": "JAMES 的《DICON》特別宣傳片「DEAR YOU」透過電話訪談分享心路歷程的內容"
   }
 ]
