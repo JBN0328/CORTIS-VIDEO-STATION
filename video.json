@@ -1840,7 +1840,7 @@
     "subtype": "八點檔",
     "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
     "tags": [],
-    "description": "",
+    "description": "CORTIS在六旗魔術山玩的過程。",
     "timestamps": []
   },
   {
@@ -1851,8 +1851,8 @@
     "category": "official",
     "subtype": "八點檔",
     "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
-    "tags": [],
-    "description": "",
+    "tags": ["樂高積木", "JUHOON 金主訓"],
+    "description": "在拍攝專輯照片時，玩樂高積木的主訓、成玹、乾鎬。",
     "timestamps": []
   },
   {
@@ -1863,9 +1863,12 @@
     "category": "official",
     "subtype": "八點檔",
     "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
-    "tags": [],
-    "description": "",
-    "timestamps": []
+    "tags": ["藏壽司", "相機", "扭蛋", "BALABABABA", "麥當勞", "快吃一個", "撒嬌"],
+    "description": "CORTIS邊吃藏壽司邊用相機互相拍照的過程。",
+    "timestamps": [{ "time": "17:40", "seconds": 1060, "label": "雖然在藏壽司，但主訓想吃BALABABABA..." },
+      { "time": "18:09", "seconds": 1089, "label": "快吃一個 撒嬌安安" },
+      { "time": "18:16", "seconds": 1096, "label": "快吃一個 撒嬌嚴嚴" },
+      { "time": "19:04", "seconds": 1144, "label": "安安:我去一下洗手間" }]
   },
   {
     "id": "J10X3CQg098",
@@ -1875,9 +1878,14 @@
     "category": "official",
     "subtype": "八點檔",
     "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
-    "tags": [],
-    "description": "",
-    "timestamps": []
+    "tags": ["洛杉磯", "休假日", "中央市場", "拍貼", "西班牙語", "青檸檬派", "酸"],
+    "description": " CORTIS 在洛杉磯的休假日，去中央市場吃美食、拍拍貼的過程。",
+    "timestamps": [{ "time": "00:56", "seconds": 56, "label": "學主訓說話的安安" },
+      { "time": "04:27", "seconds": 247, "label": "關於安小狗拍食物手又遮錯邊" },
+      { "time": "04:32", "seconds": 252, "label": "安安覺得檸檬派太酸了" },
+      { "time": "05:14", "seconds": 314, "label": "關於主訓也覺得檸檬派太酸了" },
+      { "time": "05:43", "seconds": 343, "label": "五人拍拍貼時間" },
+      { "time": "06:58", "seconds": 418, "label": "拍貼照片" }]
   },
   {
     "id": "9OTVaXTcW28",
@@ -1887,8 +1895,8 @@
     "category": "official",
     "subtype": "八點檔",
     "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
-    "tags": [],
-    "description": "",
+    "tags": ["公園", "馬丁", "狗大便", "狗屎"],
+    "description": "關於馬丁在公園踩到狗大便。",
     "timestamps": []
   },
   {
@@ -1899,8 +1907,8 @@
     "category": "official",
     "subtype": "八點檔",
     "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
-    "tags": [],
-    "description": "",
+    "tags": ["Teezo", "韓式餐廳", "BBQ", "生菜包肉", "What You Want", "M COUNTDOWN"],
+    "description": "Teezo來到韓國，和CORTIS成員們練習舞蹈、彩排打歌舞台，還有去吃韓式餐廳的過程。",
     "timestamps": []
   },
   {
@@ -1912,7 +1920,7 @@
     "subtype": "八點檔",
     "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
     "tags": ["身高問題", "腦筋急轉彎", "判斷力"],
-    "description": "CORTIS 成員們在討論一個關於身高的腦筋急轉彎，在關於選擇「B」還是「D」中展開激烈的爭論，金主訓對選D的人感到失望。",
+    "description": "CORTIS成員們在討論一個關於身高的腦筋急轉彎，在關於選擇「B」還是「D」中展開激烈的爭論，金主訓對選D的人感到失望。",
     "timestamps": []
   },
   {
