@@ -1815,9 +1815,25 @@
     "category": "official",
     "subtype": "八點檔",
     "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
-    "tags": [],
-    "description": "",
-    "timestamps": []
+    "tags": ["Release Party", "化汀體育館", "COLOR OUTSIDE THE LINES", "拍貼", "雨凡哭", "超大疊衛生紙", "安可", "彩排"],
+    "description": "CORTIS第一次Release Party從準備到正式開始的過程。",
+    "timestamps": [{ "time": "00:19", "seconds": 19, "label": "休息室" },
+      { "time": "00:51", "seconds": 51, "label": "彩排" },
+      { "time": "04:23", "seconds": 263, "label": "過場彩排" },
+      { "time": "05:48", "seconds": 348, "label": "互拍成員的拍貼" },
+      { "time": "08:01", "seconds": 481, "label": "當天的熱身運動" },
+      { "time": "09:28", "seconds": 568, "label": "最終彩排" },
+      { "time": "10:31", "seconds": 631, "label": "後臺" },
+      { "time": "11:13", "seconds": 673, "label": "CORTIS首張EP已發行 安安:大家要去聽!" },
+      { "time": "11:27", "seconds": 687, "label": "馬丁在看粉絲留言" },
+      { "time": "12:54", "seconds": 774, "label": "正式開始" },
+      { "time": "14:14", "seconds": 854, "label": "聊天環節" },
+      { "time": "14:17", "seconds": 857, "label": "看出道前的影片" },
+      { "time": "16:36", "seconds": 996, "label": "感動雨凡" },
+      { "time": "17:04", "seconds": 1024, "label": "安安給雨凡的一大疊衛生紙" },
+      { "time": "17:49", "seconds": 1069, "label": "安可" },
+      { "time": "19:31", "seconds": 1171, "label": "馬丁的失誤瞬間" },
+      { "time": "20:48", "seconds": 1248, "label": "大家的爸媽都哭了" }]
   },
   {
     "id": "N5CUdP6KmJ8",
@@ -1827,8 +1843,8 @@
     "category": "official",
     "subtype": "八點檔",
     "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
-    "tags": [],
-    "description": "",
+    "tags": ["打籃球", "籃球比賽", "滑板"],
+    "description": "CORTIS在LA打籃球的過程。",
     "timestamps": []
   },
   {
@@ -1839,7 +1855,7 @@
     "category": "official",
     "subtype": "八點檔",
     "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
-    "tags": [],
+    "tags": ["六旗魔術山", "遊樂園", "遊樂設施", "自由落體", "雲霄飛車", "歐媽", "熱狗", "汽水", "冰淇淋"],
     "description": "CORTIS在六旗魔術山玩的過程。",
     "timestamps": []
   },
