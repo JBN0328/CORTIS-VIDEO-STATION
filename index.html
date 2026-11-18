@@ -3894,10 +3894,14 @@ function createVideoCardHTML(
    */
 
   const thumbnailUrl =
+  `https://img.youtube.com/vi/${encodeURIComponent(
+    item.youtubeId
+  )}/maxresdefault.jpg`;
 
-    `https://img.youtube.com/vi/${encodeURIComponent(
-      item.youtubeId
-    )}/hqdefault.jpg`;
+const thumbnailFallbackUrl =
+  `https://img.youtube.com/vi/${encodeURIComponent(
+    item.youtubeId
+  )}/hqdefault.jpg`;
 
 
   return `
@@ -3957,7 +3961,7 @@ function createVideoCardHTML(
           "
         >
 
-          <img
+         <img
             src="${thumbnailUrl}"
             alt="${escapeHtml(item.title)}"
             class="
@@ -3966,8 +3970,8 @@ function createVideoCardHTML(
               object-cover
             "
             loading="lazy"
+            onerror="this.onerror=null;this.src='${thumbnailFallbackUrl}'"
           >
-
         </div>
 
 
