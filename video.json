@@ -1767,8 +1767,8 @@
     "category": "official",
     "subtype": "八點檔",
     "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
-    "tags": [],
-    "description": "",
+    "tags": ["出道一百天", "家人", "哭"],
+    "description": "慶祝CORTIS出道一百天!有工作人員的祝賀，還有五個人家人的祝福影片。",
     "timestamps": []
   },
   {
@@ -1779,9 +1779,13 @@
     "category": "official",
     "subtype": "八點檔",
     "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
-    "tags": [],
-    "description": "",
-    "timestamps": []
+    "tags": ["回家", "家人", "小時候", "芒果", "PRADA墨鏡", "Cookie", "巧克力", "看電影", "打籃球", "獎牌"],
+    "description": "CORTIS在休假期間回各自家裡的紀錄。",
+    "timestamps": [{ "time": "00:23", "seconds": 23, "label": "馬丁" },
+      { "time": "05:33", "seconds": 333, "label": "乾鎬" },
+      { "time": "12:30", "seconds": 750, "label": "雨凡" },
+      { "time": "17:53", "seconds": 1073, "label": "主訓" },
+      { "time": "22:47", "seconds": 1367, "label": "成玹" }]
   },
   {
     "id": "yglOWWqFzTM",
@@ -1791,8 +1795,8 @@
     "category": "official",
     "subtype": "八點檔",
     "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
-    "tags": [],
-    "description": "",
+    "tags": ["撲克牌", "押注", "巧克力"],
+    "description": "金主訓和嚴成玹在車上玩撲克牌，並用巧克力作為籌碼來押注。",
     "timestamps": []
   },
   {
@@ -1803,8 +1807,8 @@
     "category": "official",
     "subtype": "八點檔",
     "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
-    "tags": [],
-    "description": "",
+    "tags": ["TikTok Awards", "Pororo", "化汀體育館", "全球新人獎"],
+    "description": "CORTIS參加2025 TikTok Awards的準備、紅毯、演出，以及拿到Global Rookie Award的得獎感言。",
     "timestamps": []
   },
   {
