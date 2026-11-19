@@ -1707,8 +1707,8 @@
     "category": "official",
     "subtype": "八點檔",
     "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
-    "tags": [],
-    "description": "",
+    "tags": ["對決", "鑰匙圈"],
+    "description": "小嚴和小安的對決，兩人在比較彼此的鑰匙圈。",
     "timestamps": []
   },
   {
@@ -1719,8 +1719,8 @@
     "category": "official",
     "subtype": "八點檔",
     "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
-    "tags": [],
-    "description": "",
+    "tags": ["烤肉", "火"],
+    "description": "CORTIS吃烤肉時的360度紀錄影片，可以在觀看過程中自由調整視角，過程中包含小嚴的失火燒肉。",
     "timestamps": []
   },
   {
@@ -1743,9 +1743,21 @@
     "category": "official",
     "subtype": "八點檔",
     "members": ["JAMES 趙雨凡", "JUHOON 金主訓", "MARTIN 朴宇宙", "SEONGHYEON 嚴成玹", "KEONHO 安乾鎬"],
-    "tags": [],
-    "description": "",
-    "timestamps": []
+    "tags": ["舞蹈Challenge", "KATSEYE", "volcano armshake", "TXT", "LE SSERAFIM", "&TEAM", "TWS", "Jam Republic", "BOYNEXTDOOR", "ENHYPHEN", "Ruthie", "Hollywood Action", "Overdrive"],
+    "description": "CORTIS第一次和各個團體Challenge的紀錄影片。",
+    "timestamps": [{ "time": "00:16", "seconds": 16, "label": "KATSEYE" },
+      { "time": "03:43", "seconds": 223, "label": "volcano armshake" },
+      { "time": "03:54", "seconds": 234, "label": "TXT 崔然竣 休寧凱" },
+      { "time": "07:36", "seconds": 456, "label": "LE SSERAFIM" },
+      { "time": "09:28", "seconds": 568, "label": "&TEAM" },
+      { "time": "12:17", "seconds": 737, "label": "TWS 申惟 志薫" },
+      { "time": "12:36", "seconds": 756, "label": "志薫和雨凡" },
+      { "time": "13:44", "seconds": 824, "label": "TWS 志薫 道勳 英宰" },
+      { "time": "16:18", "seconds": 978, "label": "特邀嘉賓 Jam Republic" },
+      { "time": "21:35", "seconds": 1295, "label": "hyun" },
+      { "time": "22:41", "seconds": 1361, "label": "BOYNEXTDOOR 成淏" },
+      { "time": "26:04", "seconds": 1564, "label": "Ruthie老師" },
+      { "time": "28:47", "seconds": 1727, "label": "ENHYPHEN 禎元" }]
   },
   {
     "id": "9xFg60as2CA",
